@@ -1,79 +1,88 @@
-# Phần mềm Quản lý và Tạo đề thi LaTeX tự động
+# Phần mềm Quản lý Ngân hàng Câu hỏi & Tạo Đề thi LaTeX
 
-Dự án này là một bộ công cụ dòng lệnh (CLI) được viết bằng Python, giúp tự động hóa toàn bộ quy trình quản lý ngân hàng câu hỏi định dạng LaTeX. Phần mềm cho phép trích xuất dữ liệu, xây dựng cơ sở dữ liệu siêu tốc và tự động sinh đề thi theo ma trận cấu trúc với nhiều mã đề hoán vị.
+Phần mềm giao diện đồ họa (GUI) hỗ trợ giáo viên tự động hóa quá trình quản lý ngân hàng câu hỏi trắc nghiệm/tự luận LaTeX và xuất đề thi ngẫu nhiên dựa trên cấu trúc ma trận. 
 
-## Tính năng nổi bật
+Giao diện được thiết kế hiện đại, hỗ trợ Dark Mode và tối ưu hóa trải nghiệm người dùng (UX) thông qua thư viện `customtkinter`.
 
-* **Chuẩn hóa & Lưu trữ thông minh (Parsing & Storage):** Tự động quét các tệp `.tex` gốc, làm sạch các thẻ thông tin thừa để chỉ giữ lại mã ID chuẩn, và lưu vào cơ sở dữ liệu `database.json` giúp tốc độ truy xuất tức thì ở các lần chạy sau.
-* **Sinh đề theo Ma trận (Matrix Auto-pick):** Bốc ngẫu nhiên số lượng câu hỏi chính xác dựa trên tiền tố ID (Ví dụ: `2D4H` - Lớp 12, Đại số, Chương 4, Thông hiểu) mà không bị trùng lặp.
-* **Tự động phân loại (Auto-Categorization):** Nhận diện cú pháp LaTeX để tự động xếp câu hỏi vào 3 phần riêng biệt:
-* Trắc nghiệm (Chứa thẻ `\choice`)
-* Đúng/Sai (Chứa thẻ `\choiceTF` hoặc `\choicetf`)
-* Điền khuyết (Không chứa thẻ trắc nghiệm)
+---
 
+## 🌟 Tính năng nổi bật
 
-* **Hoán vị đa dạng (Shuffle & Permutation):** Tự động xáo trộn vị trí câu hỏi và nhân bản thành nhiều mã đề thi khác nhau chỉ với một lần nhập lệnh.
+1. **Quét & Nạp dữ liệu tự động:** Tự động đọc hàng loạt tệp `.tex` trong thư mục, nhận diện các khối câu hỏi `\begin{ex}` và chuẩn hóa mã ID.
+2. **Cơ sở dữ liệu thông minh:** Lưu trữ cục bộ toàn bộ câu hỏi vào tệp `database.json`, giúp việc truy xuất cực kỳ nhanh chóng.
+3. **Bốc câu hỏi theo Ma trận:** Cho phép người dùng thiết lập số lượng câu hỏi cần bốc cho từng dạng (thông qua Tiền tố ID). Thuật toán bốc ngẫu nhiên đảm bảo các mã đề không bị trùng lặp câu hỏi.
+4. **Phân loại tự động:** Tự động nhận diện câu hỏi Trắc nghiệm nhiều phương án (`\choice`), Đúng/Sai (`\choiceTF`) và Tự luận (Điền khuyết) để sắp xếp vào đúng bố cục.
+5. **Xuất file LaTeX chuẩn:** Tạo ra các tệp `.tex` đề thi hoán vị sẵn sàng để biên dịch, tích hợp tự động mã đáp án.
 
-## Cấu trúc thư mục
+---
 
-Để phần mềm hoạt động trơn tru, cấu trúc thư mục cần được tổ chức như sau:
+## 📂 Cấu trúc thư mục dự án
+
+Dự án được tổ chức theo chuẩn mô-đun hóa, tách biệt rõ ràng giữa Giao diện (Frontend) và Xử lý logic (Backend):
 
 ```text
-thu_muc_du_an/
+📁 Thu-muc-du-an/
 │
-├── data/                   # Thư mục chứa các tệp .tex gốc (Ngân hàng câu hỏi)
-├── output/                 # Thư mục xuất các đề thi mới và file đáp án
+├── 📄 app.py               # Chạy phần mềm (Giao diện người dùng CTk)
+├── 📄 data_process.py      # Module xử lý dữ liệu (Quét tệp, Đọc/Ghi JSON)
+├── 📄 tao_de.py            # Module tạo đề (Lắp ráp khung LaTeX, phân loại)
 │
-├── main.py                 # Mã lệnh quét dữ liệu, làm sạch ID và tạo database
-├── tao_de.py               # Mã lệnh tương tác nhập ma trận và tạo đề thi
-├── database.json           # (Tự động sinh) Cơ sở dữ liệu lưu trữ
-└── README.md               # Tệp tài liệu hướng dẫn
+├── 📄 database.json        # Cơ sở dữ liệu lưu trữ câu hỏi (Sinh tự động)
+├── 📄 README.md            # Tài liệu hướng dẫn sử dụng
+│
+├── 📁 data/                # Nơi chứa các tệp .tex câu hỏi nguồn (Đầu vào)
+└── 📁 output/              # Nơi chứa các tệp .tex đề thi đã tạo (Đầu ra)
 
 ```
 
-## Yêu cầu về cấu trúc câu hỏi gốc
+---
 
-Các câu hỏi đầu vào trong thư mục `data/` cần tuân thủ nghiêm ngặt định dạng sau:
+## ⚙️ Hướng dẫn Cài đặt
 
-1. Nằm trọn vẹn trong môi trường `\begin{ex}` và `\end{ex}`.
-2. Chứa mã ID có định dạng `%[Tham số - Tham số]` (bắt buộc có dấu gạch ngang). Ví dụ: `%[2D4H2-5]`.
-3. *Lưu ý:* Phần mềm sẽ tự động loại bỏ các tag thừa (như `%[Tên tác giả]`) nằm trước mã ID chính thức trong quá trình nạp dữ liệu.
+Phần mềm yêu cầu Python 3.x và thư viện giao diện `customtkinter`.
 
-## Hướng dẫn sử dụng
+**Bước 1:** Cài đặt thư viện yêu cầu thông qua Terminal / Command Prompt:
 
-### Bước 1: Quét và Xây dựng Cơ sở dữ liệu
-
-Thực hiện bước này lần đầu tiên hoặc mỗi khi bạn cập nhật thêm câu hỏi mới vào thư mục `data/`.
-
-1. Chép tất cả các tệp `.tex` chứa ngân hàng câu hỏi vào thư mục `data/`.
-2. Mở Terminal / Command Prompt tại thư mục dự án và chạy lệnh:
 ```bash
-python main.py
+pip install customtkinter
 
 ```
 
+**Bước 2:** Khởi chạy phần mềm:
 
-3. Hệ thống sẽ báo cáo số lượng câu hỏi được trích xuất và tạo ra tệp `database.json`.
-
-### Bước 2: Tạo đề thi tự động theo Ma trận
-
-1. Chạy lệnh sau trên Terminal:
 ```bash
-python tao_de.py
+python app.py
 
 ```
 
+---
 
-2. Cung cấp các thông số định dạng đề thi:
-* **Môn học:** (VD: Toán)
-* **Tên đề:** (VD: Đề kiểm tra Chương 2)
-* **Mã gốc file đáp án:** (VD: De01)
+## 🚀 Hướng dẫn Sử dụng
+
+### 1. Nạp Dữ Liệu Ngân Hàng
+
+* Đặt các tệp LaTeX chứa câu hỏi (định dạng `.tex`) vào thư mục `data/` (hoặc bất kỳ thư mục nào trên máy).
+* Mở phần mềm, chuyển sang Tab **Nạp Dữ Liệu**.
+* Bấm **Mở Thư Mục** để trỏ đến thư mục chứa câu hỏi.
+* Bấm **QUÉT VÀ CẬP NHẬT**. Phần mềm sẽ đọc và lưu toàn bộ câu hỏi vào hệ thống.
+
+*Lưu ý về chuẩn dữ liệu:* Mỗi câu hỏi phải nằm trong môi trường `\begin{ex}... \end{ex}` và chứa mã ID ở dòng đầu tiên. Ví dụ: `\begin{ex}%[2D4H2-5]`
+
+### 2. Tạo Đề Thi
+
+* Chuyển sang Tab **Tạo Đề Thi**.
+* Điền thông tin tiêu đề: Môn học, Tên đề, Mã đáp án gốc và số lượng đề cần tạo (số hoán vị).
+* Thêm cấu trúc ma trận:
+* Nhập **Tiền tố ID** (Ví dụ: `2D` để bốc câu hỏi Toán lớp 12 Giải tích, hoặc `2D4H` cho mức độ cụ thể hơn).
+* Nhập **Số lượng** câu hỏi muốn bốc cho tiền tố đó.
+* Bấm **Thêm**. Lặp lại cho đến khi đủ cấu trúc đề thi.
 
 
-3. Nhập ma trận đề thi:
-* Nhập lần lượt các **Tiền tố ID** (VD: `2D4H`) và **Số lượng** mong muốn.
-* Gõ `xong` khi đã hoàn tất việc nhập ma trận.
+* Bấm **TẠO ĐỀ THI**. Các tệp kết quả sẽ xuất hiện trong thư mục `output/`.
 
+---
 
-4. Nhập số lượng mã đề hoán vị cần tạo (VD: `4`).
-5. Phần mềm sẽ tự động xáo trộn và sinh ra các tệp `.tex` hoàn chỉnh (ví dụ: `dethi_moi_1.tex`, `dethi_moi_2.tex`...) trong thư mục `output/`. Bạn chỉ cần biên dịch các tệp này để lấy file PDF.
+## 🛠 Lỗi thường gặp
+
+* **`PermissionError` khi lưu JSON:** Đảm bảo tệp `database.json` không bị mở bởi một phần mềm khác (như Excel hay Notepad) trong lúc bấm Nạp dữ liệu.
+* **Không tìm thấy câu hỏi phù hợp:** Đảm bảo Tiền tố ID bạn nhập trên giao diện khớp chính xác với mã ID có trong các tệp `.tex` nguồn. Kiểm tra phân biệt chữ hoa/chữ thường.
