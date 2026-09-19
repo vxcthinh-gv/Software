@@ -1,0 +1,2926 @@
+[
+    {
+        "tenMon": "Đại số / Thống kê 10",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 1. Mệnh đề. Tập hợp",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Mệnh đề",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định mệnh đề, mệnh đề chứa biến",
+                                "maChung": "%[0D1*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính đúng-sai của mệnh đề",
+                                "maChung": "%[0D1*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phủ định của một mệnh đề",
+                                "maChung": "%[0D1*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Mệnh đề kéo theo, mệnh đề đảo, mệnh đề tương đương",
+                                "maChung": "%[0D1*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Mệnh đề với mọi, tồn tại (và phủ định chúng)",
+                                "maChung": "%[0D1*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Áp dụng mệnh đề vào suy luận có lí",
+                                "maChung": "%[0D1*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Tập hợp",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tập hợp và phần tử của tập hợp",
+                                "maChung": "%[0D1*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tập hợp con. Hai tập hợp bằng nhau",
+                                "maChung": "%[0D1*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Ký hiệu khoảng, đoạn, nửa khoảng",
+                                "maChung": "%[0D1*2-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Các phép toán tập hợp",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Giao và hợp của hai tập hợp (rời rạc)",
+                                "maChung": "%[0D1*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Hiệu và phần bù của hai tập hợp (rời rạc)",
+                                "maChung": "%[0D1*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Giao và hợp (dùng đoạn, khoảng)",
+                                "maChung": "%[0D1*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Hiệu và phần bù (dùng đoạn, khoảng)",
+                                "maChung": "%[0D1*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế ứng dụng của tập hợp",
+                                "maChung": "%[0D1*3-5]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 2. BPT và hệ BPT bậc nhất hai ẩn",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Bất phương trình bậc nhất hai ẩn",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Các khái niệm về BPT bậc nhất hai ẩn",
+                                "maChung": "%[0D2*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Miền nghiệm của BPT bậc nhất hai ẩn",
+                                "maChung": "%[0D2*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Toán thực tế về BPT bậc nhất hai ẩn",
+                                "maChung": "%[0D2*1-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Hệ bất phương trình bậc nhất hai ẩn",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Các khái niệm về Hệ BPT bậc nhất hai ẩn",
+                                "maChung": "%[0D2*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Miền nghiệm của Hệ BPT bậc nhất hai ẩn",
+                                "maChung": "%[0D2*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Toán thực tế về Hệ BPT bậc nhất hai ẩn",
+                                "maChung": "%[0D2*2-3]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 3. Hàm số bậc hai và đồ thị",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Hàm số và đồ thị",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định một hàm số",
+                                "maChung": "%[0D3*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tập xác định của hàm số",
+                                "maChung": "%[0D3*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Giá trị của hàm số",
+                                "maChung": "%[0D3*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Đồ thị của hàm số",
+                                "maChung": "%[0D3*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Tính đồng biến, nghịch biến",
+                                "maChung": "%[0D3*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Tính chẵn, lẻ",
+                                "maChung": "%[0D3*1-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế về hàm số",
+                                "maChung": "%[0D3*1-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Hàm số bậc hai",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định hàm số bậc hai",
+                                "maChung": "%[0D3*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bảng biến thiên, tính đơn điệu, max, min",
+                                "maChung": "%[0D3*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Đồ thị của hàm số bậc hai",
+                                "maChung": "%[0D3*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán về sự tương giao",
+                                "maChung": "%[0D3*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Hàm số chứa dấu giá trị tuyệt đối",
+                                "maChung": "%[0D3*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế ứng dụng hàm số bậc hai",
+                                "maChung": "%[0D3*2-6]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 6. Thống kê",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Số gần đúng. Sai số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính và ước lượng sai số tuyệt đối, tương đối",
+                                "maChung": "%[0D6*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính và xác định độ chính xác của kết quả",
+                                "maChung": "%[0D6*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Quy tròn số gần đúng",
+                                "maChung": "%[0D6*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Viết số gần đúng cho số đúng biết độ chính xác",
+                                "maChung": "%[0D6*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Đọc và phân tích thông tin trên bảng số liệu",
+                                "maChung": "%[0D6*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Đọc và phân tích thông tin trên biểu đồ",
+                                "maChung": "%[0D6*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Số liệu bất thường trên bảng số liệu",
+                                "maChung": "%[0D6*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Số liệu bất thường trên biểu đồ",
+                                "maChung": "%[0D6*2-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Các số đặc trưng đo xu thế trung tâm của mẫu số liệu",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[0D6*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Số trung bình cộng",
+                                "maChung": "%[0D6*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Số trung vị",
+                                "maChung": "%[0D6*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tứ phân vị",
+                                "maChung": "%[0D6*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Mốt",
+                                "maChung": "%[0D6*3-5]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Các số đặc trưng đo mức độ phân tán của mẫu số liệu",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[0D6*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Khoảng biến thiên, khoảng tứ phân vị",
+                                "maChung": "%[0D6*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Giá trị bất thường của mẫu số liệu",
+                                "maChung": "%[0D6*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Phương sai, độ lệch chuẩn của mẫu số liệu",
+                                "maChung": "%[0D6*4-4]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 7. Bất phương trình bậc 2 một ẩn",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Dấu của tam thức bậc 2",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định tam thức bậc 2",
+                                "maChung": "%[0D7*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Dấu của tam thức bậc 2 và ứng dụng",
+                                "maChung": "%[0D7*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán xét dấu biết BXD, đồ thị",
+                                "maChung": "%[0D7*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Xét dấu biểu thức dạng tích, thương",
+                                "maChung": "%[0D7*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế ứng dụng dấu tam thức bậc 2",
+                                "maChung": "%[0D7*1-5]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Giải bất phương trình bậc 2 một ẩn",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Bất phương trình bậc 2 và ứng dụng",
+                                "maChung": "%[0D7*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Giải bất phương trình bậc hai biết BXD, đồ thị",
+                                "maChung": "%[0D7*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bất phương trình dạng tích, thương",
+                                "maChung": "%[0D7*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Hệ bất phương trình BPT bậc 2",
+                                "maChung": "%[0D7*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bất phương trình chứa căn, |.|",
+                                "maChung": "%[0D7*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán có tham số m",
+                                "maChung": "%[0D7*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế ứng dụng bất phương trình bậc 2 một ẩn",
+                                "maChung": "%[0D7*2-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Phương trình quy về phương trình bậc hai",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Phương trình căn{f(x)}=căn{g(x)} và mở rộng",
+                                "maChung": "%[0D7*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương trình căn{f(x)}=g(x) và mở rộng",
+                                "maChung": "%[0D7*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương trình căn thức có tham số",
+                                "maChung": "%[0D7*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Phương trình căn thức (dạng khác)",
+                                "maChung": "%[0D7*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phương trình khác quy về phương trình bậc 2",
+                                "maChung": "%[0D7*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán hình, toán thực tế ứng dụng phương trình quy về bậc 2",
+                                "maChung": "%[0D7*3-6]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 8. Đại số tổ hợp",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Quy tắc cộng-quy tắc nhân",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Bài toán chỉ sử dụng quy tắc cộng",
+                                "maChung": "%[0D8*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán chỉ sử dụng quy tắc nhân",
+                                "maChung": "%[0D8*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán kết hợp quy tắc cộng và quy tắc nhân",
+                                "maChung": "%[0D8*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán dùng quy tắc bù trừ",
+                                "maChung": "%[0D8*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bài toán đếm số tự nhiên",
+                                "maChung": "%[0D8*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Sơ đồ hình cây",
+                                "maChung": "%[0D8*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Hoán vị. Chỉnh hợp. Tổ hợp",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Lý thuyết tổng hợp về P, C, A",
+                                "maChung": "%[0D8*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán có biểu thức P, C, A",
+                                "maChung": "%[0D8*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán đếm số tự nhiên",
+                                "maChung": "%[0D8*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán chọn người",
+                                "maChung": "%[0D8*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bài toán chọn đối tượng khác",
+                                "maChung": "%[0D8*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán có yếu tố hình học",
+                                "maChung": "%[0D8*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Bài toán xếp chỗ (không tròn, không lặp)",
+                                "maChung": "%[0D8*2-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Hoán vị bàn tròn",
+                                "maChung": "%[0D8*2-8]"
+                            },
+                            {
+                                "tenDang": "Dạng 9. Hoán vị lặp",
+                                "maChung": "%[0D8*2-9]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Nhị thức Newton",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Các câu hỏi lý thuyết tổng hợp",
+                                "maChung": "%[0D8*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Khai triển một nhị thức Newton",
+                                "maChung": "%[0D8*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm hệ số, số hạng trong khai triển bằng tam giác Pascal",
+                                "maChung": "%[0D8*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm hệ số, số hạng trong khai triển",
+                                "maChung": "%[0D8*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Tính tổng nhờ khai triển nhị thức Newton",
+                                "maChung": "%[0D8*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán tổ hợp có dùng nhị thức Newton",
+                                "maChung": "%[0D8*3-6]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 10. Xác suất",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Không gian mẫu và biến cố",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Các câu hỏi lý thuyết tổng hợp",
+                                "maChung": "%[0D0*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Mô tả không gian mẫu, biến cố",
+                                "maChung": "%[0D0*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Đếm phần tử không gian mẫu, biến cố",
+                                "maChung": "%[0D0*1-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Xác suất của biến cố",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Các câu hỏi lý thuyết tổng hợp",
+                                "maChung": "%[0D0*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Liên quan xúc xắc, đồng tiền (PP liệt kê)",
+                                "maChung": "%[0D0*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Liên quan việc sắp xếp chỗ",
+                                "maChung": "%[0D0*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Liên quan việc chọn người",
+                                "maChung": "%[0D0*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Liên quan việc chọn đối tượng khác",
+                                "maChung": "%[0D0*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Liên quan hình học",
+                                "maChung": "%[0D0*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Liên quan việc đếm số",
+                                "maChung": "%[0D0*2-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Liên quan bàn tròn hoặc hoán vị lặp",
+                                "maChung": "%[0D0*2-8]"
+                            },
+                            {
+                                "tenDang": "Dạng 9. Liên quan vấn đề khác",
+                                "maChung": "%[0D0*2-9]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Hình học 10",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 4. Hệ thức lượng trong tam giác",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Giá trị lượng giác của góc (0->180)",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xét dấu của biểu thức lượng giác",
+                                "maChung": "%[0H4*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính các giá trị lượng giác",
+                                "maChung": "%[0H4*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Biến đổi, rút gọn biểu thức lượng giác",
+                                "maChung": "%[0H4*1-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Định lý sin và định lý côsin",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Bài toán chỉ dùng định lý Sin, Côsin",
+                                "maChung": "%[0H4*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán có dùng công thức diện tích",
+                                "maChung": "%[0H4*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Biến đổi, rút gọn biểu thức",
+                                "maChung": "%[0H4*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Nhận dạng tam giác",
+                                "maChung": "%[0H4*2-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Giải tam giác và ứng dụng thực tế",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Giải tam giác",
+                                "maChung": "%[0H4*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Các ứng dụng thực tế",
+                                "maChung": "%[0H4*3-2]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 5. Véctơ (chưa xét tọa độ)",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Khái niệm véctơ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định một véctơ",
+                                "maChung": "%[0H5*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xét phương và hướng của các véctơ",
+                                "maChung": "%[0H5*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Hai véctơ bằng nhau",
+                                "maChung": "%[0H5*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Hai véctơ đối nhau",
+                                "maChung": "%[0H5*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Độ dài của một véctơ",
+                                "maChung": "%[0H5*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng véctơ",
+                                "maChung": "%[0H5*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Tổng và hiệu của hai véctơ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính toán, thu gọn hiệu các véctơ",
+                                "maChung": "%[0H5*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính đúng-sai của 1 đẳng thức véctơ",
+                                "maChung": "%[0H5*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm điểm nhờ đẳng thức véctơ",
+                                "maChung": "%[0H5*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tính độ dài của véctơ tổng, hiệu",
+                                "maChung": "%[0H5*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Cực trị hình học",
+                                "maChung": "%[0H5*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng tổng hiệu véctơ",
+                                "maChung": "%[0H5*2-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Tích của một số với véctơ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định k.vec{a} và độ dài của nó",
+                                "maChung": "%[0H5*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Biến đổi, thu gọn 1 đẳng thức véctơ",
+                                "maChung": "%[0H5*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm điểm nhờ đẳng thức véctơ",
+                                "maChung": "%[0H5*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Sự cùng phương của 2 véctơ và ứng dụng",
+                                "maChung": "%[0H5*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phân tích 1 véctơ theo 2 véctơ không cùng phương",
+                                "maChung": "%[0H5*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Tính độ dài của véctơ tổng, hiệu",
+                                "maChung": "%[0H5*3-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Tập hợp điểm",
+                                "maChung": "%[0H5*3-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Cực trị hình học",
+                                "maChung": "%[0H5*3-8]"
+                            },
+                            {
+                                "tenDang": "Dạng 9. Toán thực tế áp dụng tích 1 số với véctơ",
+                                "maChung": "%[0H5*3-9]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Tích vô hướng (chưa xét tọa độ)",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tích vô hướng, góc giữa 2 véctơ",
+                                "maChung": "%[0H5*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm góc nhờ tích vô hướng",
+                                "maChung": "%[0H5*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Đẳng thức về tích vô hướng hoặc độ dài",
+                                "maChung": "%[0H5*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Điều kiện vuông góc",
+                                "maChung": "%[0H5*4-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Các bài toán tìm điểm và tập hợp điểm",
+                                "maChung": "%[0H5*4-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Cực trị và chứng minh bất đẳng thức",
+                                "maChung": "%[0H5*4-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế áp dụng tích vô hướng",
+                                "maChung": "%[0H5*4-7]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 9. Phương pháp toạ độ trong mặt phẳng (Oxy)",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Toạ độ của véctơ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tọa độ điểm, độ dài đại số của véctơ trên 1 trục",
+                                "maChung": "%[0H9*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phép toán véctơ (tổng, hiệu, tích với số) trong Oxy",
+                                "maChung": "%[0H9*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tọa độ điểm và véctơ trên hệ trục Oxy",
+                                "maChung": "%[0H9*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Sự cùng phương của 2 véctơ và ứng dụng",
+                                "maChung": "%[0H9*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phân tích một véctơ theo 2 véctơ không cùng phương",
+                                "maChung": "%[0H9*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế dùng hệ toạ độ",
+                                "maChung": "%[0H9*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Tích vô hướng (theo tọa độ)",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tích vô hướng, góc giữa 2 véctơ",
+                                "maChung": "%[0H9*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm góc nhờ tích vô hướng",
+                                "maChung": "%[0H9*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Đẳng thức về tích vô hướng hoặc độ dài",
+                                "maChung": "%[0H9*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Điều kiện vuông góc",
+                                "maChung": "%[0H9*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Các bài toán tìm điểm và tập hợp điểm",
+                                "maChung": "%[0H9*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Cực trị và chứng minh bất đẳng thức",
+                                "maChung": "%[0H9*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế, liên môn",
+                                "maChung": "%[0H9*2-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Đường thẳng trong mặt phẳng toạ độ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Điểm, véctơ, hệ số góc của đường thẳng",
+                                "maChung": "%[0H9*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương trình đường thẳng",
+                                "maChung": "%[0H9*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Vị trí tương đối giữa hai đường thẳng",
+                                "maChung": "%[0H9*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán về góc giữa hai đường thẳng",
+                                "maChung": "%[0H9*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bài toán về khoảng cách",
+                                "maChung": "%[0H9*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán tìm điểm",
+                                "maChung": "%[0H9*3-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Bài toán dùng cho tam giác, tứ giác",
+                                "maChung": "%[0H9*3-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Bài toán thực tế, PP tọa độ hóa",
+                                "maChung": "%[0H9*3-8]"
+                            },
+                            {
+                                "tenDang": "Dạng 9. Bài toán có dùng PT chính tắc",
+                                "maChung": "%[0H9*3-9]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Đường tròn trong mặt phẳng toạ độ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tìm tâm, bán kính và điều kiện là đường tròn",
+                                "maChung": "%[0H9*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương trình đường tròn",
+                                "maChung": "%[0H9*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương trình tiếp tuyến của đường tròn",
+                                "maChung": "%[0H9*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Vị trí tương đối liên quan đường tròn",
+                                "maChung": "%[0H9*4-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán tổng hợp đường thẳng và đường tròn",
+                                "maChung": "%[0H9*4-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán dùng cho tam giác, tứ giác",
+                                "maChung": "%[0H9*4-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Bài toán thực tế, PP tọa độ hóa",
+                                "maChung": "%[0H9*4-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Ba đường conic trong mặt phẳng toạ độ",
+                        "danhSachDang": [
+                            {
+                                "tenDang": " Lưu ý. Chuyên đề 3. Ba đường conic gán ID vào bài này.",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": " -----------------------------",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 1. Xác định các yếu tố của elip",
+                                "maChung": "%[0H9*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương trình chính tắc của elip",
+                                "maChung": "%[0H9*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán điểm trên elip",
+                                "maChung": "%[0H9*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Xác định các yếu tố của hypebol",
+                                "maChung": "%[0H9*5-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phương trình chính tắc của hypebol",
+                                "maChung": "%[0H9*5-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán điểm trên hypebol",
+                                "maChung": "%[0H9*5-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Xác định các yếu tố của parabol",
+                                "maChung": "%[0H9*5-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Phương trình chính tắc của parabol",
+                                "maChung": "%[0H9*5-8]"
+                            },
+                            {
+                                "tenDang": "Dạng 9. Bài toán điểm trên parabol",
+                                "maChung": "%[0H9*5-9]"
+                            },
+                            {
+                                "tenDang": "Dạng 10. Bài toán tổng hợp/thực tế, PP tọa độ hóa 3 đường conic",
+                                "maChung": "%[0H9*5-0]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Chuyên đề 10",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 1. Hệ phương trình bậc nhất 3 ẩn và ứng dụng",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Hệ phương trình bậc nhất 3 ẩn và ứng dụng",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Các khái niệm về Hệ PT bậc nhất 3 ẩn",
+                                "maChung": "%[0C1*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Giải Hệ PT bậc nhất 3 ẩn",
+                                "maChung": "%[0C1*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Toán thực tế ứng dụng Hệ PT bậc nhất 3 ẩn",
+                                "maChung": "%[0C1*1-3]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 2. Phương pháp quy nạp toán học",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Phương pháp quy nạp toán học",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Quy nạp chứng minh các đẳng thức/công thức/chia hết",
+                                "maChung": "%[0C2*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Quy nạp chứng minh các bất đẳng thức",
+                                "maChung": "%[0C2*1-2]"
+                            },
+                            {
+                                "tenDang": " ----------------------------------------",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": " Lưu ý: Nhị thức Newton, gán trong Bài chính thức",
+                                "maChung": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 3. Ba đường conic trong mặt phẳng toạ độ",
+                "danhSachBai": [
+                    {
+                        "tenBai": " Gán trong Bài chính thức",
+                        "danhSachDang": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Đại số / Thống kê 11",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Góc lượng giác",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D1*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Chuyển đổi đơn vị độ và radian",
+                                "maChung": "%[1D1*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Số đo của một góc lượng giác",
+                                "maChung": "%[1D1*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Độ dài của một cung tròn",
+                                "maChung": "%[1D1*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Đường tròn lượng giác và ứng dụng",
+                                "maChung": "%[1D1*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng góc lượng giác",
+                                "maChung": "%[1D1*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Giá trị lượng giác của một góc lượng giác",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D1*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xét dấu giá trị lượng giác. Tính giá trị lượng giác của một góc",
+                                "maChung": "%[1D1*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Biến đổi, rút gọn biểu thức lượng giác; chứng minh đẳng thức lượng giác",
+                                "maChung": "%[1D1*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Các góc lượng giác có liên quan đặc biệt: bù nhau, phụ nhau, đối nhau, hơn kém nhau pi",
+                                "maChung": "%[1D1*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế áp dụng giá trị của một góc lượng giác",
+                                "maChung": "%[1D1*2-5]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Các công thức lượng giác",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D1*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Áp dụng công thức cộng",
+                                "maChung": "%[1D1*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Áp dụng công thức nhân đôi - hạ bậc",
+                                "maChung": "%[1D1*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Áp dụng công thức biến đổi tích <-> tổng",
+                                "maChung": "%[1D1*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Kết hợp nhiều công thức lượng giác",
+                                "maChung": "%[1D1*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Nhận dạng tam giác",
+                                "maChung": "%[1D1*3-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế áp dụng công thức lượng giác",
+                                "maChung": "%[1D1*3-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Hàm số lượng giác và đồ thị",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D1*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm tập xác định",
+                                "maChung": "%[1D1*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xét tính đơn điệu",
+                                "maChung": "%[1D1*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Xét tính chẵn, lẻ",
+                                "maChung": "%[1D1*4-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Xét tính tuần hoàn, tìm chu kỳ",
+                                "maChung": "%[1D1*4-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Tìm tập giá trị và min, max",
+                                "maChung": "%[1D1*4-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Bảng biến thiên và đồ thị",
+                                "maChung": "%[1D1*4-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng hàm số lượng giác",
+                                "maChung": "%[1D1*4-8]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Phương trình lượng giác cơ bản",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết. Khái niệm phương trình tương đương",
+                                "maChung": "%[1D1*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Điều kiện có nghiệm",
+                                "maChung": "%[1D1*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương trình cơ bản dùng Radian",
+                                "maChung": "%[1D1*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Phương trình cơ bản dùng Độ",
+                                "maChung": "%[1D1*5-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phương trình đưa về dạng cơ bản",
+                                "maChung": "%[1D1*5-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng phương trình lượng giác",
+                                "maChung": "%[1D1*5-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 6. [Giảm] Phương trình lượng giác thường gặp",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Phương trình bậc n theo một hàm số lượng giác",
+                                "maChung": "%[1D1*6-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương trình đẳng cấp bậc n đối với sinx và cosx",
+                                "maChung": "%[1D1*6-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương trình bậc nhất đối với sinx và cosx",
+                                "maChung": "%[1D1*6-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Phương trình đối xứng, phản đối xứng",
+                                "maChung": "%[1D1*6-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phương trình lượng giác không mẫu mực",
+                                "maChung": "%[1D1*6-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Phương trình lượng giác có chứa ẩn ở mẫu số",
+                                "maChung": "%[1D1*6-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Phương trình lượng giác có chứa tham số",
+                                "maChung": "%[1D1*6-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng phương trình lượng giác thường gặp",
+                                "maChung": "%[1D1*6-8]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 2. Dãy số. Cấp số cộng. Cấp số nhân",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Dãy số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D2*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Số hạng tổng quát, biểu diễn dãy số",
+                                "maChung": "%[1D2*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm số hạng cụ thể của dãy số",
+                                "maChung": "%[1D2*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Dãy số tăng, dãy số giảm",
+                                "maChung": "%[1D2*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Dãy số bị chặn",
+                                "maChung": "%[1D2*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế  áp dụng dãy số",
+                                "maChung": "%[1D2*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Cấp số cộng",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D2*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Nhận diện cấp số cộng, công sai d",
+                                "maChung": "%[1D2*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Số hạng tổng quát của cấp số cộng",
+                                "maChung": "%[1D2*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm số hạng cụ thể trong cấp số cộng",
+                                "maChung": "%[1D2*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Điều kiện để dãy số là cấp số cộng",
+                                "maChung": "%[1D2*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Tính tổng của cấp số cộng",
+                                "maChung": "%[1D2*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế  áp dụng cấp số cộng",
+                                "maChung": "%[1D2*2-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Cấp số nhân",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D2*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Nhận diện cấp số nhân, công bội q",
+                                "maChung": "%[1D2*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Số hạng tổng quát của cấp số nhân",
+                                "maChung": "%[1D2*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm số hạng cụ thể trong cấp số nhân",
+                                "maChung": "%[1D2*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Điều kiện để dãy số là cấp số nhân",
+                                "maChung": "%[1D2*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Tính tổng của cấp số nhân",
+                                "maChung": "%[1D2*3-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Kết hợp cấp số nhân và cấp số cộng",
+                                "maChung": "%[1D2*3-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế  áp dụng cấp số nhân",
+                                "maChung": "%[1D2*3-8]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 3. Giới hạn. Hàm số liên tục",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Giới hạn của dãy số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D3*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương pháp đặt thừa số chung (lim hữu hạn)",
+                                "maChung": "%[1D3*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương pháp lượng liên hợp (lim hữu hạn)",
+                                "maChung": "%[1D3*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Giới hạn vô cực",
+                                "maChung": "%[1D3*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Cấp số nhân lùi vô hạn",
+                                "maChung": "%[1D3*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng giới hạn của dãy số",
+                                "maChung": "%[1D3*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Giới hạn của hàm số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D3*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Thay số trực tiếp",
+                                "maChung": "%[1D3*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. PP đặt thừa số chung, kết quả hữu hạn",
+                                "maChung": "%[1D3*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. PP đặt thừa số chung, kết quả vô cực",
+                                "maChung": "%[1D3*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. PP lượng liên hợp, kết quả hữu hạn",
+                                "maChung": "%[1D3*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. PP lượng liên hợp, kết quả vô cực",
+                                "maChung": "%[1D3*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Giới hạn một bên",
+                                "maChung": "%[1D3*2-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng giới hạn của hàm số",
+                                "maChung": "%[1D3*2-8]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Hàm số liên tục",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D3*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính liên tục thể hiện qua đồ thị",
+                                "maChung": "%[1D3*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Hàm số liên tục tại một điểm",
+                                "maChung": "%[1D3*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Hàm số liên tục trên khoảng, đoạn",
+                                "maChung": "%[1D3*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bài toán phương trình có nghiệm",
+                                "maChung": "%[1D3*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng hàm số liên tục",
+                                "maChung": "%[1D3*3-6]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 5. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Số trung bình và mốt của mẫu số liệu ghép nhóm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D5*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Mẫu số liệu ghép nhóm",
+                                "maChung": "%[1D5*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Số trung bình",
+                                "maChung": "%[1D5*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Mốt",
+                                "maChung": "%[1D5*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Trung vị và tứ phân vị của mẫu số liệu ghép nhóm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1D5*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Trung vị",
+                                "maChung": "%[1D5*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tứ phân vị",
+                                "maChung": "%[1D5*2-3]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 6. Hàm số mũ và hàm số lôgarít",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Phép tính luỹ thừa",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính giá trị của biểu thức chứa lũy thừa",
+                                "maChung": "%[1D6*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Biến đổi, rút gọn biểu thức chứa lũy thừa",
+                                "maChung": "%[1D6*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Điều kiện cho luỹ thừa, căn thức",
+                                "maChung": "%[1D6*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. So sánh các lũy thừa",
+                                "maChung": "%[1D6*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Phép tính lôgarít",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính giá trị biểu thức chứa lôgarít",
+                                "maChung": "%[1D6*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Biến đổi, biểu diễn biểu thức chứa lôgarít",
+                                "maChung": "%[1D6*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Rút gọn, chứng minh biểu thức lôgarít",
+                                "maChung": "%[1D6*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Số e và bài toán lãi kép",
+                                "maChung": "%[1D6*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế áp dụng phép tính lôgarít",
+                                "maChung": "%[1D6*2-5]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Hàm số mũ. Hàm số lôgarít",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết hàm số lũy thừa, mũ, lôgarít",
+                                "maChung": "%[1D6*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tập xác định của hàm số",
+                                "maChung": "%[1D6*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Sự biến thiên và đồ thị của hàm số mũ, lôgarít",
+                                "maChung": "%[1D6*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. So sánh các luỹ thừa và lôgarít",
+                                "maChung": "%[1D6*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế áp dụng hàm số mũ, lôgarít",
+                                "maChung": "%[1D6*3-5]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Phương trình, bất phương trình mũ và lôgarít",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Điều kiện có nghiệm",
+                                "maChung": "%[1D6*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương trình mũ, lôgarít cơ bản",
+                                "maChung": "%[1D6*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bất phương trình mũ, lôgarít cơ bản",
+                                "maChung": "%[1D6*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Phương trình mũ, lôgarít đưa về cùng cơ số",
+                                "maChung": "%[1D6*4-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bất phương trình mũ, lôgarít đưa về cùng cơ số",
+                                "maChung": "%[1D6*4-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng phương trình mũ, lôgarít",
+                                "maChung": "%[1D6*4-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. [Giảm] Các phương pháp giải được giảm tải",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Phương pháp đặt ẩn phụ cho PT mũ, lôgarít",
+                                "maChung": "%[1D6*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương pháp lôgarít hóa, mũ cho PT mũ, lôgarít",
+                                "maChung": "%[1D6*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương pháp hàm số, đánh giá cho PT mũ, lôgarít",
+                                "maChung": "%[1D6*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Hệ PT mũ, lôgarít",
+                                "maChung": "%[1D6*5-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế áp dụng phương trình mũ, lôgarít",
+                                "maChung": "%[1D6*5-5]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 7. Đạo hàm",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Đạo hàm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính đạo hàm bằng định nghĩa",
+                                "maChung": "%[1D7*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Số gia hàm số, số gia biến số",
+                                "maChung": "%[1D7*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Ý nghĩa Hình học của đạo hàm",
+                                "maChung": "%[1D7*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ý nghĩa Vật lý của đạo hàm",
+                                "maChung": "%[1D7*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Toán thực tế khác áp dụng định nghĩa đạo hàm",
+                                "maChung": "%[1D7*1-5]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Các quy tắc đạo hàm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính đạo hàm",
+                                "maChung": "%[1D7*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Đẳng thức có y và y'",
+                                "maChung": "%[1D7*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tiếp tuyến tại một điểm",
+                                "maChung": "%[1D7*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tiếp tuyến biết trước hệ số góc",
+                                "maChung": "%[1D7*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Tiếp tuyến chưa biết tiếp điểm và hệ số góc",
+                                "maChung": "%[1D7*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Giới hạn hàm số lượng giác, hàm số mũ, lôgarít",
+                                "maChung": "%[1D7*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Dùng đạo hàm cho nhị thức Newton",
+                                "maChung": "%[1D7*2-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng quy tắc đạo hàm",
+                                "maChung": "%[1D7*2-8]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Đạo hàm cấp hai",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tính đạo hàm cấp hai",
+                                "maChung": "%[1D7*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Đẳng thức có y và (y', y'')",
+                                "maChung": "%[1D7*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Toán thực tế và Ý nghĩa Vật lý của đạo hàm cấp hai",
+                                "maChung": "%[1D7*3-3]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 9. Xác suất",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Biến cố giao và quy tắc nhân xác suất",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết",
+                                "maChung": "%[1D9*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định và đếm số phần tử của biến cố giao",
+                                "maChung": "%[1D9*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Quy tắc nhân xác suất cho hai biến cố độc lập",
+                                "maChung": "%[1D9*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tính xác suất biến cố giao bằng sơ đồ hình cây",
+                                "maChung": "%[1D9*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Biến cố hợp và quy tắc cộng xác suất",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết",
+                                "maChung": "%[1D9*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định và đếm số phần tử của biến cố hợp",
+                                "maChung": "%[1D9*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Quy tắc cộng xác suất cho hai biến cố xung khắc",
+                                "maChung": "%[1D9*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Quy tắc cộng xác suất cho hai biến cố bất kì",
+                                "maChung": "%[1D9*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Tính xác suất biến cố hợp bằng sơ đồ hình cây",
+                                "maChung": "%[1D9*2-5]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Hình học 11",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 4. Đường thẳng, mặt phẳng. Quan hệ song song trong không gian",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Điểm, đường thẳng và mặt phẳng",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1H4*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Hình biểu diễn của một hình không gian",
+                                "maChung": "%[1H4*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm giao tuyến của hai mặt phẳng",
+                                "maChung": "%[1H4*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm giao điểm của đường thẳng và mặt phẳng",
+                                "maChung": "%[1H4*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Xác định thiết diện",
+                                "maChung": "%[1H4*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Ba điểm thẳng hàng, ba đường thẳng đồng quy",
+                                "maChung": "%[1H4*1-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế áp dụng điểm, đường thẳng và mặt phẳng",
+                                "maChung": "%[1H4*1-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Hai đường thẳng song song",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1H4*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Hai đường thẳng song song",
+                                "maChung": "%[1H4*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm giao tuyến bằng cách kẻ song song",
+                                "maChung": "%[1H4*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm giao điểm của đường thẳng và mặt phẳng",
+                                "maChung": "%[1H4*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Xác định thiết diện bằng cách kẻ song song",
+                                "maChung": "%[1H4*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Ba điểm thẳng hàng",
+                                "maChung": "%[1H4*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Bài toán quỹ tích và điểm cố định",
+                                "maChung": "%[1H4*2-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng hai đường thẳng song song",
+                                "maChung": "%[1H4*2-8]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Đường thẳng và mặt phẳng song song",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1H4*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Đường thẳng song song với mặt phẳng",
+                                "maChung": "%[1H4*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm giao tuyến bằng cách kẻ song song",
+                                "maChung": "%[1H4*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm giao điểm của đường thẳng và mặt phẳng",
+                                "maChung": "%[1H4*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Xác định thiết diện bằng cách kẻ song song",
+                                "maChung": "%[1H4*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Ba điểm thẳng hàng",
+                                "maChung": "%[1H4*3-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Bài toán quỹ tích và điểm cố định",
+                                "maChung": "%[1H4*3-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng đường thẳng song song mặt phẳng",
+                                "maChung": "%[1H4*3-8]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Hai mặt phẳng song song",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1H4*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Hai mặt phẳng song song",
+                                "maChung": "%[1H4*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Chứng minh đường thẳng song song mặt phẳng",
+                                "maChung": "%[1H4*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Xác định mặt phẳng đi qua một điểm và song song với một mặt phẳng",
+                                "maChung": "%[1H4*4-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Xác định mặt phẳng chứa đường thẳng (hoặc đi qua hai điểm) và song song với một mặt phẳng",
+                                "maChung": "%[1H4*4-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán tổng hợp",
+                                "maChung": "%[1H4*4-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế áp dụng hai mặt phẳng song song",
+                                "maChung": "%[1H4*4-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Hình lăng trụ và hình hộp (xiên)",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1H4*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán về hình lăng trụ (xiên)",
+                                "maChung": "%[1H4*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán về hình hộp (xiên)",
+                                "maChung": "%[1H4*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Toán thực tế áp dụng hình lăng trụ và hình hộp",
+                                "maChung": "%[1H4*5-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 6. Phép chiếu song song",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1H4*6-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Hình biểu diễn của một hình không gian",
+                                "maChung": "%[1H4*6-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xác định yếu tố song song",
+                                "maChung": "%[1H4*6-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Xác định phương chiếu",
+                                "maChung": "%[1H4*6-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Tính tỉ số đoạn thẳng, diện tích qua phép chiếu",
+                                "maChung": "%[1H4*6-5]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 8. Quan hệ vuông góc trong không gian",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Hai đường thẳng vuông góc",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết",
+                                "maChung": "%[1H8*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định hai đường thẳng vuông góc",
+                                "maChung": "%[1H8*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm góc giữa hai đường thẳng",
+                                "maChung": "%[1H8*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Toán thực tế áp dụng hai đường thẳng vuông góc",
+                                "maChung": "%[1H8*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Đường thẳng vuông góc với mặt phẳng",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết",
+                                "maChung": "%[1H8*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định hoặc chứng minh đường thẳng và mặt phẳng vuông góc",
+                                "maChung": "%[1H8*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xác định hoặc chứng minh hai đường thẳng vuông góc",
+                                "maChung": "%[1H8*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Dựng mặt phẳng, tìm thiết diện",
+                                "maChung": "%[1H8*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Hình chiếu vuông góc của một hình trên mặt phẳng (tìm điểm, tìm đoạn thẳng, tính diện tích)",
+                                "maChung": "%[1H8*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng đường thẳng vuông góc mặt phẳng",
+                                "maChung": "%[1H8*2-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Phép chiếu vuông góc",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Lý thuyết về phép chiếu vuông góc",
+                                "maChung": "%[1H8*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Hình chiếu vuông góc của đa giác trên mặt phẳng",
+                                "maChung": "%[1H8*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Các bài toán thực tế áp dụng phép chiếu vuông góc",
+                                "maChung": "%[1H8*3-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Hai mặt phẳng vuông góc",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết",
+                                "maChung": "%[1H8*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định/chứng minh đường thẳng vuông góc mặt phẳng, mặt phẳng vuông góc",
+                                "maChung": "%[1H8*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xác định góc giữa hai mặt phẳng",
+                                "maChung": "%[1H8*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Dựng mặt phẳng, thiết diện",
+                                "maChung": "%[1H8*4-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Nhận dạng và tính toán liên quan các hình thông dụng",
+                                "maChung": "%[1H8*4-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán cho trước góc giữa d và (P)",
+                                "maChung": "%[1H8*4-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế áp dụng hai mặt phẳng vuông góc",
+                                "maChung": "%[1H8*4-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Khoảng cách",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết",
+                                "maChung": "%[1H8*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Khoảng cách giữa 2 điểm, từ 1 điểm đến 1 đường thẳng",
+                                "maChung": "%[1H8*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Khoảng cách từ một điểm đến một mặt phẳng",
+                                "maChung": "%[1H8*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Khoảng cách giữa hai đường thẳng chéo nhau",
+                                "maChung": "%[1H8*5-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Đường vuông góc chung của hai đường thẳng chéo nhau",
+                                "maChung": "%[1H8*5-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng khoảng cách",
+                                "maChung": "%[1H8*5-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 6. Góc giữa đường thẳng và mặt phẳng. Góc nhị diện",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Góc giữa đường thẳng và mặt phẳng",
+                                "maChung": "%[1H8*6-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Góc nhị diện, góc phẳng nhị diện",
+                                "maChung": "%[1H8*6-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Góc giữa 2 mặt phẳng, biết trước góc (d,(P))",
+                                "maChung": "%[1H8*6-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Khoảng cách giữa điểm, đường, biết trước góc (d,(P))",
+                                "maChung": "%[1H8*6-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Khoảng cách giữa điểm - mặt phẳng, biết trước góc (d,(P))",
+                                "maChung": "%[1H8*6-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Khoảng cách giữa 2 đường chéo nhau, biết trước góc (d,(P))",
+                                "maChung": "%[1H8*6-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế về góc đường thẳng, mặt phẳng, góc nhị diện",
+                                "maChung": "%[1H8*6-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 7. Hình lăng trụ đứng. Hình chóp đều. Thể tích",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lí thuyết, công thức",
+                                "maChung": "%[1H8*7-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Thể tích khối chóp tam giác",
+                                "maChung": "%[1H8*7-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Thể tích khối chóp tứ giác",
+                                "maChung": "%[1H8*7-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Thể tích khối lăng trụ tam giác",
+                                "maChung": "%[1H8*7-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Thể tích khối lăng trụ tứ giác",
+                                "maChung": "%[1H8*7-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Thể tích khối chóp cụt và các khối khác",
+                                "maChung": "%[1H8*7-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Tỉ số thể tích",
+                                "maChung": "%[1H8*7-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Ứng dụng thể tích tính góc, khoảng cách,...",
+                                "maChung": "%[1H8*7-8]"
+                            },
+                            {
+                                "tenDang": "Dạng 9. Toán thực tế hình lăng trụ đứng, chóp đều, thể tích",
+                                "maChung": "%[1H8*7-9]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Chuyên đề 11",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 1. Phép biến hình phẳng",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Phép biến hình, phép dời hình và hai hình bằng nhau",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán xác định một phép đặt tương ứng có là phép dời hình hay không?",
+                                "maChung": "%[1C1*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xác định ảnh khi thực hiện phép dời hình",
+                                "maChung": "%[1C1*1-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Phép tịnh tiến",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm ảnh hoặc tạo ảnh khi thực hiện phép tịnh tiến",
+                                "maChung": "%[1C1*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Ứng dụng phép tịnh tiến",
+                                "maChung": "%[1C1*2-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Phép đối xứng trục",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm ảnh hoặc tạo ảnh khi thực hiện phép đối xứng trục",
+                                "maChung": "%[1C1*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xác định trục đối xứng và số trục đối xứng của một hình",
+                                "maChung": "%[1C1*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ứng dụng phép đối xứng trục",
+                                "maChung": "%[1C1*3-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Phép đối xứng tâm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm ảnh, tạo ảnh khi thực hiện phép đối xứng tâm",
+                                "maChung": "%[1C1*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Xác định hình có tâm đối xứng",
+                                "maChung": "%[1C1*4-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ứng dụng phép đối xứng tâm",
+                                "maChung": "%[1C1*4-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Phép quay",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định vị trí ảnh của điểm, hình khi thực hiện phép quay cho trước",
+                                "maChung": "%[1C1*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm tọa độ ảnh của điểm, phương trình của một đường thẳng khi thực hiện phép quay",
+                                "maChung": "%[1C1*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ứng dụng phép quay",
+                                "maChung": "%[1C1*5-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 6. Phép vị tự",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*6-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định ảnh, tạo ảnh khi thực hiện phép vị tự",
+                                "maChung": "%[1C1*6-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm tâm vị tự của hai đường tròn",
+                                "maChung": "%[1C1*6-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ứng dụng phép vị tự",
+                                "maChung": "%[1C1*6-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 7. Phép đồng dạng",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[1C1*7-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định ảnh, tạo ảnh khi thực hiện phép đồng dạng",
+                                "maChung": "%[1C1*7-2]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 2. Lý thuyết đồ thị",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Đồ thị",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi về đỉnh, cạnh của đồ thị",
+                                "maChung": "%[1C2*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Câu hỏi về bậc của đồ thị",
+                                "maChung": "%[1C2*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Câu hỏi tổng hợp",
+                                "maChung": "%[1C2*1-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Đường đi Euler và Harmilton",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Đường đi Euler",
+                                "maChung": "%[1C2*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Đường đi Harmilton",
+                                "maChung": "%[1C2*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Câu hỏi tổng hợp",
+                                "maChung": "%[1C2*2-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Bài toán tìm đường đi ngắn nhất",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Bài toán tìm đường đi ngắn nhất",
+                                "maChung": "%[1C2*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tổng hợp",
+                                "maChung": "%[1C2*3-2]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 3. Một số yếu tố vẽ kỹ thuật",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Hình biểu diễn của một hình, khối",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Lý thuyết về phép chiếu và hình biểu diễn song song",
+                                "maChung": "%[1C3*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Lý thuyết về phép chiếu vuông góc",
+                                "maChung": "%[1C3*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Lý thuyết về phép chiếu trục đo",
+                                "maChung": "%[1C3*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tổng hợp",
+                                "maChung": "%[1C3*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Bản vẽ kỹ thuật",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Lý thuyết cơ bản về bản vẽ kỹ thuật",
+                                "maChung": "%[1C3*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương pháp biểu diễn bản vẽ kỹ thuật",
+                                "maChung": "%[1C3*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tổng hợp",
+                                "maChung": "%[1C3*2-3]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Giải tích / Thống kê 12",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 1. Ứng dụng đạo hàm để khảo sát hàm số",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Sự đồng biến và nghịch biến của hàm số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xét tính đơn điệu của hàm số cho bởi công thức",
+                                "maChung": "%[2D1*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xét tính đơn điệu dựa vào bảng biến thiên, đồ thị",
+                                "maChung": "%[2D1*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm tham số m để hàm số đơn điệu",
+                                "maChung": "%[2D1*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ứng dụng tính đơn điệu để chứng minh BĐT, giải PT, BPT, HPT",
+                                "maChung": "%[2D1*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Cực trị của hàm số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Tìm cực trị của hàm số cho bởi công thức",
+                                "maChung": "%[2D1*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm cực trị dựa vào bảng biến thiên, đồ thị",
+                                "maChung": "%[2D1*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm m để hàm số đạt cực trị tại 1 điểm x_0 cho trước",
+                                "maChung": "%[2D1*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tìm m để hàm số, đồ thị hàm số bậc ba có cực trị thỏa mãn điều kiện",
+                                "maChung": "%[2D1*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Tìm m để hàm số, đồ thị hàm số trùng phương có cực trị thỏa mãn điều kiện",
+                                "maChung": "%[2D1*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Tìm m để hàm số, đồ thị hàm số các hàm số khác có cực trị thỏa mãn điều kiện",
+                                "maChung": "%[2D1*2-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Giá trị lớn nhất và giá trị nhỏ nhất của hàm số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. GTLN, GTNN trên đoạn",
+                                "maChung": "%[2D1*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. GTLN, GTNN trên khoảng",
+                                "maChung": "%[2D1*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Sử dụng các đánh giá, bất đẳng thức cổ điển",
+                                "maChung": "%[2D1*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Ứng dụng GTNN, GTLN trong bài toán PT, BPT",
+                                "maChung": "%[2D1*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. GTLN, GTNN hàm nhiều biến",
+                                "maChung": "%[2D1*3-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Bài toán ứng dụng, tối ưu, thực tế",
+                                "maChung": "%[2D1*3-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Đường tiệm cận",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Bài toán xác định tiệm cận (không có tham số)",
+                                "maChung": "%[2D1*4-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán xác định tiệm cận (có tham số)",
+                                "maChung": "%[2D1*4-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán liên quan đến đồ thị hàm số và các đường tiệm cận",
+                                "maChung": "%[2D1*4-3]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Khảo sát sự biến thiên và vẽ đồ thị hàm số",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Nhận dạng đồ thị, bảng biến thiên",
+                                "maChung": "%[2D1*5-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Các phép biến đổi đồ thị",
+                                "maChung": "%[2D1*5-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Biện luận số giao điểm dựa vào đồ thị, bảng biến thiên",
+                                "maChung": "%[2D1*5-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Sự tương giao của hai đồ thị (liên quan đến tọa độ giao điểm)",
+                                "maChung": "%[2D1*5-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Đồ thị của hàm số đạo hàm",
+                                "maChung": "%[2D1*5-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Phương trình tiếp tuyến của đồ thị hàm số",
+                                "maChung": "%[2D1*5-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Điểm đặc biệt của đồ thị hàm số",
+                                "maChung": "%[2D1*5-7]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 3. Các số đặc trưng đo mức độ phân tán cho mẫu số liệu ghép nhóm",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Khoảng biến thiên, khoảng tứ phân vị của mẫu số liệu ghép nhóm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2D3*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm khoảng biến thiên",
+                                "maChung": "%[2D3*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm khoảng tứ phân vị",
+                                "maChung": "%[2D3*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Câu hỏi tổng hợp",
+                                "maChung": "%[2D3*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Phương sai, độ lệch chuẩn của mẫu số liệu ghép nhóm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2D3*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm phương sai, độ lệch chuẩn",
+                                "maChung": "%[2D3*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Câu hỏi tổng hợp",
+                                "maChung": "%[2D3*2-3]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 4. Nguyên hàm, tích phân và ứng dụng",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Nguyên hàm",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2D4*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Nguyên hàm cơ bản đa thức, phân thức",
+                                "maChung": "%[2D4*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Nguyên hàm cơ bản hàm lượng giác",
+                                "maChung": "%[2D4*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Nguyên hàm cơ bản hàm mũ, luỹ thừa",
+                                "maChung": "%[2D4*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phương pháp đổi biến số cơ bản",
+                                "maChung": "%[2D4*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng nguyên hàm",
+                                "maChung": "%[2D4*1-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Tích phân",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2D4*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tích phân cơ bản đa thức, phân thức",
+                                "maChung": "%[2D4*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tích phân cơ bản hàm lượng giác",
+                                "maChung": "%[2D4*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Tích phân cơ bản hàm mũ, luỹ thừa",
+                                "maChung": "%[2D4*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Phương pháp đổi biến số cơ bản",
+                                "maChung": "%[2D4*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng tích phân",
+                                "maChung": "%[2D4*2-6]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Ứng dụng của tích phân",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Diện tích hình phẳng được giới hạn bởi các đồ thị",
+                                "maChung": "%[2D4*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Bài toán thực tế sử dụng diện tích hình phẳng",
+                                "maChung": "%[2D4*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Thể tích giới hạn bởi các đồ thị (tròn xoay)",
+                                "maChung": "%[2D4*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Thể tích tính theo mặt cắt S(x)",
+                                "maChung": "%[2D4*3-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Bài toán thực tế và ứng dụng thể tích tròn xoay, S(x)",
+                                "maChung": "%[2D4*3-5]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 5. Một số yếu tố xác suất",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Xác suất có điều kiện",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2D5*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính xác suất có điều kiện bằng công thức",
+                                "maChung": "%[2D5*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tính xác suất có điều kiện bằng sơ đồ cây",
+                                "maChung": "%[2D5*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán tổng hợp",
+                                "maChung": "%[2D5*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Công thức xác suất toàn phần. Công thức Bayes",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2D5*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tính xác suất bằng công thức xác suất toàn phần",
+                                "maChung": "%[2D5*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tính xác suất bằng công thức xác suất Bayes",
+                                "maChung": "%[2D5*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán tổng hợp",
+                                "maChung": "%[2D5*2-4]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 4. Số phức",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Khái niệm số phức",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Xác định các yếu tố cơ bản của số phức",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 2. Biểu diễn hình học cơ bản của số phức",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 3. Câu hỏi lý thuyết",
+                                "maChung": ""
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Phép cộng, trừ và nhân số phức",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Thực hiện phép tính",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định các yếu tố cơ bản của số phức qua các phép toán",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán quy về giải phương trình, hệ phương trình nghiệm thực",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán tập hợp điểm",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 5. Câu hỏi lý thuyết",
+                                "maChung": ""
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Phép chia số phức",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Thực hiện phép tính",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định các yếu tố cơ bản của số phức qua các phép toán",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 3. Bài toán quy về giải phương trình, hệ phương trình nghiệm thực",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 4. Bài toán tập hợp điểm",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 5. Câu hỏi lý thuyết",
+                                "maChung": ""
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 4. Phương trình bậc hai hệ số thực",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Giải phương trình. Tính toán biểu thức nghiệm",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 2. Định lí Viet và ứng dụng",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 3. Phương trình quy về bậc hai",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 4. Câu hỏi lý thuyết",
+                                "maChung": ""
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 5. Cực trị",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Phương pháp hình học",
+                                "maChung": ""
+                            },
+                            {
+                                "tenDang": "Dạng 2. Phương pháp đại số",
+                                "maChung": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tenMon": "Hình học 12",
+        "danhSachChuong": [
+            {
+                "tenChuong": "Chương 2. Tọa độ của véc-tơ trong không gian",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Véc-tơ và các phép toán véc-tơ trong không gian (chưa toạ độ hoá)",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2H2*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tổng, hiệu, tích một số với véc-tơ",
+                                "maChung": "%[2H2*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tích vô hướng và ứng dụng",
+                                "maChung": "%[2H2*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Toán thực tế áp dụng các phép toán véc-tơ",
+                                "maChung": "%[2H2*1-4]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Toạ độ của véc-tơ và các công thức",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Công thức lý thuyết",
+                                "maChung": "%[2H2*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Tìm tọa độ điểm",
+                                "maChung": "%[2H2*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Tìm tọa độ véc-tơ",
+                                "maChung": "%[2H2*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Công thức toạ độ của tích vô hướng và ứng dụng",
+                                "maChung": "%[2H2*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Công thức toạ độ của tích có hướng và ứng dụng",
+                                "maChung": "%[2H2*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Toán thực tế áp dụng các phép toán toạ độ hoá véc-tơ",
+                                "maChung": "%[2H2*2-6]"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tenChuong": "Chương 5. Phương trình mặt phẳng, đường thẳng, mặt cầu trong không gian Oxyz",
+                "danhSachBai": [
+                    {
+                        "tenBai": "Bài 1. Phương trình mặt phẳng",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[2H5*1-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định véc-tơ pháp tuyến, cặp véc-tơ chỉ phương",
+                                "maChung": "%[2H5*1-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Viết phương trình tổng quát mặt phẳng",
+                                "maChung": "%[2H5*1-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Vị trí tương đối giữa hai mặt phẳng (song song, vuông góc)",
+                                "maChung": "%[2H5*1-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Khoảng cách điểm tới mặt phẳng",
+                                "maChung": "%[2H5*1-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Góc giữa hai mặt phẳng",
+                                "maChung": "%[2H5*1-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Toán thực tế áp dụng phương trình mặt phẳng",
+                                "maChung": "%[2H5*1-7]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 2. Phương trình đường thẳng trong không gian",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[2H5*2-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định véc-tơ chỉ phương, cặp véc-tơ pháp tuyến",
+                                "maChung": "%[2H5*2-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Viết phương trình tổng quát, chính tắc, tham số đường thẳng",
+                                "maChung": "%[2H5*2-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Vị trí tương đối giữa hai đường thẳng",
+                                "maChung": "%[2H5*2-4]"
+                            },
+                            {
+                                "tenDang": "Dạng 5. Vị trí tương đối giữa đường thẳng và mặt phẳng",
+                                "maChung": "%[2H5*2-5]"
+                            },
+                            {
+                                "tenDang": "Dạng 6. Khoảng cách điểm tới đường thẳng",
+                                "maChung": "%[2H5*2-6]"
+                            },
+                            {
+                                "tenDang": "Dạng 7. Góc giữa hai đường thẳng, đường thẳng và mặt phẳng",
+                                "maChung": "%[2H5*2-7]"
+                            },
+                            {
+                                "tenDang": "Dạng 8. Toán thực tế áp dụng phương trình đường thẳng",
+                                "maChung": "%[2H5*2-8]"
+                            }
+                        ]
+                    },
+                    {
+                        "tenBai": "Bài 3. Phương trình mặt cầu trong không gian",
+                        "danhSachDang": [
+                            {
+                                "tenDang": "Dạng 1. Câu hỏi lý thuyết",
+                                "maChung": "%[2H5*3-1]"
+                            },
+                            {
+                                "tenDang": "Dạng 2. Xác định tâm, bán kính, đường kính mặt cầu",
+                                "maChung": "%[2H5*3-2]"
+                            },
+                            {
+                                "tenDang": "Dạng 3. Viết phương trình tổng quát mặt cầu",
+                                "maChung": "%[2H5*3-3]"
+                            },
+                            {
+                                "tenDang": "Dạng 4. Toán thực tế áp dụng phương trình mặt cầu",
+                                "maChung": "%[2H5*3-4]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

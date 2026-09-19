@@ -2,13 +2,12 @@ import os
 import random
 import tkinter as tk
 from tkinter import messagebox, filedialog
+from tkinter import ttk
 import customtkinter as ctk
 
-# Nhập hàm từ các module lõi (Giữ nguyên cấu trúc dự án của bạn)
-from data_process import parse_latex_files, save_database
+from data_process import parse_latex_files, save_database, load_structure
 from tao_de import load_database, auto_pick_questions, create_exam
 
-# Thiết lập UI mặc định: Chế độ Tối và tông màu Xanh dương
 ctk.set_appearance_mode("Dark")  
 ctk.set_default_color_theme("blue")  
 
@@ -16,21 +15,20 @@ class AppTaoDe:
     def __init__(self, root):
         self.root = root
         self.root.title("Quản lý Ngân hàng Câu hỏi LaTeX")
-        self.root.geometry("750x820")
+        self.root.geometry("1150x820") 
         
         self.ma_tran_list = []
         self.db = load_database('database.json') or {}
+        self.structure_data = load_structure('cau_truc_chuong_trinh.json')
         
         self.build_ui()
 
     def build_ui(self):
-        # Font chữ dùng chung
         self.font_title = ctk.CTkFont(family="Segoe UI", size=16, weight="bold")
         self.font_main = ctk.CTkFont(family="Segoe UI", size=13)
         
-        # Tabview hiện đại
-        self.tabview = ctk.CTkTabview(self.root, width=700, height=750, corner_radius=10)
-        self.tabview.pack(padx=20, pady=20, fill="both", expand=True)
+        self.tabview = ctk.CTkTabview(self.root, corner_radius=10)
+        self.tabview.pack(padx=10, pady=10, fill="both", expand=True)
         
         self.tab_tao_de = self.tabview.add("Tạo Đề Thi")
         self.tab_nap_data = self.tabview.add("Nạp Dữ Liệu")
@@ -38,69 +36,149 @@ class AppTaoDe:
         self.build_tab_tao_de()
         self.build_tab_nap_data()
 
-    # ==========================================
-    # TAB 1: TẠO ĐỀ THI
-    # ==========================================
     def build_tab_tao_de(self):
-        # --- Khung 1: Thông tin Đề thi ---
-        frame_info = ctk.CTkFrame(self.tab_tao_de, corner_radius=10)
-        frame_info.pack(fill="x", padx=10, pady=10)
+        # --- CỘT TRÁI (CÂY THƯ MỤC) ---
+        left_frame = ctk.CTkFrame(self.tab_tao_de, corner_radius=10)
+        left_frame.pack(side="left", fill="both", expand=True, padx=(10, 5), pady=10)
+        
+        ctk.CTkLabel(left_frame, text="📖 Cấu trúc Chương trình", font=self.font_title).pack(pady=(10, 5))
+        
+        style = ttk.Style()
+        style.theme_use("default")
+        style.configure("Treeview", background="#2b2b2b", foreground="white", fieldbackground="#2b2b2b", borderwidth=0, font=("Segoe UI", 11))
+        style.map('Treeview', background=[('selected', '#1f538d')])
+        
+        tree_scroll = ctk.CTkScrollbar(left_frame)
+        tree_scroll.pack(side="right", fill="y", pady=10)
+        
+        self.tree = ttk.Treeview(left_frame, yscrollcommand=tree_scroll.set, show="tree")
+        self.tree.pack(side="left", fill="both", expand=True, padx=(10, 0), pady=10)
+        tree_scroll.configure(command=self.tree.yview)
+        
+        self.populate_tree()
+        self.tree.bind("<<TreeviewSelect>>", self.on_tree_select)
+
+        # --- CỘT PHẢI (THAO TÁC) ---
+        right_frame = ctk.CTkFrame(self.tab_tao_de, width=450, corner_radius=10, fg_color="transparent")
+        right_frame.pack(side="right", fill="y", expand=False, padx=(5, 10), pady=10)
+
+        # 1. Thông tin Đề thi
+        frame_info = ctk.CTkFrame(right_frame, corner_radius=10)
+        frame_info.pack(fill="x", pady=(0, 10))
         
         ctk.CTkLabel(frame_info, text="1. Thông tin Đề thi", font=self.font_title).grid(row=0, column=0, columnspan=2, sticky="w", padx=15, pady=(10, 5))
 
         ctk.CTkLabel(frame_info, text="Môn học:", font=self.font_main).grid(row=1, column=0, sticky="w", padx=15, pady=5)
-        self.entry_mon_hoc = ctk.CTkEntry(frame_info, width=350, font=self.font_main)
-        self.entry_mon_hoc.grid(row=1, column=1, padx=15, pady=5)
+        self.entry_mon_hoc = ctk.CTkEntry(frame_info, width=250, font=self.font_main)
+        self.entry_mon_hoc.grid(row=1, column=1, padx=15, pady=5, sticky="w")
 
         ctk.CTkLabel(frame_info, text="Tên đề thi:", font=self.font_main).grid(row=2, column=0, sticky="w", padx=15, pady=5)
-        self.entry_ten_de = ctk.CTkEntry(frame_info, width=350, font=self.font_main)
-        self.entry_ten_de.grid(row=2, column=1, padx=15, pady=5)
+        self.entry_ten_de = ctk.CTkEntry(frame_info, width=250, font=self.font_main)
+        self.entry_ten_de.grid(row=2, column=1, padx=15, pady=5, sticky="w")
 
-        ctk.CTkLabel(frame_info, text="Mã đáp án gốc:", font=self.font_main).grid(row=3, column=0, sticky="w", padx=15, pady=5)
-        self.entry_ma_dap_an = ctk.CTkEntry(frame_info, width=350, font=self.font_main)
-        self.entry_ma_dap_an.grid(row=3, column=1, padx=15, pady=5)
+        ctk.CTkLabel(frame_info, text="Mã đáp án:", font=self.font_main).grid(row=3, column=0, sticky="w", padx=15, pady=5)
+        self.entry_ma_dap_an = ctk.CTkEntry(frame_info, width=250, font=self.font_main)
+        self.entry_ma_dap_an.grid(row=3, column=1, padx=15, pady=5, sticky="w")
         
-        ctk.CTkLabel(frame_info, text="Số lượng đề (Hoán vị):", font=self.font_main).grid(row=4, column=0, sticky="w", padx=15, pady=(5, 15))
-        self.entry_so_luong_de = ctk.CTkEntry(frame_info, width=100, font=self.font_main)
+        ctk.CTkLabel(frame_info, text="Số lượng đề:", font=self.font_main).grid(row=4, column=0, sticky="w", padx=15, pady=(5, 15))
+        self.entry_so_luong_de = ctk.CTkEntry(frame_info, width=80, font=self.font_main)
         self.entry_so_luong_de.insert(0, "1")
         self.entry_so_luong_de.grid(row=4, column=1, sticky="w", padx=15, pady=(5, 15))
 
-        # --- Khung 2: Ma trận ---
-        frame_matrix = ctk.CTkFrame(self.tab_tao_de, corner_radius=10)
-        frame_matrix.pack(fill="both", expand=True, padx=10, pady=5)
+        # 2. Cấu trúc Ma trận
+        frame_matrix = ctk.CTkFrame(right_frame, corner_radius=10)
+        frame_matrix.pack(fill="both", expand=True, pady=5)
         
         ctk.CTkLabel(frame_matrix, text="2. Cấu trúc Ma trận", font=self.font_title).pack(anchor="w", padx=15, pady=(10, 5))
 
         toolbar_frame = ctk.CTkFrame(frame_matrix, fg_color="transparent")
         toolbar_frame.pack(fill="x", padx=15, pady=5)
 
-        ctk.CTkLabel(toolbar_frame, text="Tiền tố ID:", font=self.font_main).pack(side="left")
-        self.entry_prefix = ctk.CTkEntry(toolbar_frame, width=120, font=self.font_main)
-        self.entry_prefix.pack(side="left", padx=10)
+        ctk.CTkLabel(toolbar_frame, text="Tiền tố:", font=self.font_main).grid(row=0, column=0, padx=2, pady=5, sticky="e")
+        self.entry_prefix = ctk.CTkEntry(toolbar_frame, width=90, font=self.font_main)
+        self.entry_prefix.grid(row=0, column=1, padx=2, pady=5, sticky="w")
 
-        ctk.CTkLabel(toolbar_frame, text="Số lượng:", font=self.font_main).pack(side="left")
-        self.entry_count = ctk.CTkEntry(toolbar_frame, width=80, font=self.font_main)
-        self.entry_count.pack(side="left", padx=10)
+        ctk.CTkLabel(toolbar_frame, text="Mức độ:", font=self.font_main).grid(row=0, column=2, padx=(10, 2), pady=5, sticky="e")
+        self.combo_muc_do = ctk.CTkOptionMenu(
+            toolbar_frame, 
+            values=["Bất kỳ (*)", "Nhận biết (Y)", "Thông hiểu (B)", "Vận dụng (K)", "Vận dụng cao (G)"],
+            width=120, font=self.font_main
+        )
+        self.combo_muc_do.grid(row=0, column=3, padx=2, pady=5, sticky="w")
 
-        btn_add = ctk.CTkButton(toolbar_frame, text="Thêm", width=80, fg_color="#28A745", hover_color="#218838", font=self.font_main, command=self.add_to_matrix)
-        btn_add.pack(side="left", padx=5)
+        ctk.CTkLabel(toolbar_frame, text="Số lượng:", font=self.font_main).grid(row=1, column=0, padx=2, pady=5, sticky="e")
+        self.entry_count = ctk.CTkEntry(toolbar_frame, width=60, font=self.font_main)
+        self.entry_count.grid(row=1, column=1, padx=2, pady=5, sticky="w")
+
+        btn_add = ctk.CTkButton(toolbar_frame, text="Thêm", width=60, fg_color="#28A745", hover_color="#218838", font=self.font_main, command=self.add_to_matrix)
+        btn_add.grid(row=1, column=2, padx=5, pady=5)
         
-        btn_clear = ctk.CTkButton(toolbar_frame, text="Xóa", width=80, fg_color="#DC3545", hover_color="#C82333", font=self.font_main, command=self.clear_matrix)
-        btn_clear.pack(side="left", padx=5)
+        btn_clear = ctk.CTkButton(toolbar_frame, text="Xóa", width=60, fg_color="#DC3545", hover_color="#C82333", font=self.font_main, command=self.clear_matrix)
+        btn_clear.grid(row=1, column=3, padx=5, pady=5, sticky="w")
 
-        # Hộp hiển thị danh sách (Dùng Textbox thay thế cho Listbox cũ)
-        self.textbox_matrix = ctk.CTkTextbox(frame_matrix, height=120, font=self.font_main, state="disabled")
+        self.textbox_matrix = ctk.CTkTextbox(frame_matrix, height=150, font=self.font_main, state="disabled")
         self.textbox_matrix.pack(fill="both", expand=True, padx=15, pady=(5, 15))
 
-        # --- Nút Xử lý ---
-        btn_generate = ctk.CTkButton(self.tab_tao_de, text="🚀 TẠO ĐỀ THI", height=50, font=ctk.CTkFont(family="Segoe UI", size=15, weight="bold"), command=self.generate_exams)
-        btn_generate.pack(fill="x", padx=10, pady=15)
+        btn_generate = ctk.CTkButton(right_frame, text="🚀 TẠO ĐỀ THI", height=45, font=ctk.CTkFont(family="Segoe UI", size=14, weight="bold"), command=self.generate_exams)
+        btn_generate.pack(fill="x", pady=15)
+
+    def populate_tree(self):
+        """Đổ dữ liệu từ file JSON vào cây thư mục và đếm số lượng câu hỏi."""
+        # 1. Xóa toàn bộ dữ liệu cũ trên cây để làm mới
+        for item in self.tree.get_children():
+            self.tree.delete(item)
+
+        if not self.structure_data:
+            self.tree.insert("", "end", text="Không tìm thấy cấu trúc dữ liệu!")
+            return
+            
+        # 2. Duyệt qua từng cấp độ của cấu trúc JSON
+        for mon in self.structure_data:
+            node_mon = self.tree.insert("", "end", text=mon.get("tenMon", ""), open=False)
+            for chuong in mon.get("danhSachChuong", []):
+                node_chuong = self.tree.insert(node_mon, "end", text=chuong.get("tenChuong", ""), open=False)
+                for bai in chuong.get("danhSachBai", []):
+                    node_bai = self.tree.insert(node_chuong, "end", text=bai.get("tenBai", ""), open=False)
+                    for dang in bai.get("danhSachDang", []):
+                        ma_raw = dang.get("maChung", "")
+                        ma_clean = ma_raw.replace("%[", "").replace("]", "").strip()
+                        
+                        if ma_clean or "Dạng" in dang.get("tenDang", ""):
+                            # --- BẮT ĐẦU ĐẾM SỐ LƯỢNG CÂU HỎI ---
+                            so_luong = 0
+                            if ma_clean and self.db:
+                                for q_id in self.db.keys():
+                                    if len(q_id) >= len(ma_clean):
+                                        match = True
+                                        # So sánh bỏ qua dấu '*'
+                                        for i in range(len(ma_clean)):
+                                            if ma_clean[i] != '*' and ma_clean[i] != q_id[i]:
+                                                match = False
+                                                break
+                                        if match:
+                                            so_luong += 1
+                            # ------------------------------------
+                            
+                            # Hiển thị tên Dạng kèm theo (số lượng)
+                            ten_hien_thi = f"{dang.get('tenDang', '')} ({so_luong} câu)"
+                            self.tree.insert(node_bai, "end", text=ten_hien_thi, values=(ma_clean,))
+
+    def on_tree_select(self, event):
+        selected_item = self.tree.selection()
+        if selected_item:
+            item = self.tree.item(selected_item[0])
+            values = item.get("values")
+            if values and values[0]:
+                ma_id = values[0]
+                self.entry_prefix.delete(0, tk.END)
+                self.entry_prefix.insert(0, str(ma_id))
 
     def add_to_matrix(self):
-        prefix = self.entry_prefix.get().strip()
+        prefix_raw = self.entry_prefix.get().strip()
         count_str = self.entry_count.get().strip()
+        muc_do_str = self.combo_muc_do.get()
 
-        if not prefix or not count_str:
+        if not prefix_raw or not count_str:
             messagebox.showwarning("Cảnh báo", "Vui lòng nhập đủ Tiền tố và Số lượng.")
             return
 
@@ -111,11 +189,20 @@ class AppTaoDe:
             messagebox.showwarning("Cảnh báo", "Số lượng phải là số nguyên dương.")
             return
 
-        self.ma_tran_list.append((prefix, count))
+        muc_do_char = "*"
+        if "Nhận biết" in muc_do_str: muc_do_char = "Y"
+        elif "Thông hiểu" in muc_do_str: muc_do_char = "B"
+        elif "Vận dụng cao" in muc_do_str: muc_do_char = "G"
+        elif "Vận dụng" in muc_do_str: muc_do_char = "K"
         
-        # Mở khóa Textbox, thêm nội dung, khóa lại
+        prefix_final = prefix_raw
+        if "*" in prefix_final and muc_do_char != "*":
+            prefix_final = prefix_final.replace("*", muc_do_char)
+
+        self.ma_tran_list.append((prefix_final, count))
+        
         self.textbox_matrix.configure(state="normal")
-        self.textbox_matrix.insert("end", f"  🔹 Mã ID: {prefix:<15} | Số lượng: {count} câu\n")
+        self.textbox_matrix.insert("end", f"  🔹 ID: {prefix_final:<12} | SL: {count} câu\n")
         self.textbox_matrix.configure(state="disabled")
         
         self.entry_prefix.delete(0, tk.END)
@@ -180,11 +267,7 @@ class AppTaoDe:
 
         messagebox.showinfo("Hoàn tất", f"Tạo thành công {thanh_cong}/{so_luong_de} đề thi.")
 
-    # ==========================================
-    # TAB 2: NẠP DỮ LIỆU
-    # ==========================================
     def build_tab_nap_data(self):
-        # Khung chứa nội dung tab 2
         frame_nap = ctk.CTkFrame(self.tab_nap_data, corner_radius=10)
         frame_nap.pack(fill="both", expand=True, padx=20, pady=20)
 
@@ -234,6 +317,10 @@ class AppTaoDe:
             if thanh_cong:
                 self.db = du_lieu_moi
                 self.lbl_status.configure(text=f"Tổng số câu hỏi: {so_luong} câu", text_color="#28A745")
+                
+                # --- GỌI LẠI HÀM LÀM MỚI CÂY SAU KHI NẠP DỮ LIỆU THÀNH CÔNG ---
+                self.populate_tree()
+                
                 messagebox.showinfo("Thành công", f"Quét {so_file} file.\nThu được: {so_luong} câu hỏi.")
             else:
                 self.lbl_status.configure(text="❌ Lỗi lưu dữ liệu!", text_color="#DC3545")
@@ -243,7 +330,6 @@ class AppTaoDe:
             messagebox.showwarning("Kết quả", "Không tìm thấy câu hỏi hợp lệ.")
 
 if __name__ == "__main__":
-    # Khởi tạo cửa sổ chính bằng CTk
     root = ctk.CTk()
     app = AppTaoDe(root)
     root.mainloop()

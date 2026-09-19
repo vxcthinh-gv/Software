@@ -46,3 +46,37 @@ def save_database(data, output_file):
     except Exception as e:
         # Bắt lỗi thực tế từ hệ điều hành và trả về
         return False, str(e)
+
+def load_structure(filepath):
+    """Đọc file cấu trúc chương trình từ định dạng JSON."""
+    if not os.path.exists(filepath):
+        return None
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Lỗi khi đọc file cấu trúc: {e}")
+        return None
+
+if __name__ == "__main__":
+    thu_muc_data = 'data'
+    file_database = 'database.json' 
+    
+    print("BẮT ĐẦU QUÉT DỮ LIỆU...\n" + "-"*30)
+    du_lieu_cau_hoi, so_file = parse_latex_files(thu_muc_data)
+    so_luong = len(du_lieu_cau_hoi)
+    
+    if so_luong > 0:
+         thanh_cong, thong_bao = save_database(du_lieu_cau_hoi, file_database)
+         
+         if thanh_cong:
+             print(f"\n[THÀNH CÔNG] Quá trình nạp dữ liệu hoàn tất!")
+             print(f" 📁 Thư mục quét   : {thu_muc_data}")
+             print(f" 📄 Số tệp đã đọc   : {so_file}")
+             print(f" ✅ Tổng câu hỏi    : {so_luong}")
+             print(f" 💾 Đã lưu file    : {file_database}\n")
+         else:
+             print(f"\n[LỖI HỆ THỐNG] Không thể lưu file '{file_database}'.")
+             print(f"Chi tiết lỗi: {thong_bao}\n")
+    else:
+         print(f"\n[CẢNH BÁO] Đã quét {so_file} tệp nhưng không tìm thấy câu hỏi hợp lệ nào.\n")
