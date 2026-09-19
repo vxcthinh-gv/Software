@@ -38,10 +38,11 @@ def parse_latex_files(folder_path):
     return question_bank, files_scanned
 
 def save_database(data, output_file):
-    """Lưu dữ liệu ngân hàng câu hỏi vào file JSON."""
+    """Lưu dữ liệu ngân hàng câu hỏi vào file JSON và báo lỗi chi tiết."""
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
-        print(f"\n[THÀNH CÔNG] Đã lưu cơ sở dữ liệu vào '{output_file}'.")
+        return True, "Thành công"
     except Exception as e:
-        print(f"\n[LỖI] Không thể lưu file JSON: {e}")
+        # Bắt lỗi thực tế từ hệ điều hành và trả về
+        return False, str(e)

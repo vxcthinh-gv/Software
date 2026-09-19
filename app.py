@@ -1,18 +1,22 @@
 import os
 import random
 import tkinter as tk
-from tkinter import messagebox
-from tkinter import ttk, filedialog
+from tkinter import messagebox, filedialog
+import customtkinter as ctk
 
-# Nhập tất cả các hàm cần thiết từ các module đã chia nhỏ
+# Nhập hàm từ các module lõi (Giữ nguyên cấu trúc dự án của bạn)
 from data_process import parse_latex_files, save_database
-from tao_de import create_exam, load_database, auto_pick_questions
+from tao_de import load_database, auto_pick_questions, create_exam
+
+# Thiết lập UI mặc định: Chế độ Tối và tông màu Xanh dương
+ctk.set_appearance_mode("Dark")  
+ctk.set_default_color_theme("blue")  
 
 class AppTaoDe:
     def __init__(self, root):
         self.root = root
-        self.root.title("Phần mềm Quản lý Ngân hàng Câu hỏi LaTeX")
-        self.root.geometry("650x700")
+        self.root.title("Quản lý Ngân hàng Câu hỏi LaTeX")
+        self.root.geometry("750x820")
         
         self.ma_tran_list = []
         self.db = load_database('database.json') or {}
@@ -20,19 +24,17 @@ class AppTaoDe:
         self.build_ui()
 
     def build_ui(self):
-        # Tạo công cụ quản lý Tab (Notebook)
-        self.notebook = ttk.Notebook(self.root)
-        self.notebook.pack(fill="both", expand=True, padx=5, pady=5)
+        # Font chữ dùng chung
+        self.font_title = ctk.CTkFont(family="Segoe UI", size=16, weight="bold")
+        self.font_main = ctk.CTkFont(family="Segoe UI", size=13)
         
-        # Tạo 2 Frame đại diện cho 2 Tab
-        self.tab_tao_de = ttk.Frame(self.notebook)
-        self.tab_nap_data = ttk.Frame(self.notebook)
+        # Tabview hiện đại
+        self.tabview = ctk.CTkTabview(self.root, width=700, height=750, corner_radius=10)
+        self.tabview.pack(padx=20, pady=20, fill="both", expand=True)
         
-        # Thêm Tab vào Notebook
-        self.notebook.add(self.tab_tao_de, text="Tạo Đề Thi")
-        self.notebook.add(self.tab_nap_data, text="Nạp Dữ Liệu Ngân Hàng")
+        self.tab_tao_de = self.tabview.add("Tạo Đề Thi")
+        self.tab_nap_data = self.tabview.add("Nạp Dữ Liệu")
         
-        # Xây dựng nội dung cho từng Tab
         self.build_tab_tao_de()
         self.build_tab_nap_data()
 
@@ -40,54 +42,59 @@ class AppTaoDe:
     # TAB 1: TẠO ĐỀ THI
     # ==========================================
     def build_tab_tao_de(self):
-        # --- Frame Thông tin chung ---
-        frame_info = tk.LabelFrame(self.tab_tao_de, text="1. Thông tin Đề thi", padx=10, pady=10)
-        frame_info.pack(fill="x", padx=10, pady=5)
-
-        tk.Label(frame_info, text="Môn học:").grid(row=0, column=0, sticky="w", pady=2)
-        self.entry_mon_hoc = tk.Entry(frame_info, width=40)
-        self.entry_mon_hoc.grid(row=0, column=1, pady=2)
-
-        tk.Label(frame_info, text="Tên đề thi:").grid(row=1, column=0, sticky="w", pady=2)
-        self.entry_ten_de = tk.Entry(frame_info, width=40)
-        self.entry_ten_de.grid(row=1, column=1, pady=2)
-
-        tk.Label(frame_info, text="Mã đáp án gốc:").grid(row=2, column=0, sticky="w", pady=2)
-        self.entry_ma_dap_an = tk.Entry(frame_info, width=40)
-        self.entry_ma_dap_an.grid(row=2, column=1, pady=2)
+        # --- Khung 1: Thông tin Đề thi ---
+        frame_info = ctk.CTkFrame(self.tab_tao_de, corner_radius=10)
+        frame_info.pack(fill="x", padx=10, pady=10)
         
-        tk.Label(frame_info, text="Số lượng đề (Hoán vị):").grid(row=3, column=0, sticky="w", pady=2)
-        self.entry_so_luong_de = tk.Entry(frame_info, width=10)
+        ctk.CTkLabel(frame_info, text="1. Thông tin Đề thi", font=self.font_title).grid(row=0, column=0, columnspan=2, sticky="w", padx=15, pady=(10, 5))
+
+        ctk.CTkLabel(frame_info, text="Môn học:", font=self.font_main).grid(row=1, column=0, sticky="w", padx=15, pady=5)
+        self.entry_mon_hoc = ctk.CTkEntry(frame_info, width=350, font=self.font_main)
+        self.entry_mon_hoc.grid(row=1, column=1, padx=15, pady=5)
+
+        ctk.CTkLabel(frame_info, text="Tên đề thi:", font=self.font_main).grid(row=2, column=0, sticky="w", padx=15, pady=5)
+        self.entry_ten_de = ctk.CTkEntry(frame_info, width=350, font=self.font_main)
+        self.entry_ten_de.grid(row=2, column=1, padx=15, pady=5)
+
+        ctk.CTkLabel(frame_info, text="Mã đáp án gốc:", font=self.font_main).grid(row=3, column=0, sticky="w", padx=15, pady=5)
+        self.entry_ma_dap_an = ctk.CTkEntry(frame_info, width=350, font=self.font_main)
+        self.entry_ma_dap_an.grid(row=3, column=1, padx=15, pady=5)
+        
+        ctk.CTkLabel(frame_info, text="Số lượng đề (Hoán vị):", font=self.font_main).grid(row=4, column=0, sticky="w", padx=15, pady=(5, 15))
+        self.entry_so_luong_de = ctk.CTkEntry(frame_info, width=100, font=self.font_main)
         self.entry_so_luong_de.insert(0, "1")
-        self.entry_so_luong_de.grid(row=3, column=1, sticky="w", pady=2)
+        self.entry_so_luong_de.grid(row=4, column=1, sticky="w", padx=15, pady=(5, 15))
 
-        # --- Frame Ma trận ---
-        frame_matrix = tk.LabelFrame(self.tab_tao_de, text="2. Cấu trúc Ma trận", padx=10, pady=10)
+        # --- Khung 2: Ma trận ---
+        frame_matrix = ctk.CTkFrame(self.tab_tao_de, corner_radius=10)
         frame_matrix.pack(fill="both", expand=True, padx=10, pady=5)
-
-        tk.Label(frame_matrix, text="Tiền tố ID:").grid(row=0, column=0, sticky="w")
-        self.entry_prefix = tk.Entry(frame_matrix, width=15)
-        self.entry_prefix.grid(row=0, column=1, padx=5)
-
-        tk.Label(frame_matrix, text="Số lượng:").grid(row=0, column=2, sticky="w")
-        self.entry_count = tk.Entry(frame_matrix, width=10)
-        self.entry_count.grid(row=0, column=3, padx=5)
-
-        btn_add = tk.Button(frame_matrix, text="Thêm", command=self.add_to_matrix)
-        btn_add.grid(row=0, column=4, padx=10)
         
-        btn_clear = tk.Button(frame_matrix, text="Xóa", command=self.clear_matrix)
-        btn_clear.grid(row=0, column=5, padx=5)
+        ctk.CTkLabel(frame_matrix, text="2. Cấu trúc Ma trận", font=self.font_title).pack(anchor="w", padx=15, pady=(10, 5))
 
-        self.listbox_matrix = tk.Listbox(frame_matrix, height=10)
-        self.listbox_matrix.grid(row=1, column=0, columnspan=6, sticky="we", pady=10)
+        toolbar_frame = ctk.CTkFrame(frame_matrix, fg_color="transparent")
+        toolbar_frame.pack(fill="x", padx=15, pady=5)
 
-        # --- Frame Xử lý ---
-        frame_action = tk.Frame(self.tab_tao_de, pady=10)
-        frame_action.pack(fill="x")
+        ctk.CTkLabel(toolbar_frame, text="Tiền tố ID:", font=self.font_main).pack(side="left")
+        self.entry_prefix = ctk.CTkEntry(toolbar_frame, width=120, font=self.font_main)
+        self.entry_prefix.pack(side="left", padx=10)
 
-        btn_generate = tk.Button(frame_action, text="TẠO ĐỀ THI", font=("Arial", 14, "bold"), bg="green", fg="white", command=self.generate_exams)
-        btn_generate.pack(ipadx=20, ipady=10)
+        ctk.CTkLabel(toolbar_frame, text="Số lượng:", font=self.font_main).pack(side="left")
+        self.entry_count = ctk.CTkEntry(toolbar_frame, width=80, font=self.font_main)
+        self.entry_count.pack(side="left", padx=10)
+
+        btn_add = ctk.CTkButton(toolbar_frame, text="Thêm", width=80, fg_color="#28A745", hover_color="#218838", font=self.font_main, command=self.add_to_matrix)
+        btn_add.pack(side="left", padx=5)
+        
+        btn_clear = ctk.CTkButton(toolbar_frame, text="Xóa", width=80, fg_color="#DC3545", hover_color="#C82333", font=self.font_main, command=self.clear_matrix)
+        btn_clear.pack(side="left", padx=5)
+
+        # Hộp hiển thị danh sách (Dùng Textbox thay thế cho Listbox cũ)
+        self.textbox_matrix = ctk.CTkTextbox(frame_matrix, height=120, font=self.font_main, state="disabled")
+        self.textbox_matrix.pack(fill="both", expand=True, padx=15, pady=(5, 15))
+
+        # --- Nút Xử lý ---
+        btn_generate = ctk.CTkButton(self.tab_tao_de, text="🚀 TẠO ĐỀ THI", height=50, font=ctk.CTkFont(family="Segoe UI", size=15, weight="bold"), command=self.generate_exams)
+        btn_generate.pack(fill="x", padx=10, pady=15)
 
     def add_to_matrix(self):
         prefix = self.entry_prefix.get().strip()
@@ -105,7 +112,11 @@ class AppTaoDe:
             return
 
         self.ma_tran_list.append((prefix, count))
-        self.listbox_matrix.insert(tk.END, f"Mã ID: {prefix} | Số lượng: {count} câu")
+        
+        # Mở khóa Textbox, thêm nội dung, khóa lại
+        self.textbox_matrix.configure(state="normal")
+        self.textbox_matrix.insert("end", f"  🔹 Mã ID: {prefix:<15} | Số lượng: {count} câu\n")
+        self.textbox_matrix.configure(state="disabled")
         
         self.entry_prefix.delete(0, tk.END)
         self.entry_count.delete(0, tk.END)
@@ -113,11 +124,13 @@ class AppTaoDe:
         
     def clear_matrix(self):
         self.ma_tran_list.clear()
-        self.listbox_matrix.delete(0, tk.END)
+        self.textbox_matrix.configure(state="normal")
+        self.textbox_matrix.delete("1.0", "end")
+        self.textbox_matrix.configure(state="disabled")
 
     def generate_exams(self):
         if not self.db:
-            messagebox.showerror("Lỗi", "Ngân hàng câu hỏi trống. Vui lòng sang Tab 'Nạp Dữ Liệu' để cập nhật.")
+            messagebox.showerror("Lỗi", "Ngân hàng trống. Hãy sang Tab 'Nạp Dữ Liệu'.")
             return
             
         mon_hoc = self.entry_mon_hoc.get().strip()
@@ -128,7 +141,7 @@ class AppTaoDe:
             so_luong_de = int(self.entry_so_luong_de.get().strip())
             if so_luong_de < 1: raise ValueError
         except ValueError:
-            messagebox.showwarning("Cảnh báo", "Số lượng đề phải là số nguyên lớn hơn 0.")
+            messagebox.showwarning("Cảnh báo", "Số lượng đề phải lớn hơn 0.")
             return
 
         if not mon_hoc or not ten_de or not ma_dap_an:
@@ -145,7 +158,7 @@ class AppTaoDe:
             danh_sach_id_cuoi_cung.extend(ids_duoc_chon)
 
         if not danh_sach_id_cuoi_cung:
-            messagebox.showerror("Lỗi", "Không tìm thấy câu hỏi nào phù hợp với ma trận yêu cầu.")
+            messagebox.showerror("Lỗi", "Không tìm thấy câu hỏi phù hợp với ma trận.")
             return
 
         thanh_cong = 0
@@ -165,37 +178,38 @@ class AppTaoDe:
             kq = create_exam(ids_ban_sao, self.db, duong_dan_file, mon_hoc, ten_de, ma_dap_an_hien_tai)
             if kq: thanh_cong += 1
 
-        messagebox.showinfo("Hoàn tất", f"Đã bốc tổng cộng {len(danh_sach_id_cuoi_cung)} câu hỏi.\nTạo thành công {thanh_cong}/{so_luong_de} đề thi trong thư mục 'output'.")
+        messagebox.showinfo("Hoàn tất", f"Tạo thành công {thanh_cong}/{so_luong_de} đề thi.")
 
     # ==========================================
     # TAB 2: NẠP DỮ LIỆU
     # ==========================================
     def build_tab_nap_data(self):
-        frame_nap = tk.Frame(self.tab_nap_data, padx=20, pady=20)
-        frame_nap.pack(fill="both", expand=True)
+        # Khung chứa nội dung tab 2
+        frame_nap = ctk.CTkFrame(self.tab_nap_data, corner_radius=10)
+        frame_nap.pack(fill="both", expand=True, padx=20, pady=20)
 
-        tk.Label(frame_nap, text="QUẢN LÝ NGÂN HÀNG CÂU HỎI", font=("Arial", 14, "bold")).pack(pady=(0, 20))
+        ctk.CTkLabel(frame_nap, text="🗄️ QUẢN LÝ NGÂN HÀNG DỮ LIỆU", font=ctk.CTkFont(family="Segoe UI", size=20, weight="bold")).pack(pady=(30, 20))
         
-        # Nhãn hiển thị trạng thái hiện tại
-        so_luong_hien_tai = len(self.db)
-        self.lbl_status = tk.Label(frame_nap, text=f"Số lượng câu hỏi hiện có trong hệ thống: {so_luong_hien_tai} câu", fg="blue", font=("Arial", 11))
+        so_luong_hien_tai = len(self.db) if self.db else 0
+        self.lbl_status = ctk.CTkLabel(frame_nap, text=f"Tổng số câu hỏi: {so_luong_hien_tai} câu", text_color="#28A745", font=self.font_title)
         self.lbl_status.pack(pady=10)
 
-        # Chọn thư mục
-        frame_folder = tk.Frame(frame_nap)
-        frame_folder.pack(fill="x", pady=10)
+        frame_folder = ctk.CTkFrame(frame_nap, fg_color="transparent")
+        frame_folder.pack(fill="x", padx=30, pady=20)
         
-        tk.Label(frame_folder, text="Thư mục chứa file .tex:").pack(side="left")
-        self.entry_folder = tk.Entry(frame_folder, width=40)
-        self.entry_folder.insert(0, "data") # Mặc định là thư mục data
-        self.entry_folder.pack(side="left", padx=10)
+        ctk.CTkLabel(frame_folder, text="Thư mục chứa file .tex:", font=self.font_main).pack(anchor="w", pady=(0, 5))
         
-        btn_browse = tk.Button(frame_folder, text="Chọn Thư Mục...", command=self.browse_folder)
-        btn_browse.pack(side="left")
+        box_folder = ctk.CTkFrame(frame_folder, fg_color="transparent")
+        box_folder.pack(fill="x")
+        self.entry_folder = ctk.CTkEntry(box_folder, font=self.font_main)
+        self.entry_folder.insert(0, "data")
+        self.entry_folder.pack(side="left", fill="x", expand=True, padx=(0, 10))
+        
+        btn_browse = ctk.CTkButton(box_folder, text="Mở Thư Mục", width=100, font=self.font_main, command=self.browse_folder)
+        btn_browse.pack(side="right")
 
-        # Nút bấm thực thi
-        btn_update = tk.Button(frame_nap, text="CẬP NHẬT DỮ LIỆU", font=("Arial", 12, "bold"), bg="orange", command=self.update_database)
-        btn_update.pack(pady=30, ipadx=10, ipady=5)
+        btn_update = ctk.CTkButton(frame_nap, text="🔄 QUÉT VÀ CẬP NHẬT", height=50, font=ctk.CTkFont(family="Segoe UI", size=15, weight="bold"), command=self.update_database)
+        btn_update.pack(pady=40)
 
     def browse_folder(self):
         folder_selected = filedialog.askdirectory()
@@ -206,27 +220,30 @@ class AppTaoDe:
     def update_database(self):
         folder_path = self.entry_folder.get().strip()
         if not folder_path or not os.path.exists(folder_path):
-            messagebox.showerror("Lỗi", "Đường dẫn thư mục không hợp lệ hoặc không tồn tại.")
+            messagebox.showerror("Lỗi", "Đường dẫn thư mục không hợp lệ.")
             return
             
-        messagebox.showinfo("Đang xử lý", "Hệ thống đang quét dữ liệu. Quá trình này có thể mất vài giây...")
-        
-        # Gọi hàm quét dữ liệu từ data_process.py
-        du_lieu_moi = parse_latex_files(folder_path)
+        self.lbl_status.configure(text="⏳ Đang xử lý...", text_color="#FFC107")
+        self.root.update()
+            
+        du_lieu_moi, so_file = parse_latex_files(folder_path)
         so_luong = len(du_lieu_moi)
         
         if so_luong > 0:
-            # Lưu ra file JSON
-            save_database(du_lieu_moi, 'database.json')
-            
-            # Cập nhật bộ nhớ chương trình
-            self.db = du_lieu_moi
-            self.lbl_status.config(text=f"Số lượng câu hỏi hiện có trong hệ thống: {so_luong} câu")
-            messagebox.showinfo("Thành công", f"Đã quét và cập nhật thành công {so_luong} câu hỏi vào ngân hàng!")
+            thanh_cong, thong_bao_loi = save_database(du_lieu_moi, 'database.json')
+            if thanh_cong:
+                self.db = du_lieu_moi
+                self.lbl_status.configure(text=f"Tổng số câu hỏi: {so_luong} câu", text_color="#28A745")
+                messagebox.showinfo("Thành công", f"Quét {so_file} file.\nThu được: {so_luong} câu hỏi.")
+            else:
+                self.lbl_status.configure(text="❌ Lỗi lưu dữ liệu!", text_color="#DC3545")
+                messagebox.showerror("Lỗi", f"Chi tiết: {thong_bao_loi}")
         else:
-            messagebox.showwarning("Kết quả", "Không tìm thấy câu hỏi hợp lệ nào trong thư mục đã chọn.")
+            self.lbl_status.configure(text=f"Tổng số câu hỏi: {len(self.db)} câu", text_color="#DC3545")
+            messagebox.showwarning("Kết quả", "Không tìm thấy câu hỏi hợp lệ.")
 
 if __name__ == "__main__":
-    root = tk.Tk()
+    # Khởi tạo cửa sổ chính bằng CTk
+    root = ctk.CTk()
     app = AppTaoDe(root)
     root.mainloop()
