@@ -1,0 +1,569 @@
+\caulc
+\begin{ex}%[2D4H3-3]
+	Tính thể tích vật thể tròn xoay khi quay hình phẳng giới hạn bởi các đường cong $y=\sqrt{\mathrm{e}^{x}-x}$, $y=0$, $x=1$, $x=2$ xung quanh trục $Ox$ là
+	\choice
+	{$\pi(\mathrm{e}^{2}-\mathrm{e}-\dfrac{5}{2})$}
+	{\True $\pi(\mathrm{e}^{2}-\mathrm{e}-\dfrac{3}{2})$}
+	{$\mathrm{e}^{2}-\mathrm{e}-\dfrac{5}{2}$}
+	{$\mathrm{e}^{2}-\mathrm{e}-\dfrac{3}{2}$}
+	\loigiai{
+		Thể tích vật thể tròn xoay là\allowdisplaybreaks
+		\begin{eqnarray*}
+			V &=& \pi \int_{1}^{2} \left(\sqrt{\mathrm{e}^x - x}\right)^2 \mathrm{\,d}x = \pi \int_{1}^{2} (\mathrm{e}^x - x) \mathrm{\,d}x\\
+			&=& \pi \left( \mathrm{e}^x - \dfrac{x^2}{2} \right) \Big|_{1}^{2} = \pi \left[ \left(\mathrm{e}^2 - 2\right) - \left(\mathrm{e}- \dfrac{1}{2}\right) \right] \\
+			&=& \pi \left( \mathrm{e}^2 - \mathrm{e}- \dfrac{3}{2} \right).
+		\end{eqnarray*}
+	}
+\end{ex}
+
+\begin{ex}%[1D2N3-2]
+	Cho cấp số nhân $(u_{n})$ với $u_{1}=6$ và $u_{2}=-18$. Công bội $q$ của cấp số nhân là
+	\choice
+	{$q=6$}
+	{\True $q=-3$}
+	{$q=-\dfrac{1}{3}$}
+	{$q=-18$}
+	\loigiai{
+		Công bội của cấp số nhân là $q = \dfrac{u_2}{u_1} = \dfrac{-18}{6} = -3$.
+	}
+\end{ex}
+
+\begin{ex}%[1D6N2-2]
+	Với mọi số thực dương $a$, khi đó $\log_{3}(27a)-\log_{3}a$ bằng
+	\choice
+	{$9$}
+	{$3-2\log_{3}a$}
+	{\True $3$}
+	{$\log_{3}(26a)$}
+	\loigiai{
+		Ta có $\log_{3}(27a) - \log_{3}a = \log_{3}\left(\dfrac{27a}{a}\right) = \log_{3}27 = 3$.
+	}
+\end{ex}
+
+\begin{ex}%[2D3N1-2]
+	Cho mẫu số liệu ghép nhóm cho bởi bảng sau:
+	\begin{center}
+		\begin{tabular}{|l|c|c|c|c|}
+			\hline
+			Nhóm & $[0;10)$ & $[10;20)$ & $[20;30)$ & $[30;40)$ \\
+			\hline
+			Tần số & $3$ & $7$ & $2$ & $9$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	Khoảng biến thiên của mẫu số liệu ghép nhóm này là
+	\choice
+	{\True $40$}
+	{$50$}
+	{$70$}
+	{$60$}
+	\loigiai{
+		Khoảng biến thiên của mẫu số liệu ghép nhóm là $R = 40 - 0 = 40$.
+	}
+\end{ex}
+
+\begin{ex}%[1H8N7-2]
+	Cho khối chóp có diện tích đáy $B=2a^{2}$ và chiều cao $h=9a$. Thể tích của khối chóp đã cho bằng
+	\choice
+	{$3a^{3}$}
+	{\True $6a^{3}$}
+	{$18a^{3}$}
+	{$9a^{3}$}
+	\loigiai{
+		Thể tích của khối chóp là $V = \dfrac{1}{3}Bh = \dfrac{1}{3} \cdot 2a^2 \cdot 9a = 6a^3$.
+	}
+\end{ex}
+
+\begin{ex}%[2H5N3-3]
+	Trong không gian $Oxyz$, cho mặt cầu $(S)$ có tâm $I(0;-2;1)$ và bán kính $R=5$. Phương trình của $(S)$ là
+	\choice
+	{$x^{2}+(y+2)^{2}+(z-1)^{2}=5$}
+	{$x^{2}+(y-2)^{2}+(z+1)^{2}=25$}
+	{$x^{2}+(y-2)^{2}+(z+1)^{2}=5$}
+	{\True $x^{2}+(y+2)^{2}+(z-1)^{2}=25$}
+	\loigiai{
+		Mặt cầu tâm $I(0;-2;1)$ và bán kính $R=5$ có phương trình là
+		$(x-0)^2 + (y+2)^2 + (z-1)^2 = 25$.
+	}
+\end{ex}
+
+\begin{ex}%[2D1N1-2]
+	Cho hàm số $y=f(x)$ có bảng biến thiên như hình vẽ. Hàm số đã cho nghịch biến trên khoảng nào dưới đây?
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9,font=\footnotesize,line join=round,line cap=round,>=stealth]
+			\tkzTabInit[lgt=1.2,espcl=3]
+			{$x$/1,$f'(x)$/1,$f(x)$/3}
+			{$-\infty$,$-1$,$1$,$+\infty$}
+			\tkzTabLine{,+,0,-,0,+,}
+			\tkzTabVar
+			{-/$-\infty$,+/$2$,-/$-2$,+/$+\infty$}
+		\end{tikzpicture}
+	\end{center}
+	\choice
+	{\True $(-1;1)$}
+	{$(-2;2)$}
+	{$(1;+\infty)$}
+	{$(-2;1)$}
+	\loigiai{
+		Dựa vào bảng biến thiên, ta thấy $f'(x) < 0$ trên khoảng $(-1; 1)$. Do đó, hàm số nghịch biến trên khoảng $(-1; 1)$.
+	}
+\end{ex}
+
+\begin{ex}%[2D4N1-2]
+	Nguyên hàm của hàm số $f(x)=2\,026^{x}$ là
+	\choice
+	{$\dfrac{2\,026^{x-1}}{\ln 2\,026}+C$}
+	{$2\,026^{x}+C$}
+	{$x \cdot 2\,026^{x-1}+C$}
+	{\True $\dfrac{2\,026^{x}}{\ln 2\,026}+C$}
+	\loigiai{
+	Ta có $\int 2\,026^x \mathrm{\,d}x = \dfrac{2\,026^x}{\ln 2\,026} + C$.
+	}
+\end{ex}
+
+\begin{ex}%[2H5N2-2]
+	Trong không gian $Oxyz$, cho đường thẳng $d\colon \dfrac{x+1}{2}=\dfrac{-y}{2}=\dfrac{z+2}{-6}$. Vectơ nào dưới đây là một vectơ chỉ phương của đường thẳng $d$?
+	\choice
+	{$\vec{u}_2=(1;-1;3)$}
+	{\True $\vec{u}_3=(-1;1;3)$}
+	{$\vec{u}_4=(-1;0;-2)$}
+	{$\vec{u}_1=(2;2;-6)$}
+	\loigiai{
+		Viết lại phương trình $d$ dưới dạng chuẩn: $\dfrac{x+1}{2} = \dfrac{y}{-2} = \dfrac{z+2}{-6}$.\\
+		Đường thẳng $d$ có một vectơ chỉ phương là $\vec{u} = (2; -2; -6)$.\\
+		Chọn vectơ cùng phương $\vec{u}_3 = -\dfrac{1}{2}\vec{u} = (-1; 1; 3)$.
+	}
+\end{ex}
+
+\begin{ex}%[2D1N4-1]
+	Tiệm cận ngang của đồ thị hàm số $y=\dfrac{2x-5}{x+1}$ là đường thẳng có phương trình
+	\choice
+	{$y=-1$}
+	{$x=-1$}
+	{\True $y=2$}
+	{$x=2$}
+	\loigiai{
+		Ta có $\lim_{x \to \pm\infty} \dfrac{2x-5}{x+1} = 2$. Do đó, tiệm cận ngang của đồ thị hàm số là đường thẳng $y=2$.
+	}
+\end{ex}
+
+\begin{ex}%[2H2N2-3]
+	Trong không gian $Oxyz$, cho hai điểm $A(1;1;-2)$ và $B(3;-1;2)$. Tọa độ của vectơ $\vec{BA}$ là
+	\choice
+	{$(2;-2;4)$}
+	{$(2;0;0)$}
+	{\True $(-2;2;-4)$}
+	{$(1;-1;2)$}
+	\loigiai{
+		Ta có $\vec{BA} = (x_A - x_B; y_A - y_B; z_A - z_B)=(-2; 2; -4)$.
+	}
+\end{ex}
+
+\begin{ex}%[2H2H1-3]
+	Cho tứ diện $ABCD$. Gọi $M$, $P$ là trung điểm của $AB$ và $CD$. Đặt $\vec{BA}=\vec{b}$, $\vec{AC}=\vec{c}$, $\vec{AD}=\vec{d}$. Khẳng định nào sau đây \textbf{đúng}?
+	\choice
+	{\True $\vec{MP}=\dfrac{1}{2}(\vec{c}+\vec{d}-\vec{b})$}
+	{$\vec{MP}=\dfrac{1}{2}(\vec{c}+\vec{d}+\vec{b})$}
+	{$\vec{MP}=\dfrac{1}{2}(-\vec{d}+\vec{b}+\vec{c})$}
+	{$\vec{MP}=\dfrac{1}{2}(\vec{d}+\vec{b}-\vec{c})$}
+	\loigiai{
+		Ta có $M$, $P$ là trung điểm của $AB$, $CD$ nên
+		$\vec{MP} = \dfrac{1}{2}(\vec{MC} + \vec{MD})$.
+	}
+\end{ex}
+\cauds
+
+\begin{ex}%[2D1H5-6]
+	Cho hàm số $y=f(x)=\dfrac{x^{2}-x+4}{x-1}$ có đồ thị là $(C)$.
+	\choiceTF
+	{\True Tập xác định của hàm số là $\mathscr{D}=\mathbb{R} \setminus \{1\}$}
+	{\True Đạo hàm của hàm số là $f'(x)=\dfrac{x^{2}-2x-3}{(x-1)^{2}}$}
+	{Điểm cực tiểu của đồ thị hàm số có tọa độ là $A(-1;-3)$}
+	{Tiếp tuyến của đồ thị $(C)$ tại giao điểm của $(C)$ với trục $Oy$ là đường thẳng $y=-3x+4$}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Điều kiện $x-1 \ne 0 \Leftrightarrow x \ne 1$.\\
+			Tập xác định của hàm số là $\mathscr{D}=\mathbb{R} \setminus \{1\}$.
+			\itemch Ta có $y = x + \dfrac{4}{x-1}$ suy ra $y' = 1 - \dfrac{4}{(x-1)^2} = \dfrac{(x-1)^2 - 4}{(x-1)^2} = \dfrac{x^2 - 2x - 3}{(x-1)^2}$.
+			\itemch Xét phương trình $y' = 0 \Leftrightarrow x^2 - 2x - 3 = 0 \Leftrightarrow \hoac{& x=-1\\ & x=3.}$\\ 
+			Bảng biến thiên.
+			\begin{center}
+				\begin{tikzpicture}[scale=0.9,font=\footnotesize,line join=round,line cap=round,>=stealth]
+					\tkzTabInit[lgt=1.2,espcl=2.5,nocadre]
+					{$x$/1,$f'(x)$/1,$f(x)$/3}
+					{$-\infty$,$-1$,$1$,$3$,$+\infty$}
+					\tkzTabLine{,+,0,-,d,-,0,+,}
+					\tkzTabVar
+					{-/$-\infty$,+/$-3$,-D+/$-\infty$/$+\infty$,-/$5$,+/$+\infty$}
+				\end{tikzpicture}
+			\end{center}
+			Điểm cực tiểu của đồ thị hàm số là $(3;5)$. Điểm cực đại của đồ thị hàm số là $(-1;-3)$.
+			\itemch Giao điểm của $(C)$ với trục $Oy$ là $M(0; -4)$. \\
+			Tiếp tuyến tại $M$ có hệ số góc $k = y'(0) = -3$. \\
+			Phương trình tiếp tuyến: $y = -3(x - 0) - 4 = -3x - 4$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[2H5V3-4]
+	\immini[thm]{Trong không gian cho hệ tọa độ $Oxyz$, các vectơ $\vec{i}$, $\vec{j}$, $\vec{k}$ lần lượt là các vectơ đơn vị trên các trục $Ox$, $Oy$, $Oz$ và độ dài của mỗi vectơ đơn vị đó bằng $1$ kilômét. Máy bay bắt đầu quá trình hạ cánh tại điểm $A(3;3;4)$ ở thời điểm ban đầu và chuyển động thẳng đều hướng về vị trí $B(3;0;0)$ trên đường băng. Tại gốc tọa độ $O$, sân bay thiết lập một trạm radar cảnh báo thiên tai có vùng phủ sóng được mô phỏng bởi một mặt cầu $(S)$ bán kính $R=5$ km. Trong quá trình hạ cánh, máy bay phải xuyên qua một lớp mây dày đặc được mô phỏng bởi mặt phẳng $(\alpha)$ đi qua ba điểm $M(5;0;0)$, $N(0;10;0)$ và $P(0;0;10)$. Gọi $C$ là vị trí máy bay bắt đầu xuyên qua đám mây.}
+	{\begin{tikzpicture}[scale=0.9,font=\footnotesize,line join=round,line cap=round,>=stealth]
+	\path 
+	(0,0) coordinate (O)
+	(-3,0) coordinate (N)
+	(-120:2) coordinate (M)
+	(0,3) coordinate (P)
+	(-120:3) coordinate (x)
+	(-4,0) coordinate (y)
+	(0,4) coordinate (z)
+	(-2,2) coordinate (A)
+	(1,-1.5) coordinate (B)
+	($(A)!1/3!(B)$) coordinate (C)
+	;
+	\draw (M)--(N)--(P)--(M) (A)--(C);
+	\draw[dashed] (O)--(N) (C)--(B);
+	\draw[->] (N)--(y)node[above]{$y$};
+	\draw[->] (O)--(x)node[right]{$x$};
+	\draw[->] (O)--(z)node[right]{$z$};
+	\foreach \x/\g in {A/-90,B/-45,N/135,O/0,P/0,M/-90,C/-135}
+			\fill[] 	(\x) circle (1pt)
+			($(\g:3mm)+(\x)$) node {$\x$};
+	\end{tikzpicture}}
+	\choiceTF
+	{\True Phương trình mặt phẳng $(\alpha)$ mô phỏng lớp mây là $2x+y+z-10=0$}
+	{\True Phương trình mặt cầu $(S)$ mô phỏng vùng phủ sóng của radar là $x^{2}+y^{2}+z^{2}=25$}
+	{Tại vị trí điểm $C$, máy bay không nằm trong vùng phủ sóng hiệu quả của radar}
+	{Tổng độ dài quãng đường máy bay di chuyển trong vùng phủ sóng của radar nhỏ hơn $4$ km}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Phương trình mặt phẳng $(\alpha)$ đi qua $M$, $N$, $P$ theo đoạn chắn là \[\dfrac{x}{5} + \dfrac{y}{10} + \dfrac{z}{10} = 1 \Leftrightarrow 2x + y + z - 10 = 0.\]
+			\itemch Mặt cầu tâm $O(0;0;0)$ bán kính $R=5$ có phương trình $x^2 + y^2 + z^2 = 25$.
+			\itemch Phương trình đường thẳng quỹ đạo bay $AB$ là $AB\colon \heva{& x=3\\ & y=3t\\ & z=4t.}$ \\
+			Vì $C\in AB$ nên $C(3;3t;4t)$.\\
+			Máy bay xuyên qua mây tại $C = AB \cap (\alpha)$.\\
+			Suy ra $C\in (\alpha)$ suy ra $2\cdot 3 + 3t + 4t - 10 = 0 \Leftrightarrow t = \dfrac{4}{7}$.\\
+			Tọa độ điểm $C$ là $C\left(3; \dfrac{12}{7}; \dfrac{16}{7}\right)$.\\
+			Khoảng cách từ $C$ đến tâm $O$ là $OC = \sqrt{3^2 + \left(\dfrac{12}{7}\right)^2 + \left(\dfrac{16}{7}\right)^2} \approx 4{,}14$ km. \\
+			Vì $4{,}14 < 5$ (bán kính radar) nên $C$ nằm trong vùng phủ sóng của radar.
+			\itemch Giao điểm của quỹ đạo $AB$ với mặt cầu $(S)$ là $3^2 + (3t)^2 + (4t)^2 = 25 \Leftrightarrow t = \pm \dfrac{4}{5}$.\\
+			Vì máy bay bay từ $A$ (tương ứng $t=1$) đến $B$ (tương ứng $t=0)$, nên máy bay bắt đầu vào radar tại điểm $E$ ứng với $t = \dfrac{4}{5}$ và đáp tại $B$.\\
+			Độ dài quãng đường trong radar là $EB = \sqrt{(3-3)^2 + \left(\dfrac{12}{5} - 0\right)^2 + \left(\dfrac{16}{5} - 0\right)^2}= 4$ km.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[2D6H2-4]
+	Trong một kì thi tốt nghiệp trung học phổ thông, một tỉnh $X$ có $50\%$ học sinh lựa chọn tổ hợp $A00$ (gồm các môn Toán, Lý, Hóa). Biết rằng, nếu một học sinh chọn tổ hợp $A00$ thì xác suất để học sinh đó đỗ đại học là $0{,}7$; còn nếu một học sinh không chọn tổ hợp $A00$ thì xác suất để học sinh đó đỗ đại học là $0{,}6$. Chọn ngẫu nhiên một học sinh của tỉnh $X$ đã tốt nghiệp trung học phổ thông trong kì thi trên. Biết rằng học sinh này đã đỗ đại học. Gọi 
+	\begin{itemize}
+	\item $A$ là biến cố: \lq\lq Học sinh đó chọn tổ hợp $A00$\rq\rq.
+	\item $B$ là biến cố: \lq\lq Học sinh đó đỗ đại học\rq\rq.
+	\end{itemize}
+	Khi đó
+	\choiceTF
+	{\True Xác suất $\mathrm{P}\left(\overline{A}\right)=0{,}5$}
+	{Xác suất $\mathrm{P}(B\mid A)=0{,}4$}
+	{\True Xác suất $\mathrm{P}\left(B\mid \overline{A}\right)$ thuộc khoảng $(0{,}4; 0{,}9)$}
+	{$\dfrac{\mathrm{P}(A\mid B)}{\mathrm{P}(B\mid A)}$ lớn hơn $1$}
+	\loigiai{
+		Theo giả thiết: $\mathrm{P}(A) = 0{,}5 \Rightarrow \mathrm{P}\left(\overline{A}\right) = 1 - 0{,}5 = 0{,}5$.\\
+		Xác suất đỗ đại học khi chọn $A00$: $\mathrm{P}(B\mid A) = 0{,}7$.\\
+		Xác suất đỗ đại học khi không chọn $A00$: $\mathrm{P}\left(B\mid \overline{A}\right) = 0{,}6$.
+		\begin{itemchoice}
+			\itemch Vì $\mathrm{P}\left(\overline{A}\right) = 0{,}5$.
+			\itemch $\mathrm{P}(B\mid A) = 0{,}7$.
+			\itemch $\mathrm{P}\left(B\mid \overline{A}\right) = 0{,}6 \in (0{,}4; 0{,}9)$.
+			\itemch Ta có $\mathrm{P}(B) = \mathrm{P}(B\mid A)\mathrm{P}(A) + \mathrm{P}\left(B\mid \overline{A}\right)\mathrm{P}\left(\overline{A}\right) = 0{,}7 \cdot 0{,}5 + 0{,}6 \cdot 0{,}5 = 0{,}65$.\\
+			Ta có $\mathrm{P}(A\mid B) = \dfrac{\mathrm{P}(A \cap B)}{\mathrm{P}(B)} = \dfrac{0{,}7 \cdot 0{,}5}{0{,}65} = \dfrac{7}{13}$.\\
+			Tỉ số $\dfrac{\mathrm{P}(A\mid B)}{\mathrm{P}(B\mid A)} = \dfrac{7/13}{7/10} = \dfrac{10}{13} < 1$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[2D4V2-6]
+	Một kỹ sư cơ khí nghiên cứu quá trình làm nguội một chi tiết máy sau khi đúc. Độ chênh lệch nhiệt độ giữa vật và môi trường thay đổi theo thời gian. Gọi $y(t)$ là hiệu số nhiệt độ giữa chi tiết máy và môi trường tại thời điểm $t$ (phút). Theo định luật Newton về làm lạnh, tốc độ thay đổi của $y(t)$ tỉ lệ thuận với $y(t)$, tức là $y'(t)=k \cdot y(t)$ $(t\ge0,k<0)$. Người ta đo được nhiệt độ chênh lệch tại thời điểm $t=10$ phút là $40^\circ$C. Đến thời điểm $t=20$ phút, nhiệt độ chênh lệch giảm xuống còn $10^\circ$C. Cho biết $y(t)=\mathrm{e}^{g(t)}$.
+	\choiceTF
+	{\True Hàm số $g(t)=kt+C$ $(t\ge0)$ với $C$ là một hằng số xác định}
+	{\True Giá trị của hằng số $k=-\dfrac{\ln 4}{10}$}
+	{Hằng số $C$ (trong biểu thức $g(t)=kt+C$) có giá trị bằng $3\ln 2+\ln 5$}
+	{Để nhiệt độ chênh lệch $y(t)$ nhỏ hơn $1^\circ$C thì cần ít nhất $35$ phút kể từ lúc bắt đầu theo dõi}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Ta có $y'(t) = k \cdot y(t)\Rightarrow \dfrac{y'(t)}{y(t)}=k$ suy ra $\ln y(t) = kt + C\Rightarrow y(t) = \mathrm{e}^{kt + C}$. \\
+			Suy ra $g(t) = kt + C$.
+			\itemch Ta có $y(10) = 40 \Rightarrow \mathrm{e}^{10k + C} = 40$ và $y(20) = 10 \Rightarrow \mathrm{e}^{20k + C} = 10$.\\
+			Khi đó $\dfrac{\mathrm{e}^{20k+C}}{\mathrm{e}^{10k+C}} = \dfrac{10}{40} \Rightarrow \mathrm{e}^{10k} = \dfrac{1}{4} \Rightarrow 10k = -\ln 4 \Rightarrow k = -\dfrac{\ln 4}{10}$.
+			\itemch  Với $k = -\dfrac{\ln 4}{10}$ thì $\mathrm{e}^{-\ln 4 + C} = 40 \Rightarrow \dfrac{1}{4} \cdot \mathrm{e}^{C} = 40 \Rightarrow \mathrm{e}^{C} = 160 \Rightarrow C = \ln 160$.\\
+			Ta có $C = \ln 160 = \ln(2^5 \cdot 5) = 5\ln 2 + \ln 5 \ne 3\ln 2 + \ln 5$.
+			\itemch Ta có $y(t) < 1 \Leftrightarrow 160 \cdot (0{,}25)^{\tfrac{t}{10}} < 1 \Leftrightarrow 4^{\tfrac{t}{10}} > 160 \Leftrightarrow \dfrac{t}{10} > \log_4 160 \Leftrightarrow t > 10 \log_4 160 \approx 36{,}6$.\\
+			Vậy cần ít nhất khoảng $37$ phút.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\caukq
+
+\begin{ex}%[2D6H2-3]
+	Có hai đội thi đấu môn bắn súng. Đội $I$ có $5$ vận động viên, đội $II$ có $7$ vận động viên. Xác suất đạt huy chương vàng của mỗi vận động viên đội $I$ và đội $II$ lần lượt là $0{,}65$ và $0{,}55$. Chọn ngẫu nhiên một vận động viên. Giả sử vận động viên được chọn đạt huy chương vàng. Xác suất để vận động viên này thuộc đội $I$ là bao nhiêu (làm tròn kết quả đến hàng phần trăm)?
+	
+	\shortans{0{,}46}
+	\loigiai{
+		Gọi
+		\begin{itemize}
+			\item $A$ là biến cố thành viên được chọn là đội $I$
+			\item $B$ là biến cố thành viên được chọn đạt huy chương làm.
+		\end{itemize}
+		Khi đó $\mathrm{P}(A)=\dfrac{5}{12}$ và $\mathrm{P}\left(\overline{A}\right)=\dfrac{7}{12}$.\\
+		Ta có $\mathrm{P}(B\mid A) = 0{,}65$ và $\mathrm{P}\left(V\mid \overline{A}\right) = 0{,}55$.\\
+		Xác suất để VĐV được chọn đạt huy chương vàng là
+		\[\mathrm{P}(B) = \mathrm{P}(A)\mathrm{P}(B\mid A) + \mathrm{P}\left(\overline{A}\right)\mathrm{P}\left(B\mid \overline{A}\right) = \dfrac{5}{12} \cdot 0{,}65 + \dfrac{7}{12} \cdot 0{,}55 = \dfrac{71}{120}.\]
+		Xác suất VĐV thuộc đội I khi biết đã đạt huy chương vàng là
+		\[\mathrm{P}(A\mid B) = \dfrac{\mathrm{P}(A)\mathrm{P}(B\mid A)}{\mathrm{P}(B)}= \dfrac{65}{142} \approx 0{,}46.\]
+	}
+\end{ex}
+
+\begin{ex}%[2D1H3-6]
+	Một công ty công nghệ GigaCloud chuẩn bị ra mắt dịch vụ lưu trữ đám mây cao cấp dành riêng cho các doanh nghiệp lớn. Qua phân tích dữ liệu lớn (Big Data), các chuyên gia kinh tế của công ty xác lập được mô hình cầu như sau: Nếu định giá gói cước hàng tháng là $x$ (triệu đồng) thì số lượng doanh nghiệp đăng ký sử dụng $S$ (nghìn doanh nghiệp) sẽ là $S(x)=\sqrt{45-x}$ (Với điều kiện mức giá $x$ phải nhỏ hơn $45$ triệu đồng). Chi phí vận hành hệ thống của GigaCloud bao gồm hai khoản: Chi phí cố định là $10$ tỷ đồng mỗi tháng (cho cơ sở hạ tầng, nhân sự cốt lõi) và chi phí vận hành. Do đặc thù bảo mật dữ liệu, khi số lượng khách hàng tăng lên thì chi phí băng thông và bảo trì tăng theo cấp số nhân. Cụ thể, chi phí này tỷ lệ thuận với bình phương số lượng khách hàng $C_{v}=3S^{2}$ (tỷ đồng). Hãy xác định mức giá cước $x$ mà GigaCloud cần niêm yết để đạt lợi nhuận ròng hàng tháng cao nhất?
+	
+	\shortans{36}
+	\loigiai{
+		Ta có $S = \sqrt{45-x} \Rightarrow x = 45 - S^2$.\\
+		Doanh thu (tỷ đồng) tính theo $S$ là $T= x \cdot S = (45 - S^2)S = 45S - S^3$.\\
+		Tổng chi phí (tỷ đồng): $C = 10 + C_v = 10 + 3S^2$.\\
+		Lợi nhuận ròng (tỷ đồng): $L(S) = T-C =-S^3 - 3S^2 + 45S - 10$ với $S\in(0;3\sqrt{5})$.\\
+		Đạo hàm $L'(S) = -3S^2 - 6S + 45$.\\
+		Xét phuong trình $L'(S) = 0 \Leftrightarrow -3S^2 - 6S + 45= 0 \Leftrightarrow \hoac{& S=3\\ & S=-5 \,(\text{loại}).}$\\
+		Bảng biến thiên.
+		\begin{center}
+		\begin{tikzpicture}[scale=0.9,font=\footnotesize,line join=round,line cap=round,>=stealth]
+			\tkzTabInit[lgt=1.2,espcl=3,nocadre]
+			{$S$/1,$L'(S)$/1,$L(S)$/3}
+			{$0$,$3$,$3\sqrt{5}$}
+			\tkzTabLine{,+,0,-,}
+			\tkzTabVar{-/,+/$71$,-/}
+		\end{tikzpicture}
+		\end{center}
+		Khi $S=3$ thì $L(S)$ đạt GTLN. \\
+		Tương ứng mức giá cước là $x = 45 - 3^2 = 36$ (triệu đồng).
+	}
+\end{ex}
+
+\begin{ex}%[1H8H5-4]
+	Cho hình chóp đều $S.ABCD$ có đáy $ABCD$ là hình vuông cạnh bằng $1$ và cạnh bên $SA=2$. Tính khoảng cách giữa hai đường thẳng $SD$ và $AB$. (Kết quả làm tròn đến hàng phần trăm).
+	
+	\shortans{0,97}
+	\loigiai{
+		\immini{
+		Ta có $AB \parallel CD$ nên $AB \parallel (SCD)$. \\
+		Do đó $\mathrm{d}(SD, AB) = \mathrm{d}(AB, (SCD)) = \mathrm{d}(A, (SCD))$.\\
+		Gọi $O$ là tâm hình vuông $ABCD$, khi đó $SO \perp (ABCD)$.\\
+		Ta có $\mathrm{d}(A, (SCD)) = 2 \mathrm{d}(O, (SCD))$.\\
+		Gọi $M$ là trung điểm của $CD$, suy ra $OM \perp CD$ và $OM = \dfrac{1}{2}$.\\
+		Trong mặt phẳng $(SOM)$, kẻ $OH \perp SM$ tại $H$. \\
+		Ta chứng minh được $OH \perp (SCD)$, suy ra $\mathrm{d}(O, (SCD)) = OH$.\\
+		Ta có $OA =\dfrac{\sqrt{2}}{2}$.
+		}{\begin{tikzpicture}[scale=0.9,font=\footnotesize,line join=round,line cap=round,>=stealth]
+		\def\a{4}
+		\def\h{4}
+		\path 	(0:0) coordinate (A)
+				++(0:\a) coordinate (D)
+				++(-140:\a/2) coordinate (C)
+				($(A)+(C)-(D)$) coordinate (B)
+				(intersection of A--C and B--D) coordinate (O)
+				($(O)+(90:\h)$) coordinate (S)
+				($(C)!1/2!(D)$) coordinate (M)
+				($(S)!(O)!(M)$) coordinate (H)
+				;
+		\draw[dashed] 	(B)--(A)--(D)	(A)--(S)
+				(A)--(C)	(B)--(D)	(S)--(O)--(M) (O)--(H)	;
+		\draw[] 			(B)--(C)--(D)
+				(B)--(S)	(C)--(S)	(D)--(S)--(M);
+		\foreach \x/\g in {A/135,B/-135,C/-45,D/45,S/90,O/-90,M/-45,H/60}
+				\fill[] 	(\x) circle (1.5pt)
+				($(\g:3mm)+(\x)$) node {$\x$};	
+		\draw pic[draw,angle radius=3mm]{right angle=D--O--S};%Theo chiều dương	
+		\end{tikzpicture}
+		}\noindent
+		Xét $\triangle SOA$ vuông tại $O$ có $SO = \sqrt{SA^2 - OA^2}=\sqrt{\dfrac{7}{2}}$.\\
+		Trong tam giác vuông $SOM$ có $\dfrac{1}{OH^2} = \dfrac{1}{SO^2} + \dfrac{1}{OM^2}=\dfrac{30}{7}$.\\
+		Suy ra $OH = \sqrt{\dfrac{7}{30}}$.\\
+		Vậy $\mathrm{d}(A, (SCD)) = 2 \mathrm{d}(O, (SCD))= 2 \cdot OH = 2\sqrt{\dfrac{7}{30}}\approx 0{,}976$.
+	}
+\end{ex}
+
+\begin{ex}%[2D4H3-2]
+	\immini[thm]{Hướng tới chuỗi sự kiện văn hóa và du lịch năm 2026 tại Điện Biên, một nhóm kỹ sư thiết kế một mô hình bông hoa Ban khổng lồ phát sáng đặt tại Quảng trường $7/5$. Bông hoa được thiết kế gồm $5$ cánh hoa có kích thước và hình dáng giống hệt nhau. Mỗi cánh hoa được đúc đặc nguyên khối từ nhựa mica tản sáng cao cấp với độ dày đồng nhất là $15$ cm. Trên mặt phẳng tọa độ $Oxy$ (đơn vị đo trên mỗi trục tọa độ là mét), bề mặt của mỗi cánh hoa được mô tả là một hình phẳng giới hạn bởi hai parabol có phương trình là $(P_1)\colon y=-x^{2}+4x$ và $(P_2)\colon y=x^{2}-2x$. Biết chi phí vật liệu nhựa mica tản sáng này là $40$ triệu đồng cho mỗi $1$ m$^3$. Hỏi tổng chi phí vật liệu để đúc cả $5$ cánh hoa trong mô hình biểu tượng này là bao nhiêu triệu đồng?}
+	{\begin{tikzpicture}[line cap=butt,line join=miter,>=stealth,scale=0.8]
+			\tikzset{declare function={xmin=0.0;xmax=4.5;
+					ymin=-1.0;ymax=4.2;
+					f(\x)=-(\x)^2+4*(\x);
+					g(\x)=(\x)^2-2*(\x);
+				},
+					smooth,samples=250
+			}
+			\begin{scope}
+				\clip (xmin,ymin) rectangle (xmax,ymax);
+				\begin{scope}
+					\fill[pink!70,smooth]plot[domain=0:3] (\x,{f(\x)})-- plot[domain=3:0](\x,{g(\x)})-- cycle;
+				\end{scope}
+				\draw[semithick] plot[domain=xmin:xmax] (\x, {f(\x)});
+				\draw[semithick] plot[domain=xmin:xmax] (\x, {g(\x)});
+			\end{scope}
+			\draw[gray,opacity=20] (xmin,ymin-0.2) grid (xmax,ymax+0.2);
+			\draw[->] (xmin-0.25,0)--(xmax+0.5,0)
+			node[shift={(-100:7pt)},font=\normalsize]{$ x $};
+			\draw[->] (0,ymin-0.25)--(0,ymax+0.5)
+			node[shift={(-5:7pt)},font=\normalsize]{$ y $};
+			\fill (0,0) node[shift={(-135:9pt)},font=\normalsize]{$ O $};
+			\draw 
+			(3.7,4)node{\scriptsize $(P_1)$}
+			(4.5,-0.5)node{\scriptsize $(P_2)$}
+			;
+			\pgfmathsetmacro{\xmin}{int(xmin)}
+			\pgfmathsetmacro{\xmax}{int(xmax)}
+			\foreach \x [parse=true] in {\xmin,...,\xmax}{
+				\unless\ifnum\x=0
+				\draw (\x,2pt)--(\x,-2pt) +(0,-9pt) node[font=\scriptsize]{$\x$};
+				\fi
+			}
+			\pgfmathsetmacro{\ymin}{int(ymin)}
+			\pgfmathsetmacro{\ymax}{int(ymax)}
+			\foreach \x in {\ymin,...,\ymax}{
+				\unless\ifnum\x=0
+				\draw (2pt,\x)--(-2pt,\x) +(-3pt,0) node[font=\scriptsize,anchor=east]{$\x$};
+				\fi
+			}	
+			
+	\end{tikzpicture}}
+	\shortans{270}
+	\loigiai{
+	Diện tích bề mặt một cánh hoa là
+	$S_1 = \int_{0}^{3} \left[ (-x^2 + 4x) - (x^2 - 2x) \right] \mathrm{\,d}x = \int_{0}^{3} (-2x^2 + 6x) \mathrm{\,d}x = 9$ m$^2$.\\
+	Độ dày của cánh hoa là $h = 15\text{ cm} = 0{,}15$ m.\\
+	Thể tích một cánh hoa là $V_1 = S_1 \cdot h = 9 \cdot 0{,}15 = 1{,}35$ m$^3$.\\
+	Thể tích của $5$ cánh hoa là $V = 5 \cdot 1{,}35 = 6{,}75$ m$^3$.\\
+	Tổng chi phí vật liệu là $T = 6{,}75 \cdot 40 = 270$ (triệu đồng).
+	}
+\end{ex}
+
+\begin{ex}%[2H2V2-6]
+	Trong không gian với hệ trục tọa độ $Oxyz$ (quy ước đơn vị đo trên các trục là kilômét) một vệ tinh viễn thông $M$ di chuyển trên quỹ đạo là một đường Elip nằm trong mặt phẳng $(Oxy)$. Quỹ đạo này nhận hai trạm phát tín hiệu tại mặt đất làm tiêu điểm là $A(3;0;0)$ và $B(-3;0;0)$. Trong suốt quá trình vận hành, vệ tinh luôn duy trì tổng khoảng cách từ nó đến hai trạm phát $A$ và $B$ cố định bằng $10$ km. Một máy thu dữ liệu được đặt tại đỉnh của một tháp điều khiển có tọa độ $C(0;0;4)$. Tính khoảng cách ngắn nhất từ máy thu $C$ đến vệ tinh $M$ (Kết quả làm tròn đến hàng phần trăm).
+	
+	\shortans{5,66}
+	\loigiai{
+	\immini{Gọi điểm $M(x;y;0)$ là điểm nằm trên Elip trong mặt phẳng $(Oxy)$.\\
+		Theo tính chất Elip thì $MA + MB = 2a = 10$ suy ra $a = 5$.\\
+		Khoảng cách giữa hai tiêu điểm $2c = AB = 6$ suy ra $c = 3$.\\
+		Bán trục nhỏ $b = \sqrt{a^2 - c^2}= 4$.\\
+		Phương trình Elip là $(E)\colon \dfrac{x^2}{25} + \dfrac{y^2}{16} = 1 $.\\
+		Suy ra $y^2 = 16 - \dfrac{16x^2}{25}$.\\}
+		{%\usepackage{tikz-3dplot,tkz-tab,tabvar} \usepackage{pgfplots}
+			\begin{tikzpicture}[scale=0.8,>=stealth, line join=round, line cap=round, every node/.style={font=\normalsize}]
+				\tdplotsetmaincoords{70}{110}
+				\begin{scope}[tdplot_main_coords]
+					\foreach \x in {-5,-4,...,5} {
+						\draw[dashed, gray!60, line width=0.4pt] (\x, -4, 0) -- (\x, 4, 0);
+					}
+					\foreach \y in {-4,-3,...,4} {
+						\draw[dashed, gray!60, line width=0.4pt] (-5, \y, 0) -- (5, \y, 0);
+					}
+					
+					\draw[red,->] (-5.4, 0, 0) -- (6, 0, 0)node[above]{$x$};
+					\draw[green!60!black,->] (0, -4.5, 0) -- (0, 4.5, 0)node[above]{$y$};
+					\draw[->, blue] (0, 0, -1.5) -- (0, 0, 5) node[right] {$z$};
+					
+					\foreach \x in {-3,-2,-1,1,2,3,4} {
+						\draw[red] (\x, -0.15, 0) -- (\x, 0.15, 0);
+						\draw  (\x, 0, 0)node[below,font=\scriptsize]{$\x$};
+					}
+					\foreach \y in {-3,-2,-1,1,2,3} {
+						\draw[green!60!black] (-0.15, \y, 0) -- (0.15, \y, 0);
+						\draw (0, \y, 0) node[below,font=\scriptsize]{$\y$};
+					}
+					\foreach \z in {-1,1,2,3,4} {
+						\draw[blue, line width=0.6pt] (-0.1, 0, \z) -- (0.1, 0, \z);
+						\draw (0, 0, \z) node[font=\scriptsize,left]{$\z$};
+					}
+					\draw[smooth] plot[domain=0:180, samples=200] ({5*cos(\x)}, {4*sin(\x)}, 0);
+					\draw[smooth] plot[domain=180:360, samples=200] ({5*cos(\x)}, {4*sin(\x)}, 0);
+					
+					\path
+					(3,0,0) coordinate (A)
+					(-3,0,0)coordinate (B)
+					({5*cos(-45)},{4*sin(-45)},0)coordinate (M)
+					(0,0,4) coordinate (C)
+					(0,0,0) coordinate (O);
+					
+					\draw[red,line width=0.5] (C) -- (M);
+					
+					\foreach \p/\pos in {A/90, B/90, C/0, M/-135,O/-45} {
+						\fill (\p) circle (1.5pt) node[shift={(\pos:9pt)}] {$\p$};
+					}
+				\end{scope}
+		\end{tikzpicture}}\noindent
+		Khoảng cách từ $C(0;0;4)$ đến $M(x;y;0)$ là
+		\[CM=\sqrt{ x^2 + y^2 + 16}=\sqrt{x^2 + 16 - \dfrac{16x^2}{25} + 16} = \sqrt{\dfrac{9x^2}{25} + 32}\ge \sqrt{32}.\]
+		Dấu bằng xảy ra khi $x=0$.\\
+		Giá trị nhỏ nhất của $CM=\sqrt{32}$ khi $x=0$.\\
+		Vậy khoảng cách ngắn nhất là $CM = \sqrt{32} \approx 5{,}66$.
+	}
+\end{ex}
+
+\begin{ex}%[0D0C2-7]
+	Trong một trò chơi xếp số, người ta chọn ngẫu nhiên $5$ số khác nhau từ tập $S=\{1;2;3;...;30\}$ và đặt mỗi số vào đúng một vị trí trong $5$ vị trí $A$, $B$, $C$, $D$, $E$ như hình vẽ, sao cho bên trong mỗi vị trí chỉ được xếp một số. Trò chơi kết thúc khi các điều kiện sau được thỏa mãn:
+	\begin{itemize}
+		\item  Những bộ ba vị trí $(A, B, C)$, $(C, D, E)$ theo thứ tự lập thành cấp số cộng.
+		\item  Bộ ba vị trí $(A, C, E)$ theo thứ tự lập thành cấp số nhân.
+	\end{itemize}
+	Xác suất kết thúc trò chơi ở một lần chọn và xắp sếp là $\dfrac{1}{2\,026a}$. Tính $a$ (Kết quả làm tròn đến chữ số hàng đơn vị).
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			$A$	& $B$ & $C$ & $D$ & $E$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\shortans{469}
+	\loigiai{
+		Không gian mẫu $n(\Omega) = \mathrm{A}_{30}^5 = 17\,100\,720$.\\
+		Ta cần tìm số bộ $(A,B,C,D,E)$ thỏa mãn
+		\begin{itemize}
+		\item $A+C = 2B$ $(1)$.
+		\item $C+E = 2D$ $(2)$.
+		\item $A \cdot E = C^2$ $(3)$ (với $A \ne C \ne E$).
+		\end{itemize}
+		Từ $(1)$ và $(2)$ suy ra $A$ và $C$ phải cùng tính chẵn lẻ, $C$ và $E$ phải cùng tính chẵn lẻ. \\
+		Suy ra $A$, $C$, $E$ phải có cùng tính chẵn lẻ (cùng chẵn hoặc cùng lẻ). \\
+		Nếu $A$, $C$, $E$ lập thành cấp số nhân thì công bội $q = \dfrac{m}{n}$ $(m,n \in \mathbb{N}^*, (m,n)=1, m > n)$.\\
+		Ta có $A = k n^2$, $C = k\cdot m\cdot n$, $E = k m^2$.\\
+		Và ngược lại nếu dãy giảm (do tính đối xứng, ta chỉ cần tìm dãy tăng rồi nhân đôi).\\
+		Điều kiện $E \le 30 \Rightarrow k m^2 \le 30$.
+		\begin{itemize}
+			\item Xét các dãy $(A,C,E)$ tăng:\\
+			Nếu $m=2$, $n=1$ suy ra $A=k$, $C=2k$, $E=4k$. \\
+			Để $A$, $C$, $E$ cùng chẵn lẻ thì $k$ phải chẵn ($k=2p$). \\
+			$E = 8p \le 30 \Rightarrow p \in \{1, 2, 3\}$.\\
+			Có $3$ bộ: $(2,4,8)$, $(4,8,16)$, $(6,12,24)$.
+			\item  Nếu $m=3$, $n=1$ suy ra $A=k$, $C=3k$, $E=9k$.\\
+			$E = 9k \le 30 \Rightarrow k \in \{1, 2, 3\}$.\\
+			Với $k=1 \Rightarrow (1,3,9)$ (cùng lẻ).\\
+			Với $k=2 \Rightarrow (2,6,18)$ (cùng chẵn).\\
+			Với $k=3 \Rightarrow (3,9,27)$ (cùng lẻ).\\
+			Vậy có $3$ bộ.
+			\item  Nếu $m=3$, $n=2$ suy ra $A=4k$, $C=6k$, $E=9k$.\\
+			Để cùng chẵn lẻ, $k$ phải chẵn ($k=2p$).\\
+			$E = 18p \le 30 \Rightarrow p=1 \Rightarrow k=2$.\\
+			Có $1$ bộ: $(8,12,18)$ (cùng chẵn).
+			\item  Nếu $m=5$, $n=1$ suy ra $A=k$, $C=5k$, $E=25k$.\\
+			$E \le 30 \Rightarrow k=1$.\\
+			Có $1$ bộ: $(1,5,25)$ (cùng lẻ).
+			\item  Nếu $m=5$, $n=3$ suy ra $A=9k$, $C=15k$, $E=25k$.\\
+			$E \le 30 \Rightarrow k=1$.\\
+			Có $1$ bộ: $(9,15,25)$ (cùng lẻ).
+		\end{itemize}
+		Tổng cộng số bộ $(A,C,E)$ tăng thỏa mãn là $3 + 3 + 1 + 1 + 1 = 9$ bộ.\\
+		Vì $B$ và $D$ là trung bình cộng nên sẽ được xác định duy nhất từ mỗi bộ $(A,C,E)$. Dễ thấy các giá trị sinh ra luôn phân biệt và nhỏ hơn $30$.\\
+		Do dãy có thể giảm dần, tổng số cách xếp là $9 \times 2 = 18$ cách.\\
+		Xác suất $P = \dfrac{18}{17\,100\,720} = \dfrac{1}{950\,040}$.\\
+		Theo bài ra: $P = \dfrac{1}{2\,026 a} \Rightarrow a = \dfrac{950\,040}{2\,026} \approx 469$.
+	}
+\end{ex}

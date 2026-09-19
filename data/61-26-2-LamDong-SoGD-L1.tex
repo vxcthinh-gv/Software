@@ -1,0 +1,572 @@
+\section*{Đề thi thử THPTQG Sở GD\&ĐT Lâm Đồng, Lần 1}
+
+\caulc
+\Opensolutionfile{ans}[ans/ans-61-26-2-LamDong-SoGD-L1-LC]
+
+\begin{ex}%[1D6N4-2]
+	Nghiệm của phương trình $2^{x+4} = 4$ là
+	\choice
+	{$x = 2$}
+	{\True $x = -2$}
+	{$x = -1$}
+	{$x = 1$}
+	\loigiai{
+		$2^{x+4}=4\Leftrightarrow x+4=\log_24\Leftrightarrow x=-2$.
+	}
+\end{ex}
+
+
+\begin{ex}%[2D4H3-1]
+	\immini{
+		Cho hàm số $y = f(x)$ liên tục trên $\mathbb{R}$. Gọi $S$ là diện tích hình phẳng giới hạn bởi các đường $y = f(x)$, $y = 0$, $x = -1$ và $x = 5$ (hình minh họa). Mệnh đề nào sau đây đúng?
+		\choice
+		{$S = -\displaystyle\int\limits_{-1}^{1} f(x) \mathrm{\,d}x - \displaystyle\int\limits_{1}^{5} f(x) \mathrm{\,d}x$}
+		{$S = -\displaystyle\int\limits_{-1}^{1} f(x) \mathrm{\,d}x + \displaystyle\int\limits_{1}^{5} f(x) \mathrm{\,d}x$}
+		{\True $S = \displaystyle\int\limits_{-1}^{1} f(x) \mathrm{\,d}x - \displaystyle\int\limits_{1}^{5} f(x) \mathrm{\,d}x$}
+		{$S = \displaystyle\int\limits_{-1}^{1} f(x) \mathrm{\,d}x + \displaystyle\int\limits_{1}^{5} f(x) \mathrm{\,d}x$}
+	}{
+		\begin{tikzpicture}[scale=0.65,>=stealth',line width=1pt]
+			\draw[->] (-2,0)--(6,0)node[above]{$x$};
+			\draw[->] (0,-4)--(0,2.5)node[right]{$y$};
+			\draw[smooth,samples=100,domain=-1.9:5.4] plot(\x,{0.2*((\x)^2-1)*(\x-5)});
+			\draw[smooth,samples=100,pattern=north east lines,domain=-1:5] plot(\x,{0.2*((\x)^2-1)*(\x-5)});
+			\draw (-1,0)node[above left]{$-1$} (1,0)node[above right]{$1$} (5,0)node[below right]{$5$};
+			\fill (0,0)node[below left]{$O$} circle (2pt);
+		\end{tikzpicture}
+	}
+	\loigiai{
+		$S =\displaystyle\int\limits_{-1}^5 |f(x)| \mathrm{\,d}x = \displaystyle\int\limits_{-1}^{1} f(x) \mathrm{\,d}x - \displaystyle\int\limits_{1}^{5} f(x) \mathrm{\,d}x$.
+	}
+\end{ex}
+
+
+\begin{ex}%[1D2N2-2]
+	Cho cấp số nhân $(u_n)$ có $u_1 = 2$ và $u_2 = 6$. Công bội $q$ của cấp số nhân là
+	\choice
+	{$q = 2$}
+	{\True $q = 3$}
+	{$q = 4$}
+	{$q = 12$}
+	\loigiai{
+		Ta có: $ q=\dfrac{u_2}{u_1}=\dfrac{6}{2}=3 $.
+	}
+\end{ex}
+
+
+\begin{ex}%[2H5N3-2]
+	Trong không gian với hệ tọa độ $Oxyz$, cho mặt cầu $(S) \colon (x-1)^2 + (y+2)^2 + (z+1)^2 = 9$. Tâm $I$ của mặt cầu $(S)$ có tọa độ là
+	\choice
+	{$I(1; -2; 1)$}
+	{$I(-1; 2; 1)$}
+	{\True $I(1; -2; -1)$}
+	{$I(1; 2; -1)$}
+	\loigiai{
+		Phương trình mặt cầu có tâm $I(a;b;c)$ và bán kính $R$ là $(x-a)^2+(y-b)^2+(z-c)^2=R^2$.
+		\\
+		Vậy mặt cầu $(S)$ có tâm $I(1;-2;-1)$.
+	}
+\end{ex}
+
+
+\begin{ex}%[2D1N1-2]
+	\immini{
+		Cho hàm số $y = f(x)$ có bảng biến thiên như hình bên. Hàm số đã cho nghịch biến trên khoảng nào dưới đây?
+		\choice
+		{\True $(-\infty; 0)$}
+		{$(0; +\infty)$}
+		{$(0; 1)$}
+		{$(-\infty; 1)$}
+	}{
+		\begin{tikzpicture}
+			\tkzTabInit[nocadre,lgt=1, espcl=1.5]
+			{$x$ /.6,$y'$/.6,$y$/1.5}
+			{$-\infty$,$0$,$1$,$+\infty$}
+			\tkzTabLine{,-, 0 , + ,0,-,}
+			\tkzTabVar {+/$+\infty$,-/$4$ ,+/$5$,-/$-\infty$}
+		\end{tikzpicture}
+	}
+	\loigiai{
+		Dựa vào bảng biến thiên, hàm số nghịch biến trên các khoảng $(-\infty;0)$ và $(1;+\infty)$.
+	}
+\end{ex}
+
+
+\begin{ex}%[1H8N7-2]
+	Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác đều cạnh $a$. Biết $SA \perp (ABC)$ và $SA = a\sqrt{3}$. Thể tích khối chóp $S.ABC$ bằng
+	\choice
+	{\True $\dfrac{a^3}{4}$}
+	{$\dfrac{a}{4}$}
+	{$\dfrac{3a^3}{4}$}
+	{$\dfrac{a^3}{2}$}
+	\loigiai{
+		Diện tích tam giác $ABC$: $S_{\triangle ABC}=\dfrac{a^2\sqrt{3}}{4}$.
+		\\
+		Chiều cao $SA=a\sqrt{3}$.
+		\\
+		Thể tích khối chóp $S.ABC$ là $V=\dfrac{1}{3}\cdot SA\cdot S_{\triangle ABC}=\dfrac{1}{3}\cdot a\sqrt{3}\cdot \dfrac{a^2\sqrt{3}}{4}=\dfrac{a^3}{4}$.
+	}
+\end{ex}
+
+
+\begin{ex}%[2H5N1-2]
+	Trong không gian với hệ tọa độ $Oxyz$, cho mặt phẳng $(P) \colon 4x - y - 2z + 5 = 0$. Vectơ nào sau đây là một vectơ pháp tuyến của mặt phẳng $(P)$?
+	\choice
+	{$\vec{n}_4 = (-4; -1; 2)$}
+	{$\vec{n}_3 = (4; 1; -2)$}
+	{$\vec{n}_1 = (4; -2; -1)$}
+	{\True $\vec{n}_2 = (4; -1; -2)$}
+	\loigiai{
+		Vectơ $\vec{n}_2 = (4; -1; -2)$ là một vectơ pháp tuyến của mặt phẳng $(P)$.
+	}
+\end{ex}
+
+
+\begin{ex}%[2D4N1-1]
+	Họ nguyên hàm của hàm số $f(x) = e^x$ là
+	\choice
+	{$\dfrac{e^{x+1}}{x+1} + C$}
+	{\True $e^x + C$}
+	{$\dfrac{1}{e^x} + C$}
+	{$\dfrac{1}{x} + C$}
+	\loigiai{
+		Ta có công thức nguyên hàm $\displaystyle\int \mathrm{e}^x \mathrm{\,d}x=\mathrm{e}^x+C$.
+	}
+\end{ex}
+
+
+\begin{ex}%[2D3N2-2]
+	Thống kê thời gian hoàn thành một bài tập (đơn vị: phút) của một số học sinh thu được kết quả sau:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Thời gian (phút) & $[0;4)$ & $[4;8)$ & $[8;12)$ & $[12;16)$ & $[16;20)$ \\ \hline
+			Số học sinh      & $2$     & $4$     & $7$      & $4$       & $3$       \\ \hline
+		\end{tabular}
+	\end{center}
+	Thời gian trung bình (phút) để hoàn thành bài tập của các em học sinh là
+	\choice
+	{$12{,}5$}
+	{\True $10{,}4$}
+	{$7$}
+	{$11{,}3$}
+	\loigiai{
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				Thời gian (phút) & $[0;4)$ & $[4;8)$ & $[8;12)$ & $[12;16)$ & $[16;20)$ \\ \hline
+				Giá trị đại diện & $2$ & $6$ & $10$ & $14$ & $18$ \\ \hline
+				Số học sinh      & $2$     & $4$     & $7$      & $4$       & $3$       \\ \hline
+			\end{tabular}
+		\end{center}\
+		\\
+		Cỡ mẫu $n=2+4+7+4+3=20$.
+		\\
+		Giá trị trung bình $\overline{x}=\dfrac{2\cdot 2+6\cdot 4+10\cdot 7+14\cdot 4+18\cdot 3}{20}=10{,}4$.
+	}
+\end{ex}
+
+
+\begin{ex}%[0D8N2-4]
+	Số cách chọn $5$ học sinh từ $35$ học sinh của lớp $11A$ để tham gia hoạt động tiếp sức mùa thi là
+	\choice
+	{\True $\mathrm{C}_{35}^5$}
+	{$5^{35}$}
+	{$\mathrm{A}_{35}^5$}
+	{$5!$}
+	\loigiai{
+		Chọn 5 học sinh bất kì từ 35 học sinh của lớp 11A (không phân biệt thứ tự) có $\mathrm{C}_{35}^5$ cách chọn.
+	}
+\end{ex}
+
+
+\begin{ex}%[2H2N1-3]
+	Trong không gian với hệ tọa độ $Oxyz$, cho hai vectơ $\vec{u}$ và $\vec{v}$ thỏa mãn $\left|\vec{u}\right|=5$, $\left|\vec{v}\right|=8$ và $\left(\vec{u}, \vec{v}\right) = 120^\circ$. Phát biểu nào sau đây là đúng?
+	\choice
+	{$\vec{u}\cdot\vec{v} = -20\sqrt{3}$}
+	{$\vec{u}\cdot\vec{v} = 20$}
+	{$\vec{u}\cdot\vec{v} = 40$}
+	{\True $\vec{u}\cdot\vec{v} = -20$}
+	\loigiai{
+		$\vec{u}\cdot \vec{v}=\left|\vec u\right|\cdot \left|\vec v\right| \cdot \cos\left(\vec u,\vec v\right)=5\cdot 8 \cdot \cos 120^{\circ}=-20$.
+	}
+\end{ex}
+
+
+\begin{ex}%[1H8H6-1]
+	\immini{
+		Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông tại $B$, cạnh bên $SA$ vuông góc với mặt đáy. Biết $SA = AB$. Góc giữa đường thẳng $SB$ và mặt phẳng đáy bằng
+		\choice
+		{\True $45^\circ$}
+		{$90^\circ$}
+		{$30^\circ$}
+		{$60^\circ$}
+	}{
+		\begin{tikzpicture}[line join = round, line cap = round,>=stealth,scale=0.5]
+			\coordinate (A) at (0,0);
+			\coordinate (B) at ($(A) + (2,-2)$);
+			\coordinate (C) at ($(A) + (5,0)$);
+			\coordinate (S) at ($(A) + (0,4)$);
+			\tkzDrawSegments(S,A S,B S,C A,B B,C)
+			\tkzDrawSegments[dashed](A,C)
+			\tkzDrawPoints[fill=black](S,A,B,C)
+			\tkzLabelPoints[left](A,B)
+			\tkzLabelPoints[right](C)
+			\tkzLabelPoints[above](S)
+			%	\tkzMarkRightAngles(A,B,C)
+		\end{tikzpicture}
+	}
+	\loigiai{
+		Hình chiếu vuông góc của $SB$ lên $(ABC)$ là $AB$.
+		\\
+		Suy ra $\left(SB,(ABC)\right)=(SB,AB)=\widehat{SBA}$.
+		\\
+		Do $\triangle SAB$ vuông cân tại $A$ nên $\widehat{SBA}=45^{\circ}$.
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+
+\cauds
+\Opensolutionfile{ans}[ans/ans-61-26-2-LamDong-SoGD-L1-DS]
+
+\begin{ex}%[2D4V2-6]
+	\immini{
+		Hình vẽ bên mô tả hiệu suất làm việc của hai công nhân tại một nhà máy trong thời gian $6$ giờ. Công nhân $A$ đang sản xuất với hiệu suất $Q_1'(t) = -2t^2 + 4t + 58$ sản phẩm mỗi giờ, trong khi công nhân $B$ đang sản xuất với hiệu suất $Q_2'(t) = 53 + at$ sản phẩm mỗi giờ ($a \in \mathbb{R}$). Biết rằng hàm $Q_1(t)$ và $Q_2(t)$ mô phỏng số lượng sản phẩm làm được của công nhân $A$ và công nhân $B$ sau $t$ giờ.
+		\choiceTF
+		{\True Hiệu suất làm việc cực đại của công nhân $A$ là $60$ sản phẩm mỗi giờ}
+		{Giá trị $a = -3$}
+		{\True Sau $6$ giờ làm việc, công nhân $B$ hoàn thành được $228$ sản phẩm}
+		{\True Sau $6$ giờ làm việc, số sản phẩm hoàn thành của công nhân $A$ nhiều hơn số sản phẩm hoàn thành của công nhân $B$}
+	}{
+		\begin{tikzpicture}[scale=0.5,>=stealth',line width=0.8pt]
+			\draw[->] (-1,0)--(8,0)node[below]{$t$(h)};
+			\draw[->] (0,-1)--(0,7)node[right]{$Q'(t)$};
+			
+			\draw[smooth,samples=100,domain=0:6] plot(\x,{0.1*(-2*(\x)^2+4*\x+58))})node[right]{$Q'_1(t)$};
+			\draw[smooth,samples=100,pattern=north east lines,domain=0:6] plot(\x,{0.1*(53-5*\x)}) node[right]{$Q'_2(t)$};
+			\draw[line width=0.8pt,pattern=north east lines] {[smooth,samples=50,domain=0:6] plot(\x,{0.1*(-2*(\x)^2+4*\x+58)})} -- (6,2.3) {[smooth,samples=50,domain=6:0] -- plot(\x,{0.1*(53-5*\x)})} -- (0,5.8) -- cycle;
+			
+			\draw[dashed] (6,0)node[below]{$6$}--(6,1) (5,0)node[below]{$5$}--(5,2.8);
+			\fill (0,0)node[below left]{$O$} circle (2pt);
+		\end{tikzpicture}
+	}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Hàm số $Q'_1(t)$ đạt cực đại bằng $60$ tại $t=1$.
+			\itemch Ta có: $Q'_2(5)=Q'_1(5)\Rightarrow 53+5a=28\Rightarrow a=-5$.
+			\itemch Sau 6 giờ làm việc, số sản phẩm công nhân $B$ hoàn thành được là $\displaystyle\int\limits_0^6 (53-5t)\mathrm{d}t=228$.
+			\itemch Sau 6 giờ làm việc, số sản phẩm công nhân $A$ hoàn thành được là $\displaystyle\int\limits_0^6 (-2t^2+4t+58)\mathrm{d}t=276$.
+			\\
+			Vậy số sản phẩm hoàn thành của công nhân $A$ nhiều hơn số sản phẩm hoàn thành của công nhân $B$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+
+\begin{ex}%[2D1H4-3]
+	Cho hàm số $y = f(x) = \dfrac{x^2 - 2x - 4}{x + 1}$.
+	\choiceTF
+	{\True Hàm số đã cho có đạo hàm trên tập xác định là $f'(x) = \dfrac{x^2 + 2x + 2}{(x+1)^2}$}
+	{Hàm số đã cho đồng biến trên $\mathbb{R} \setminus \{-1\}$}
+	{\True Đường tiệm cận xiên của đồ thị hàm số có phương trình là $y = x - 3$}
+	{Tâm đối xứng của đồ thị hàm số là $I(1;-2)$}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch $f'(x)=\dfrac{x^2+2x+2}{(x+1)^2}$.
+			\itemch Tập xác định: $\mathscr{D}=\mathbb{R}\setminus \{-1\}$.
+			\\
+			$f'(x)=\dfrac{x^2+2x+2}{(x+1)^2}>0,\ \forall x\in\mathbb{R}\setminus\{-1\}$.
+			\\
+			Hàm số đồng biến trên các khoảng $(-\infty;-1)$ và $(-1;+\infty)$.
+			\itemch Ta có $f(x)=x-3-\dfrac{1}{x+1}$.
+			\\
+			$\lim\limits_{x\to +\infty} \left(f(x)-(x-3)\right)=0\Rightarrow$ Tiệm cận xiên của đồ thị hàm số là $y=x-3$.
+			\itemch Tiệm cận đứng của đồ thị hàm số là $x=-1$.
+			\\
+			Giao điểm của tiệm cận đứng và tiệm cận xiên là $I(-1;-4)$.
+			\\
+			Vậy tâm đối xứng của đồ thị hàm số là $I(-1;-4)$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+
+\begin{ex}%[2D6H2-4]
+	Hệ thống kiểm soát nội dung của một trang mạng xã hội tự động đánh dấu các bài đăng vi phạm Luật an ninh mạng. Thống kê cho thấy có $25\%$ số bài đăng bị hệ thống đánh dấu. Trong số các bài đăng bị đánh dấu, có $12\%$ bài đăng đánh dấu nhầm (bài đăng không vi phạm Luật an ninh mạng nhưng bị đánh dấu). Trong số các bài đăng không bị đánh dấu, vẫn có $6\%$ bài đăng vi phạm Luật an ninh mạng. Chọn ngẫu nhiên một bài đăng trên trang mạng xã hội này.
+	\choiceTF
+	{\True Xác suất chọn được bài đăng không bị hệ thống đánh dấu bằng $0{,}75$}
+	{Xác suất chọn được bài đăng vi phạm, biết rằng nó không bị đánh dấu bằng $0{,}12$}
+	{\True Xác suất chọn được bài đăng vi phạm bằng $0{,}265$}
+	{\True Xác suất chọn được bài đăng bị đánh dấu, biết rằng nó là bài đăng vi phạm xấp xỉ bằng $0{,}83$}
+	\loigiai{
+		Gọi biến cố $A$ là "chọn được bài đăng bị đánh dấu" và biến cố $B$ là "chọn được bài đăng vi phạm".
+		\begin{itemchoice}
+			\itemch $\mathrm{P}(\overline{A})=1-\mathrm{P}(A)=1-0{,}25=0{,}75$.
+			\itemch $\mathrm{P}(B|\overline{A})=6\%=0{,}06$.
+			\itemch $\mathrm{P}(B)=\mathrm{P}(A)\cdot \mathrm{P}(B|A)+\mathrm{P}(\overline{A})\cdot \mathrm{P}(B|\overline{A})=0{,}25\cdot 0{,}88+0{,}75\cdot 0{,}06=0{,}265$.
+			\itemch $\mathrm{P}(A|B)=\dfrac{\mathrm{P}(AB)}{\mathrm{P}(B)}=\dfrac{0{,}25\cdot 0{,}88}{0{,}265}=\dfrac{44}{53}\approx 0{,}83$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+
+\begin{ex}%[2H5V3-4]
+	Trong không gian với hệ tọa độ $Oxyz$, một trạm thu phát sóng điện thoại di động được đặt ở vị trí $I(-3; 5; 2)$ được thiết kế với bán kính phủ sóng là $4\,\text{km}$, mỗi đơn vị trên trục ứng với $1\,\text{km}$.
+	\choiceTF
+	{\True Phương trình mặt cầu $(S)$ mô tả ranh giới bên ngoài của vùng phủ sóng trong không gian là\\ $(x+3)^2 + (y-5)^2 + (z-2)^2 = 16$}
+	{\True Khoảng cách xa nhất giữa hai điểm thuộc vùng phủ sóng là $8\,\text{km}$}
+	{Người dùng điện thoại ở vị trí $A$ có tọa độ là $(-3; 4; 1)$ không thể sử dụng dịch vụ của trạm thu phát sóng đó}
+	{Trong điều kiện giao thông thuận lợi, khoảng cách ngắn nhất để một người ở vị trí $B$ có tọa độ là $(2; 6; 2)$ di chuyển tới vùng phủ sóng là $5{,}1\,\text{km}$. (kết quả làm tròn đến hàng phần mười)}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Ranh giới vùng phủ sóng là mặt cầu $(S)$ có tâm $I(-3;5;2)$ và bán kính $R=4$
+			\\
+			Ta có $(S)\colon (x+3)^2+(y-5)^2+(z-2)^2=16$.
+			\itemch Khoảng cách xa nhất giữa hai điểm thuộc vùng phủ sóng bằng đường kính của mặt cầu $(S)$ là 8(km).
+			\itemch Ta có $\overrightarrow{IA}=(0;-1;-1)$ có độ dài bằng $\sqrt{2}<R$ nên tại vị trí $A$ có thể sử dụng dịch vụ của trạm thu phát sóng đó.
+			\itemch Ta có $\overrightarrow{IB}=(5;1;0)$ có độ dài bằng $\sqrt{26}$.
+			\\
+			Khoảng cách ngắn nhất để một người ở vị trí $B$ di chuyển tới vùng phủ sóng bằng $|IB-R|=|\sqrt{26}-4|\approx 1,1$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+
+\caukq
+\Opensolutionfile{ans}[ans/ans-61-26-2-LamDong-SoGD-L1-KQ]
+
+\begin{ex}%[2H5C4-5]
+	Trong không gian với hệ tọa độ $Oxyz$, xét đường thẳng $(\Delta)$ đi qua điểm $M(3;1;1)$, nằm trong mặt phẳng $(\alpha) \colon x+y-z-3=0$. Khi $(\Delta)$ tạo với đường thẳng $(d) \colon \heva{&x=1 \\&y=4+3t \\& z=-3-2t}$ một góc nhỏ nhất thì đường thẳng $(\Delta)$ có một vectơ chỉ phương là $\vec{u}_{\Delta}=(5;b;c)$. Giá trị của $b+c$ bằng bao nhiêu?
+	\shortans{$-3$}
+	\loigiai{
+		Đường thẳng $d$ có một vectơ chỉ phương là $\vec{u_d}=(0;3;-2)$.
+		\\
+		Mặt phẳng $(P)$ có một vectơ pháp tuyến là $\vec{n_P}=(1;1;-1)$.
+		\\
+		Gọi $d'$ là hình chiếu vuông góc của $d$ lên mặt phẳng $(\alpha)$.
+		\\
+		Khi đó $d'$ có một vectơ chỉ phương là $\vec{u_{d'}}=\left[\left[\vec{u_{d}},\vec{n_P}\right],\vec{n_P} \right]=(5;-4;1)$.
+		\\
+		Khi $\Delta$ tạo với $d$ một góc nhỏ nhất thì $\Delta\parallel d'$ nên $\vec{u_{\Delta}}=(5;-4;1)$ là một vectơ chỉ phương của $\Delta$.
+		\\
+		Vậy $b+c=-4+1=-3$.
+	}
+\end{ex}
+
+\begin{ex}%[2D1V3-6]
+	Một xưởng gia công đồ mỹ nghệ dự định sản xuất không quá $150$ sản phẩm trong mỗi tháng. Chi phí sản xuất $x$ sản phẩm ($x \in \mathbb{N};\ 1 \leqslant x \leqslant 150$) được cho bởi hàm số $C(x)=5000+800x-3{,}6x^2+0{,}004x^3$ (nghìn đồng). Giá bán của mỗi sản phẩm là một hàm số phụ thuộc vào số lượng $x$ sản phẩm và được cho bởi công thức $p(x)=2000-9x$ (nghìn đồng). Biết rằng sản phẩm sản xuất ra được tiêu thụ hết. Lợi nhuận lớn nhất mỗi tháng mà xưởng thu được là bao nhiêu triệu đồng?
+	\shortans{$57$}
+	\loigiai{
+		Lợi nhuận $f(x)=p(x)\cdot x-C(x)=(2000-9x)x-(5000+800x-3{,}6x^2+0{,}004x^3)=-0{,}004x^3-5{,}4x^2+1200x-5000$.
+		\\
+		Với $x\in [1;150]$, $f'(x)=-0{,}012x^2-10{,}8x+1200$ có nghiệm $x=100$.
+		\\
+		Ta có $f(1)=-3805{,}404$; $f(150)=40000$; $f(100)=57000$.
+		\\
+		Hàm số $f(x)$ đạt giá trị lớn nhất bằng $57000$ tại $x=100$.
+		\\
+		Vậy doanh thu lớn nhất mỗi tháng mà xưởng thu được là 57 triệu đồng.
+	}
+\end{ex}
+
+\begin{ex}%[0D2V2-3]
+	Một bãi đậu xe ô tô kinh doanh dịch vụ giữ xe ô tô qua đêm có diện tích là $200\text{ m}^2$ (không tính phần diện tích lối đi cho xe ra vào). Biết rằng mỗi chiếc xe ô tô loại $7$ chỗ ngồi cần diện tích $10\text{ m}^2$ và mỗi chiếc xe ô tô loại $16$ chỗ ngồi cần diện tích $20\text{ m}^2$. Chi phí gửi xe mỗi đêm đối với xe ô tô loại $7$ chỗ ngồi là $150$ nghìn đồng và loại xe $16$ chỗ ngồi là $200$ nghìn đồng. Bãi đậu xe không thể chứa quá $20$ xe một đêm. Sau mỗi đêm, doanh thu lớn nhất từ việc kinh doanh dịch vụ trên là bao nhiêu nghìn đồng?
+	\shortans{$3000$}
+	\loigiai{
+		\immini{
+			Gọi $x,y$ lần lượt là số lượng xe loại 7 chỗ và xe loại 16 chỗ.
+			\\
+			Từ giả thiết của bài toán, ta có hệ bất phương trình $$\heva{&10x+20y\leqslant 200\\&x+y\leqslant 20\\&x\geqslant 0\\&y\geqslant 0}$$
+			\\
+			Miền nghiệm của hệ bất phương trình đó là tam giác $OAB$ (như hình vẽ bên) với $O(0;0)$, $A(0;10)$ và $B(20;0)$.
+			\\
+			Doanh thu $F=150x+200y$.
+			\begin{itemize}
+				\item Với $O(0;0)$, ta có $F=150\cdot 0+200\cdot 0=0$.
+				\item Với $A(0;10)$, ta có $F=150\cdot 0+200\cdot 10=2000$.
+				\item Với $B(20;0)$, ta có $F=150\cdot 20+200\cdot 0=3000$.
+			\end{itemize}
+			Vậy doanh thu lớn nhất từ kinh doanh dịch vụ trên là $3000$ nghìn đồng.
+		}{
+			\begin{tikzpicture}[scale=0.25,>=stealth',line width=0.8pt]
+				\draw[->] (-5,0)--(25,0)node[below]{$x$};
+				\draw[->] (0,-5)--(0,25)node[right]{$y$};
+				
+				\draw[smooth,samples=100,domain=-5:25] plot(\x,{-0.5*\x+10});
+				\draw[smooth,samples=100,domain=-5:25] plot(\x,{-\x +20});
+				\fill[pattern=north east lines,opacity=0.4] (-5,-5)--(-5,25)--(0,25)--(0,-5);
+				\fill[pattern=north east lines,opacity=0.4] (-5,-5)--(25,-5)--(25,0)--(-5,0);
+				\fill[pattern=north east lines,opacity=0.4] (20,0)--(25,0)--(25,25)--(0,25)--(0,10);
+				\draw (0,10)node[right]{$A$} (20,0)node[above]{$B$};
+				\draw (0,10)node[left]{$10$} (20,0)node[below]{$20$};
+				\fill (0,0)node[below left]{$O$} circle (5pt);
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+
+\begin{ex}%[0D8C2-3]
+	Gọi $X$ là tập hợp gồm các số tự nhiên có $7$ chữ số đôi một khác nhau. Lấy ngẫu nhiên một số từ tập $X$. Xác suất để lấy được một số chẵn chứa các chữ số $2, 3, 4$ sao cho chữ số $2$ đứng trước chữ số $3$ và chữ số $3$ đứng trước chữ số $4$ là $\dfrac{a}{b}$ (trong đó $a, b$ là hai số nguyên dương, $\dfrac{a}{b}$ là phân số tối giản). Giá trị $a+b$ bằng bao nhiêu?
+	\shortans{$2009$}
+	\loigiai{
+		Gọi số tự nhiên đó là $n=\overline{a_1a_2a_3a_4a_5a_6a_7}$.
+		
+		Chọn $a_1$ khác $0$ và chọn các chữ số cho $a_2,a_3,a_4,a_5,a_6,a_7$. Khi đó ta có $9\cdot\mathrm{A}_{9}^{6}=544320$ cách. Vậy tập $X$ có $544320$ phần tử.
+		\\
+		Gọi $Y$ là tập hợp chứa các số tự nhiên chẵn có 7 chữ số đôi một khác nhau và số tự nhiên đó chứa các chữ số $2,3,4$ sao cho chữ số $2$ đứng trước chữ số $3$, chữ số $3$ đứng trước chữ số $4$.
+		\begin{enumerate}[$\bullet$]
+			\item Trường hợp 1:
+			\begin{enumerate}[$\circ$]
+				\item Chọn $a_7=4$: 1 cách.
+				\item Chọn $a_1=2$: 1 cách.
+				\item Chọn một vị trí còn lại cho chữ số $3$: 5 cách.
+				\item Chọn bốn chữ số bất kì trong các chữ số còn lại: $\mathrm{A}_7^4$ cách.
+			\end{enumerate}
+			$\Rightarrow$ Có $1\cdot1\cdot5\cdot \mathrm{A}_7^4=4200$ cách.
+			\item Trường hợp 2:
+			\begin{enumerate}[$\circ$]
+				\item Chọn $a_7=4$: 1 cách.
+				\item Chọn hai vị trí (khác $a_1$) cho các chữ số $2$ và $3$ và xếp theo thứ tự từ nhỏ đến lớn: $\mathrm{C}_5^2$ cách.
+				\item Chọn $a_1$ khác $0;2;3;4$: 6 cách.
+				\item Chọn ba chữ số bất kì trong các chữ số còn lại: $\mathrm{A}_6^3$ cách.
+			\end{enumerate}
+			$\Rightarrow$ Có $1\cdot\mathrm{C}_5^2\cdot 6\cdot \mathrm{A}_6^3=7200 $ cách.
+			\item Trường hợp 3:
+			\begin{enumerate}[$\circ$]
+				\item Chọn $a_7=0$: 1 cách
+				\item Chọn ba vị trí cho các chữ số $2,3,4$ và xếp theo thứ tự từ nhỏ đến lớn: $\mathrm{C}_3^6$ cách
+				\item Chọn ba chữ số bất kì trong các chữ số còn lại: $\mathrm{A}_3^6$ cách
+			\end{enumerate}
+			$\Rightarrow$ Có $1\cdot\mathrm{C}_6^3\cdot \mathrm{A}_6^3=2400 $ cách.
+			\item Trường hợp 4:
+			\begin{enumerate}[$\circ$]
+				\item Chọn $a_7\in\{6;8\}$: 2 cách.
+				\item Chọn ba vị trí (khác $a_1$) cho các chữ số $2,3,4$ và xếp theo thứ tự từ nhỏ đến lớn: $\mathrm{C}_5^3$ cách.
+				\item Chọn $a_1$ khác $0;2;3;4;a_7$: 5 cách.
+				\item Chọn hai chữ số bất kì trong các chữ số còn lại: $\mathrm{A}_5^2$ cách.
+			\end{enumerate}
+			$\Rightarrow$ Có $2\cdot\mathrm{C}_5^3\cdot 5\cdot \mathrm{A}_5^2=2000 $ cách.
+			\item Trường hợp 5:
+			\begin{enumerate}[$\circ$]
+				\item Chọn $a_7\in\{6;8\}$: 2 cách
+				\item Chọn $a_1=2$: 1 cách
+				\item Chọn hai vị trí cho các chữ số $3,4$ và xếp theo thứ tự từ nhỏ đến lớn: $\mathrm{C}_5^2$ cách
+				\item Chọn ba chữ số bất kì trong các chữ số còn lại: $\mathrm{A}_6^3$ cách.
+			\end{enumerate}
+			$\Rightarrow$ Có $2\cdot\mathrm{C}_5^3\cdot 5\cdot \mathrm{A}_6^3=2400 $ cách.
+		\end{enumerate}\
+		\\
+		Vậy $Y$ có $4200+7200+2400+2000+2400=18200$ phần tử
+		\\
+		Không gian mẫu $\Omega$ có $n(\Omega)=\mathrm{C}_{544320}^1=544320$.
+		\\
+		Biến cố $A$ "chọn được một số thuộc $Y$".
+		\\
+		$\Rightarrow n(A)=\mathrm{C}_{18200}^1=18200$.
+		\\
+		Xác suất của biến cố $A$ là $\mathrm{P}(A)=\dfrac{n(A)}{n(\Omega)}=\dfrac{18200}{544320}=\dfrac{65}{1944}$.
+		\\
+		Vậy $a+b=65+1944=2009$.
+	}
+\end{ex}
+
+\begin{ex}%[2D4V3-2]
+	\immini{
+		Một công ty thiết kế một bảng quảng cáo có dạng hình chữ nhật $ABCD$ có kích thước $AB=10\text{ m}$, $AD=6\text{ m}$. Nội dung quảng cáo được mô tả trong phần tô đậm với hai đường cong trong hình là một phần của đồ thị hàm số $(C)$ có dạng $y=\dfrac{ax+b}{cx+d}$ (hình minh họa). Khoảng cách từ điểm $A$ đến đường tiệm cận đứng và đường tiệm cận ngang của đồ thị hàm số $(C)$ bằng $3\text{ m}$. Đồ thị hàm số $(C)$ cắt cạnh $AB$ tại điểm $E$ thỏa mãn $\dfrac{AE}{AB}=\dfrac{2}{5}$. Diện tích phần nội dung quảng cáo là bao nhiêu mét vuông? (Kết quả làm tròn đến hàng phần mười)
+		\shortans{$45{,}1$}
+	}{
+		
+		\begin{tikzpicture}[scale=0.5, font=\footnotesize]
+			\draw[thick] (7,3) rectangle (-3,-3);
+			\draw[thick,smooth, samples=100, domain=-3:-1] plot (\x, {-3/(\x)});
+			\draw[thick,smooth, samples=100, domain=1:7] plot (\x, {-3/(\x)});
+			\fill[pattern=north west lines, opacity=0.3]
+			{[smooth,samples=50,domain=-3:-1]plot(\x,{-3/(\x)})} -- (-1,-3) {[smooth,samples=50,domain=-1:-3] -- plot(\x,{-3})} -- (-3,1) -- cycle;
+			\fill[pattern=north west lines, opacity=0.3] (-1,3) rectangle (1,-3);
+			\fill[pattern=north west lines, opacity=0.3]
+			{[smooth,samples=50,domain=1:7]plot(\x,{-3/(\x)})} -- (7,3) --(1,3) -- (1,-3) -- cycle;
+			\draw (-3,-3)node[left] {$A$} (-3,3)node[left]{$D$} (7,-3)node[right]{$B$} (7,3)node[right]{$C$} (1,-3) node[below]{$E$};
+			\draw[dashed] (-3,0)--(7,0) (0,-3)--(0,3);
+		\end{tikzpicture}
+	}
+	\loigiai{
+		\immini{
+			Dựng hệ trục tọa độ $Oxy$ như hình vẽ bên.
+			\\
+			Đồ thị hàm số có tiệm cận đứng $x=0$ và tiệm cận ngang $y=0$ nên hàm số có dạng $y=\dfrac{b}{x}$.
+			\\
+			Ta có $AE=\dfrac{2}{5}AB=4$ nên $E(1;-3)$.
+			\\
+			Ta có $E\in (C)$ nên $-3=\dfrac{b}{1}\Rightarrow b=-3$.
+			\\
+			Khi đó hàm số đã cho là $y=\dfrac{-3}{x}$.
+			\\
+			Diện tích phần nội dung làm quảng cáo là $$S=6\cdot 10-\displaystyle\int\limits_1^7 \left(\dfrac{-3}{x}-(-3)\right) \mathrm{\,d}x-\displaystyle\int\limits_{-3}^{-1} \left(3-\dfrac{-3}{x}\right) \mathrm{\,d}x\approx 45{,}1.$$
+		}{
+			
+			\begin{tikzpicture}[scale=0.5, font=\footnotesize]
+				\draw[thick,->] (0,-4)--(0,4)node[right]{$y$};
+				\draw[thick,->] (-4,0)--(8,0)node[above]{$x$};
+				\draw[thick] (7,3) rectangle (-3,-3);
+				\draw[thick,smooth, samples=100, domain=-3:-1] plot (\x, {-3/(\x)});
+				\draw[thick,smooth, samples=100, domain=1:7] plot (\x, {-3/(\x)});
+				\fill[pattern=north west lines, opacity=0.3]
+				{[smooth,samples=50,domain=-3:-1]plot(\x,{-3/(\x)})} -- (-1,-3) {[smooth,samples=50,domain=-1:-3] -- plot(\x,{-3})} -- (-3,1) -- cycle;
+				\fill[pattern=north west lines, opacity=0.3] (-1,3) rectangle (1,-3);
+				\fill[pattern=north west lines, opacity=0.3]
+				{[smooth,samples=50,domain=1:7]plot(\x,{-3/(\x)})} -- (7,3) --(1,3) -- (1,-3) -- cycle;
+				\draw (-3,-3)node[left] {$A$} (-3,3)node[left]{$D$} (7,-3)node[right]{$B$} (7,3)node[right]{$C$} (1,-3) node[below]{$E$};
+				\draw (0,0)node[below left]{$O$};
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+
+\begin{ex}%[1H8V5-3]
+	Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình vuông tâm $O$. Biết $SO \perp (ABCD)$, $SO=\sqrt{3}$ và đường tròn ngoại tiếp $ABCD$ có bán kính bằng $1$. Gọi $M$ là trung điểm của cạnh $SB$. Khoảng cách từ $M$ đến mặt phẳng $(SCD)$ là $\sqrt{\dfrac{m}{n}}$ (trong đó $m, n$ là hai số nguyên dương và $\dfrac{m}{n}$ là phân số tối giản). Giá trị $m-n$ bằng bao nhiêu?
+	\shortans{$-4$}
+	\loigiai{
+		\immini{
+			Gọi $N$ là trung điểm cạnh $CD$ và $H$ là hình chiếu vuông góc của $O$ lên $SN$.
+			\\
+			Ta có $AC=2R=2\Rightarrow AB=\sqrt{2}\Rightarrow ON=\dfrac{\sqrt{2}}{2}$.
+			\\
+			Ta chứng minh được $OH\perp (SCD)$ và suy ra được $H$ là hình chiếu vuông góc của $O$ lên $(SCD)$.
+			\\
+			Ta có $OM\parallel SD$ nên $OM\parallel (SCD)$.
+			\\
+			Khi đó $\mathrm{d}(M,(SCD))=\mathrm{d}(O,(SCD))=OH=\dfrac{SO\cdot ON}{\sqrt{SO^2+ON^2}}=\sqrt{\dfrac{3}{7}}$.
+			\\
+			Vậy $m-n=3-7=-4$.
+		}{
+			\begin{tikzpicture}[line join = round, line cap = round,>=stealth,scale=0.7]
+				\coordinate (A) at (0,0);
+				\coordinate (B) at ($(A) + (-3,-2)$);
+				\coordinate (D) at ($(A) + (5,0)$);
+				\coordinate (C) at ($(B) + (5,0)$);
+				\tkzInterLL(A,C)(B,D) \tkzGetPoint{O}
+				\coordinate (S) at ($(O) + (0,5)$);
+				\tkzDefMidPoint(D,C)\tkzGetPoint{N}
+				\tkzDefMidPoint(S,B)\tkzGetPoint{M}	\tkzDefMidPoint(S,N)\tkzGetPoint{H}
+				\tkzDrawSegments(S,B S,C S,D B,C C,D S,N)
+				\tkzDrawSegments[dashed](S,A A,C B,D A,D A,B O,N O,H S,O)
+				\tkzDrawPoints[fill=black](S,A,B,C,D,O,M,N,H)
+				\tkzLabelPoints[left](M,B,A)
+				\tkzLabelPoints[right](C,N,D,H)
+				\tkzLabelPoints[above](S)
+				\tkzLabelPoints[below](O)
+				%	\tkzMarkRightAngles(S,O,N O,N,C O,H,N)
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+
+
+\indapan{6}{ans/ans-61-26-2-LamDong-SoGD-L1-LC}
+\indapan{4}{ans/ans-61-26-2-LamDong-SoGD-L1-DS}
+\indapan{6}{ans/ans-61-26-2-LamDong-SoGD-L1-KQ}
+
+\Closesolutionfile{ans}

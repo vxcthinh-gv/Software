@@ -1,0 +1,462 @@
+
+\section*{Đề thi thử TNTHPT CỤM BẮC-HÀ NỘI, NĂM HỌC 2025--2026, Lần 1}
+\caulc
+\Opensolutionfile{ans}[ans/ans-26-2--SoGD-L1-LC]
+\begin{ex}%[2D1N4-1]%Câu 1
+Tìm số tiệm cận đứng của đồ thị hàm số $y=\dfrac{x^2-3x-4}{x^2-16}$.
+\choice
+{$3$}
+{\True $1$}
+{$2$}
+{$0$}
+\loigiai{
+Ta có $\lim\limits_{x\to{4^+}}y=\lim\limits_{x\to{4^+}}\dfrac{x^2-3x-4}{x^2-16}=\lim\limits_{x\to{4^+}}\dfrac{x+1}{x+4}=\dfrac{5}{8}$.\\ Tương tự, $\lim\limits_{x\to{4^-}}y=\dfrac{5}{8}$. Vậy đường thẳng $x=4$ không là tiệm cận đứng của đồ thị.\\
+Ta có $\lim\limits_{x\to-4^+}y=\lim\limits_{x\to-4^+}\dfrac{x^2-3x-4}{x^2-16}=-\infty$ (Vì $\lim\limits_{x\to-4^+}(x^2-3x-4)=24>0$ và $x^2-16<0,\forall x \in (-4;4)$  ).\\
+ Tương tự, $\lim\limits_{x\to-4^-}y=+\infty$. Vậy đường thẳng $x=-4$ là tiệm cận đứng của đồ thị.\\
+Vậy đồ thị hàm số đã cho có một đường tiệm cận đứng.}
+\end{ex}
+
+\begin{ex}%[2D1N1-2]%Câu 2
+Cho hàm số $y=f(x)$ có bảng xét dấu đạo hàm như sau
+\begin{center}
+	% Cần khai báo \usepackage{tkz-tab}
+	\begin{tikzpicture}
+		\tkzTabInit[nocadre=false,lgt=2,espcl=2,deltacl=0.5]{$x$/1 ,$f'(x)$/1}
+		{$-\infty$ , $-3$ , $-1$ , $1$ , $+\infty$}
+		\tkzTabLine{  , - , 0 , + , 0 , - , 0 , + }
+		\end{tikzpicture}
+\end{center}
+Hàm số đồng biến trên khoảng nào dưới đây?
+\choice
+{$\left(-\infty ;-3\right)$}
+{$\left(-3;1\right)$}
+{$\left(-1;+\infty\right)$}
+{\True $\left(-3;-1\right)$}
+\loigiai{
+Từ bảng xét ta thấy $f'(x)>0,\,\forall x\in (-3;-1)$ nên hàm số đồng biến trên $\left(-3;-1\right)$.}
+\end{ex}
+
+\begin{ex}%[2H2N1-2]%Câu 3
+Cho tứ diện $ABCD$. Đặt $\overrightarrow{AB}=\overrightarrow{a}$, $\overrightarrow{AC}=\overrightarrow{b}$, $\overrightarrow{AD}=\overrightarrow{c}$. Gọi $M$ là trung điểm của đoạn thẳng $BC$. Đẳng thức nào dưới đây đúng?
+\choice
+{\True $\overrightarrow{DM}=\dfrac{1}{2}\left(\overrightarrow{a}+\overrightarrow{b}-2\overrightarrow{c}\right)$}
+{$\overrightarrow{DM}=\dfrac{1}{2}\left(\overrightarrow{a}+\overrightarrow{2b}-\overrightarrow{c}\right)$}
+{$\overrightarrow{DM}=\dfrac{1}{2}\left(\overrightarrow{a}+\overrightarrow{2b}-\overrightarrow{c}\right)$}
+{$\overrightarrow{DM}=\dfrac{1}{2}\left(\overrightarrow{a}-2\overrightarrow{b}+\overrightarrow{c}\right)$}
+\loigiai{
+\immini{Ta có $M$ là trung điểm của đoạn thẳng $BC$\\
+	$\overrightarrow{DM}=\dfrac{1}{2}\left(\overrightarrow{DB}+\overrightarrow{DC}\right)=\dfrac{1}{2}\left(\overrightarrow{AB}+\overrightarrow{AC}-2\overrightarrow{AD}\right)=\dfrac{1}{2}\left(\overrightarrow{a}+\overrightarrow{b}-2\overrightarrow{c}\right)$.}
+{\begin{tikzpicture}[scale=0.6, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\def\ac{4.5} % cạnh AC
+		\def\ab{2} % cạnh Ab
+		\def\h{4} % đường cao
+		\def\gocA{45} % góc A của đáy
+		\coordinate[label=left:$D$] (A) at (0,0);
+		\coordinate[label=below left:$B$] (B) at (-\gocA:\ab);
+		\coordinate[label=right:$C$] (C) at (\ac,0);
+		\coordinate[label=below right:$M$] (M) at ($(B)!.5!(C)$);
+		\coordinate(G) at ($(A)!2/3!(M)$);
+		\coordinate[label=above left:$A$] (S) at ($(G)+(90:\h)$);
+		\draw (A)--(B)--(C)--(S)--cycle (S)--(B)  (M)--(S);
+		\draw[dashed] (M)--(A)--(C);
+		\foreach \diem in {A,B,C,M,S}	\fill (\diem)circle(1.5pt);
+	\end{tikzpicture}}
+}
+\end{ex}
+
+\begin{ex}%[2D1H3-1]%Câu 4
+Giá trị nhỏ nhất $m$ của hàm số $y=x^4-2x^2+3$ trên đoạn $\left[0;\sqrt{3}\right]$ là 
+\choice
+{$-3$}
+{$-2$}
+{$3$}
+{\True $2$}
+\loigiai{
+Ta có $y'=4x^3-4x$.\\
+$\heva{&y'=0\\& 0<x<\sqrt{3}}\Leftrightarrow \heva{&4x^3-4x=0\\& 0<x<\sqrt{3}}\Leftrightarrow
+	 x=1.$ \\
+Vì $y(0)=3$, $y(1)=2$, $y\left(\sqrt{3}\right)=6$ nên $m=\min\limits_{\left[0;\sqrt{3}\right]}y=y(1)=2$.
+}
+\end{ex}
+
+\begin{ex}%[2H2N2-3]%Câu 5
+Trong không gian với hệ tọa độ $\text{Ox}yz$, cho hai điểm $C\left(-1;-8;-10\right)$ và $Q\left(-6;-1;-3\right)$. Tọa độ của vectơ $\overrightarrow{CQ}$ là
+\choice
+{$\left(-7;-9;-13\right)$}
+{\True $\left(-5;7;7\right)$}
+{$\left(5;-7;-7\right)$}
+{$\left(6;8;30\right)$}
+\loigiai{
+Ta có $\overrightarrow{CQ}=\left(-6-\left(-1\right);-1-\left(-8\right);-3-\left(-10\right)\right)=\left(-5;7;7\right)$.}
+\end{ex}
+
+\begin{ex}%[1D2H2-3]%Câu 6
+Cho cấp số cộng $\left(u_n\right)$ với $u_1=6$ và công sai $d=-3$. Giá trị của $u_5$ bằng 
+\choice
+{$9$}
+{$-9$}
+{$-18$}
+{\True $-6$}
+\loigiai{
+Ta có $u_n=u_1+\left(n-1\right)d$\\
+Do đó $u_5=u_1+4d=6+4\cdot\left(-3\right)=-6$.}
+\end{ex}
+
+\begin{ex}%[2D1N4-1]%Câu 7
+Hàm số $y=f(x)$ có $\lim\limits_{x\to+\infty}f(x)=1$ và $\lim\limits_{x\to-\infty}f(x)=-1$. Chọn khẳng định đúng.
+\choice
+{Đồ thị hàm số đã cho không có tiệm cận ngang}
+{Đồ thị hàm số đã cho có $2$ tiệm cận ngang là các đường thẳng $x=1$ và $x=-1$}
+{Đồ thị hàm số đã cho có đúng một tiệm cận ngang}
+{\True Đồ thị hàm số đã cho có $2$ tiệm cận ngang là các đường thẳng $y=1$ và $y=-1$}
+\loigiai{
+Do $\lim\limits_{x\to+\infty}f(x)=1$ và $\lim\limits_{x\to-\infty}f(x)=-1$ nên đồ thị hàm số có $2$ tiệm cận ngang là các đường thẳng $y=1$ và $y=-1$.}
+\end{ex}
+
+\begin{ex}%[2H2N2-3]%Câu 8
+Trong không gian với hệ tọa độ $Oxyz$, cho vectơ $\vec{u}=-3\vec{i}+4\vec{k}+\vec{j}$. Tọa độ của vectơ $\vec{u}$ là
+\choice
+{$(3; 4; 1)$}
+{\True $(-3; 1; 4)$}
+{$(-3; 4; 1)$}
+{$(1; 4;-3)$}
+\loigiai{
+Ta có $\vec{u}=-3\vec{i}+4\vec{k}+\vec{j}=-3\vec{i}+\vec{j}+4\vec{k}\Rightarrow\vec{u}\,(-3;1;4)$.\\
+Vậy tọa độ của vectơ $\vec{u}$ là $(-3; 1; 4)$.}
+\end{ex}
+
+\begin{ex}%[2H2N2-2]%Câu 9
+Trong không gian $Oxyz$, hình chiếu vuông góc của điểm $A\left(1;2;5\right)$ trên mặt phẳng $\left(Oxz\right)$ có tọa độ là 
+\choice
+{$\left(0;2;5\right)$}
+{$\left(0;2;0\right)$}
+{\True $\left(1;0;5\right)$}
+{$\left(0;0;5\right)$}
+\loigiai{
+Hình chiếu vuông góc của điểm $A\left(1;2;5\right)$ trên mặt phẳng $\left(Oxz\right)$ có tọa độ là $\left(1;0;5\right)$.}
+\end{ex}
+
+\begin{ex}%[1H4N3-2]%Câu 10
+\immini{Cho hình hộp $ABCD.A'B'C'D'$ . Đường thẳng $BD$ song song với mặt phẳng nào sau đây? }{\begin{tikzpicture}[scale=0.6, font=\footnotesize, line join=round, line cap=round, >=stealth]
+		\def\bc{4} % cạnh BC
+		\def\ba{2} % cạnh BA
+		\def\gocB{35} % góc B của đáy
+		\coordinate[label=below left:$B$] (B) at (0,0);
+		\coordinate[label=above left:$A$] (A) at (\gocB:\ba);
+		\coordinate[label=below:$C$] (C) at (\bc,0);
+		\coordinate[label=right:$D$] (D) at ($(C)-(B)+(A)$);
+		\coordinate[label=above left:$A'$] (A') at ($(A)+(90:\bc)$);
+		\coordinate[label=left:$B'$] (B') at ($(B)-(A)+(A')$);
+		\coordinate[label=below right:$C'$] (C') at ($(C)-(A)+(A')$);
+		\coordinate[label=right:$D'$] (D') at ($(D)-(A)+(A')$);
+		\draw (B')--(B)--(C)--(D)--(D')--(A')--(B')--(C')--(D') (C)--(C');
+		\draw[dashed] (A')--(A)--(D) (A)--(B)--(D);
+		\foreach \diem in {A,B,C,D,A',B',C',D'}	\fill (\diem)circle(1.5pt);
+	\end{tikzpicture}
+}
+\choice
+{$\left(A{A}'{D}'D\right)$}
+{$\left(C{C}'{A}'A\right)$}
+{\True $\left(A'B'C'D'\right)$}
+{$\left(B{B}'{C}'C\right)$}
+\loigiai{
+Ta có $\heva{
+& BD\not\subset\left(A'B'C'D'\right)\\ 
+& BD\parallel B'D'\\ 
+&B'D'\subset\left(A'B'C'D'\right)}\Rightarrow BD\parallel \left(A'B'C'D'\right)$.}
+\end{ex}
+
+\begin{ex}%[2D1N3-1]%Câu 11
+Cho hàm số $y=f(x)$ liên tục và có bảng biến thiên trên đoạn $[-1;3]$ như hình vẽ.
+\begin{center}
+	\begin{tikzpicture}[>=stealth]
+		\tkzTabInit[nocadre=false,lgt=1,espcl=2,deltacl=0.5]{$x$/.7 ,$y'$/.7,$y$/2}
+		{$-1$ , $0$ , $2$ , $3$}
+		\tkzTabLine{ , + , $0$ , - , $0$ , + , }
+		\tkzTabVar{-/$0$ , +/$5$ , -/$1$ , +/$4$}
+	\end{tikzpicture}
+\end{center}
+Tìm giá trị nhỏ nhất của hàm số trên đoạn $[-1;3]$.
+\choice
+{\True $0$}
+{$2$}
+{$1$}
+{$-1$}
+\loigiai{
+Từ bảng biến thiên, ta có $\min\limits_{\left[-1;3\right]}f(x)=0=f(-1)$.}
+\end{ex}
+
+\begin{ex}%[2D1H5-1]%Câu 12
+Đồ thị sau đây là của hàm số nào?
+\begin{center}
+	% Đồ thị hàm y=ax^3+bx^2+cx+d. Nếu hệ số lớn cần điều chỉnh hệ trục, vùng lưới, domain và lệnh \clip
+	\begin{tikzpicture}[>=stealth,x=0.6cm,y=0.6cm]
+		[font=\footnotesize, line join=round, line cap=round, >=stealth, scale=0.6]
+		\def\a{-1} % Hệ số a phải khác 0
+		\def\b{0}
+		\def\c{3}
+		\def\d{-2}
+%		\draw[color=gray,dash pattern=on 1pt off 1pt,xstep=1.0cm,ystep=1.0cm] (-4.2,-5.2) grid (4.2,4);
+		\draw[->] (-3,0) -- (3,0)node[below]{\scriptsize $x$};
+		\draw[->] (0,-4) -- (0,3) node[left] {\scriptsize $y$};
+		\draw (0,0)node[below left]{\scriptsize $O$};
+		\clip (-3.5,-4.5)rectangle(4,4);
+		\draw[samples=150,smooth,domain=-2.3:5] plot(\x,{\a*(\x)^3+(\b)*(\x)^2+(\c)*\x+(\d)});
+		\fill (-2,0) circle(1pt)node[below left]{$-2$}
+		(0,-2) circle(1pt)node[left]{$-2$}
+		(-2,0) circle(1pt)node[below left]{$-2$}
+		(1,0) circle(1pt)node[above]{$1$};
+	\end{tikzpicture}
+\end{center}
+\choice
+{$y=-x^3+2$}
+{$y=x^3-3x-2$}
+{$y=-x^3+3x+2$}
+{\True $y=-x^3+3x-2$}
+\loigiai{
+Từ hình vẽ đã cho ta có
+\begin{itemize}
+	\item Đồ thị hàm số đi qua điểm $(0;-2)$ nên các hàm số $y=-x^3+2$, $y=-x^3+3x+2$ không thỏa mãn.
+	\item Đồ thị hàm số cắt trục hoành tại các điểm có hoành độ $-2$, $1$ nên hàm số $y=-x^3+3x+2$ không thỏa mãn.
+	\item Kiểm tra các điều kiện, ta thấy đồ thị đã cho là đồ thị của hàm số $y=-x^3+3x-2$.
+	\end{itemize}
+}
+\end{ex}
+\Closesolutionfile{ans}
+\cauds
+\Opensolutionfile{ans}[ans/ans-26-2--SoGD-L1-DS]
+\begin{ex}%[1D9H2-5]%Câu 13
+Trong một Câu lạc bộ thể thao của trường X, thầy giáo có chuẩn bị các phiếu khảo sát về bộ môn thể thao yêu thích gồm Bóng đá và Cầu lông, để giao cho $40$ bạn học sinh. Sau khi khảo sát, thầy giáo thu phiếu và nhận thấy rằng: Có $35$ học sinh thích Bóng đá, có 30 học sinh thích Cầu lông, có $4$ học sinh không thích môn thể thao nào. Chọn ngẫu nhiên 1 học sinh trong Câu lạc bộ thể thao. Gọi 
+$A$ là biến cố: \lq\lq Học sinh yêu thích môn Bóng đá\rq\rq và 
+$B$ là biến cố: \lq\lq Học sinh yêu thích môn Cầu lông\rq\rq.
+\choiceTF
+{\True $\mathrm{P}(A)=\dfrac{7}{8}$}
+{\True $\mathrm{P}(AB)=\dfrac{29}{40}$}
+{$A$ và $B$ là xung khắc}
+{$\mathrm{P}(A\cup B)=\dfrac{7}{10}$}
+\loigiai{
+\begin{itemchoice}
+\itemch
+$\mathrm{P}(A)=\dfrac{35}{40}=\dfrac{7}{8}$.
+\itemch
+Số học sinh yêu thích môn Bóng đá hoặc Cầu lông là $40-4=36$\\
+Ta có $$n(A\cup B)=n(A)+n(B)-n(A\cap B)\Rightarrow n(A\cap B)=n(A)+n(B)-n(A\cup B)=35+30-36=29.$$
+Vậy $\mathrm{P}(AB)=\mathrm{P}(AB)=\dfrac{29}{40}.$
+\itemch
+$n(A\cap B)=29$ nên $A$ và $B$ không xung khắc.
+\itemch
+$\mathrm{P}(A\cup B)=\dfrac{36}{40}=\dfrac{9}{10}$.
+\end{itemchoice}
+}
+\end{ex}
+
+\begin{ex}%[2H2H2-3]%Câu 14
+Trong không gian hệ tọa độ $Oxyz$, cho tam giác $ABC$ có $A\left(1; -2; 0\right)$, $B\left(2; 1; -2\right)$, $C\left(0; 3; 4\right)$.
+\choiceTF
+{\True $\overrightarrow{AB}=\left(1; 3; -2\right)$}
+{Tọa độ hình chiếu của $B$ lên mặt phẳng $Oyz$ là $H\left(0; 0; -2\right)$}
+ {\True Gọi $G$ là trọng tâm tam giác $ABC$. Khi đó $a+b-c=1$}
+{Tọa độ điểm $M$ thuộc mặt mặt $Oxz$ sao cho $T=M{B^2}+M{C^2}$ nhỏ nhất là $M\left(\dfrac{3}{2}; 0; -\dfrac{1}{2}\,\right)$}
+
+\loigiai{
+\begin{itemchoice}
+\itemch
+$\overrightarrow{AB}=\left(1; 3; -2\right)$.\\
+\itemch
+Tọa độ hình chiếu của $B$ lên mặt phẳng $Oyz$ là $H\left(0; 1; -2\right)$.
+\itemch
+Gọi $G$ là trọng tâm tam giác $ABC$. Khi đó $G\left(\dfrac{1+2+0}{3}; \dfrac{-2+1+3}{3}; \dfrac{0-2+4}{3}\right)=\left(1; \dfrac{2}{3}; \dfrac{2}{3}\right)$.\\
+Khi đó $a+b-c=1+\dfrac{2}{3}-\dfrac{2}{3}=1$.
+\itemch
+Tọa độ điểm $M$ thuộc mặt mặt $Oxz$ nên $M\left(x; 0; z\right)$.\\
+Ta có $$T=MB^2+MC^2=2\left(x-1\right)^2+2\left(z-1\right)^2+30\ge 30,\,\forall x, z.$$
+$T_{\min}=30$ khi $M\left(1; 0; 1\,\right)$.
+\end{itemchoice}
+}
+\end{ex}
+\begin{ex}%[2D1H5-4]%Câu 15
+	Cho hàm số $y=f(x)$ xác định, liên tục trên $\mathbb{R}$ và có bảng biến thiên sau
+	\begin{center}
+	\begin{tikzpicture}[>=stealth]
+		\tkzTabInit[nocadre=false,lgt=1,espcl=2,deltacl=0.5]{$x$/.7 ,$y'$/.7,$y$/2}
+		{$-\infty$ , $0$ , $1$ , $+\infty$}
+		\tkzTabLine{ , + , $0$ , - , $0$ , + , }
+		\tkzTabVar{-/$-2$ , +/$0$ , -/$-1$ , +/$+\infty$}
+	\end{tikzpicture}
+	\end{center}
+	\choiceTF
+	{Hàm số đã cho đồng biến trên $(-1;+\infty)$}
+	{\True Hàm số đã cho đạt cực đại tại $x=0$; đạt cực tiểu tại $x=1$}
+	{Hàm số có ba điểm cực trị}
+	{Phương trình $f(x)=\dfrac{1}{2}$ có ba nghiệm phân biệt}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch
+			Trên khoảng $(-1;+\infty)$, hàm số đồng biến trên $(-1;0)$ và $(1;+\infty)$, nhưng nghịch biến trên $(0;1)$.
+			\itemch
+			Đạo hàm $y'$ đổi dấu từ dương sang âm khi đi qua $x=0$ nên hàm số đạt cực đại tại $x=0$. Đạo hàm y' đổi dấu từ âm sang dương khi đi qua $x=1$ nên hàm số đạt cực tiểu tại $x=1$. 
+			\itemch
+			Hàm số chỉ có hai điểm cực trị là $x=0$ và $x=1$.
+			\itemch
+			Đường thẳng $y=\dfrac{1}{2}$ nằm phía trên giá trị cực đại ($y_{CD}=0$). Nhìn vào bảng biến thiên, đường thẳng này chỉ cắt nhánh đồ thị cuối cùng $(1;+\infty)$ tại một điểm duy nhất. Vậy phương trình có một nghiệm. Khẳng định này sai.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[2D1V3-6]%Câu 16
+Khi bỏ qua sức cản không khí, độ cao (mét) của một vật được phóng thẳng đứng lên trên từ điểm cách mặt đất 3m với tốc độ ban đầu là $39{,}2$ m/s là $h(t)=3+39{,}2t-4{,}9t^2$.
+\choiceTF
+{\True Vận tốc của vật là $v=h'(t)$}
+{\True $h'(t)=39{,}2-9{,}8t$}
+{Sau $6$ giây, vật dừng lại và bắt đầu rơi xuống}
+{\True Vật có độ cao lớn nhất là $81{,}4$ m}
+\loigiai{
+\begin{itemchoice}
+\itemch
+Vận tốc của vật là $v=h'(t)$.
+\itemch
+$h'(t)=39{,}2-9{,}8t$.
+\itemch
+Ta có $h'(t)=0\Leftrightarrow t=4$.
+Bảng biến thiên
+\begin{center}
+	\begin{tikzpicture}[>=stealth]
+		\tkzTabInit[nocadre=false,lgt=1.5,espcl=2,deltacl=0.5]{$x$/.7 ,$h'(t)$/.7,$h(t)$/2}
+		{$0$ , $4$ , $+\infty$}
+		\tkzTabLine{ , + , $0$ , - , }
+		\tkzTabVar{-/$3$ , +/$8{,}14$ , -/$-\infty$}
+	\end{tikzpicture}
+\end{center}
+Vậy sau $4$ giây, vật dừng lại và bắt đầu rơi xuống.
+\itemch
+Dựa vào bảng biến thiên, ta thấy vật có độ cao lớn nhất là $81{,}4$ m.
+\end{itemchoice}
+}
+\end{ex}
+\Closesolutionfile{ans}
+\caukq
+\Opensolutionfile{ans}[ans/ans-26-2--SoGD-L1-KQ]
+\begin{ex}%[2D1H4-1]%Câu 17
+Đồ thị hàm số $y=\dfrac{2x^2-3x+5}{3x-3}$ có đường tiệm cận xiên là $y=ax+b$. Tính $ab$(\textit{Làm tròn kết quả đến hàng phần mười}).
+\shortans[oly]{$-0{,}2$}
+\loigiai{
+Ta có $y=\dfrac{2x^2-3x+5}{3x-3}=\dfrac{2}{3}x-\dfrac{1}{3}+\dfrac{4}{3x-3}$.\\
+Mà $\lim\limits_{x\to+\infty}\left[y-\left(\dfrac{2}{3}x-\dfrac{1}{3}\right)\right]=\lim\limits_{x\to+\infty}\dfrac{4}{3x-3}=0$ , $\lim\limits_{x\to-\infty}\left[y-\left(\dfrac{2}{3}x-\dfrac{1}{3}\right)\right]=\lim\limits_{x\to-\infty}\dfrac{4}{3x-3}=0$\\
+nên đồ thị hàm số có tiệm cận xiên là đường thẳng $y=\dfrac{2}{3}x-\dfrac{1}{3}$.\\
+Do đó $a=\dfrac{2}{3}$, $b=-\dfrac{1}{3}$.\\
+Vậy $ab=\dfrac{2}{3}.\left(-\dfrac{1}{3}\right)=-\dfrac{2}{9}\approx-0{,}2$.}
+\end{ex}
+
+\begin{ex}%[2D1V3-6]%Câu 18
+Một cửa hàng bán bưởi da xanh với giá bán mỗi quả là $50\,000$ đồng. Giá nhập vào mỗi quả là $30\,000$ đồng. Với giá bán này cửa hàng bán được $40$ quả trong một ngày. Cửa hàng dự định giảm giá bán, ước tính cứ giảm mỗi $2\,000$ đồng thì số bưởi da xanh bán được sẽ tăng thêm là $20$ quả. Cửa hàng đó phải giảm bao nhiêu đồng để cửa hàng đó thu được lợi nhuận lớn nhất.
+\shortans[oly]{$8\,000$}
+\loigiai{
+Gọi $x$ (nghìn đồng) là số tiền cần giảm trên mỗi quả bưởi ($0<x<20$).\\
+Giá bán lúc này là $50-x$ (nghìn đồng).\\
+Lợi nhuận trên mỗi quả $(50-x)-30=20-x$ (nghìn đồng).\\
+Số lượng bán tăng thêm $\dfrac{x\cdot 20}{2}=10x$ (quả).\\
+Số lượng bán được $40+10x$ (quả).\\
+Hàm Lợi nhuận\\
+$L(x)=(20-x)(40+10x)=-10x^2+160x+800$.\\
+$L'(x)=-20x+160$.\\
+$L'(x)=0\Leftrightarrow x=8$.\\
+Bảng biến thiên
+\begin{center}
+	\begin{tikzpicture}[>=stealth]
+		\tkzTabInit[nocadre=false,lgt=1.5,espcl=2,deltacl=0.5]{$x$/.7 ,$L'(x)$/.7,$L(x)$/2}
+		{$0$ , $8$ , $20$}
+		\tkzTabLine{ , + , $0$ , - , }
+		\tkzTabVar{-/$800$ , +/$1440$ , -/$0$}
+	\end{tikzpicture}
+	
+	\end{center}
+Từ bảng biến thiên ta thấy $\max\limits_{\left(0;20\right)}L(x)=L(8)=1440$ (nghìn đồng).\\
+Vậy cửa hàng cần phải giảm $8\,000$ đồng mỗi quả để thu được lợi nhuận lớn nhất.}
+\end{ex}
+
+\begin{ex}%[2D1C3-6]%Câu 19
+Lợi nhuận thu được $P$ của một công ty khi dùng số tiền $s$ để chi cho quảng cáo được cho bởi công thức
+$P=\mathrm{P}(s)=-\dfrac{1}{15}{s^3}+12s^2+300,\,\,s\ge 0$.\\
+Ở đây các số tiền được tính bằng đơn vị triệu đồng. Tìm số tiền mà công ty đó phải chi cho quảng cáo để mang lợi nhuận tối đa.
+\shortans[oly]{$120$}
+\loigiai{
+Ta có $P'(s)=-\dfrac{1}{5}{s^2}+24s$.\\
+$P'(s)=0\Leftrightarrow-\dfrac{1}{5}{s^2}+24s=0\Leftrightarrow\hoac{
+& s=120\\ 
+& s=0.}$\\
+Bảng biến thiên
+\begin{center}
+	\begin{tikzpicture}[>=stealth]
+	\tkzTabInit[nocadre=false,lgt=1.5,espcl=3,deltacl=0.5]{$x$/.7 ,$P'(x)$/.7,$\mathrm{P}(x)$/2}
+	{$0$ , $120$ , $+\infty$}
+	\tkzTabLine{ , + , $0$ , - , }
+	\tkzTabVar{-/$300$ , +/$57900$ , -/$-\infty$}
+\end{tikzpicture}
+\end{center}
+Dựa vào bảng biến thiên, ta thấy số tiền mà công ty đó phải chi cho quảng cáo để mang lợi nhuận tối đa là $120$ (triệu đồng).}
+\end{ex}
+
+\begin{ex}%[1D1H5-3]%Câu 20
+Nghiệm dương nhỏ nhất của phương trình $\sin\left(x-\dfrac{\pi}{4}\right)=1$ là $a\pi $ với $a$ là hằng số dương. Giá trị của $2a$ là bao nhiêu?
+\shortans[oly]{$1{,}5$}
+\loigiai{
+Ta có $\sin\left(x-\dfrac{\pi}{4}\right)=1\Leftrightarrow x-\dfrac{\pi}{4}=\dfrac{\pi}{2}+k2\pi\Leftrightarrow x=\dfrac{3\pi}{4}+k2\pi ,\,\,k\in\mathbb{Z}$.\\
+Ta thấy nghiệm dương nhỏ nhất của phương trình là $x=\dfrac{3\pi}{4}$ (với $k=0$).\\
+Suy ra $a=\dfrac{3}{4}$.\\
+Vậy $2a=2\cdot \dfrac{3}{4}=\dfrac{3}{2}=1{,}5$.}
+\end{ex}
+
+\begin{ex}%[2H2H2-2]%Câu 21
+Trong không gian $Oxyz$, cho $A\left(-4;1;-5\right)$, $B\left(2;-4;7\right)$, $C\left(3;-2;9\right)$. Điểm $D$ là điểm thỏa mãn $ABCD$ là hình bình hành. Tính độ dài $BD$. (Làm tròn kết quả đến hàng phần chục).
+\shortans[oly]{$13{,}2$}
+\loigiai{
+Giả sử $D\left(x;y;z\right)$\\
+Vì $ABCD$ là hình bình hành nên ta có 
+$$
+\overrightarrow{AB}=\overrightarrow{DC}\Leftrightarrow\heva{& 3-x=6\\&-2-y=-5\\& 9-z=12}
+\Leftrightarrow\heva{& x=-3\\ & y=3\\& z=-3}
+\Leftrightarrow D\left(-3;3;-3\right).
+$$
+Khi đó $\overrightarrow{BD}=\left(-5;7;-10\right)\Rightarrow\left|\overrightarrow{BD}\right|=\sqrt{\left(-5\right)^2+7^2+\left(-10\right)^2}=\sqrt{174}\approx 13{,}2$.
+}
+\end{ex}
+
+\begin{ex}%[1H8V5-3]%Câu 22
+Cho hình chóp tứ giác đều $S.ABCD$ có đáy $ABCD$ là hình vuông tâm $O$, $AB=2$, $SO=\sqrt{2}$. Tính khoảng cách từ điểm $A$ đến mặt phẳng $\left(SCD\right)$(\textit{Làm tròn đến hai chữ số thập phân}).
+\shortans[oly]{$1{,}63$}
+\loigiai{
+\begin{center}
+\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+	\def\bc{4} % cạnh BC
+	\def\ba{2} % cạnh BA
+	\def\h{4} % đường cao
+	\def\gocB{30} % góc B của đáy
+	\coordinate[label=below left:$B$] (B) at (0,0);
+	\coordinate[label=above right:$A$] (A) at (\gocB:\ba);
+	\coordinate[label=below:$C$] (C) at (\bc,0);
+	\coordinate[label=right:$D$] (D) at ($(C)-(B)+(A)$);
+	\coordinate[label=below:$O$] (O) at ($(A)!.5!(C)$);
+	\coordinate[label=above:$S$] (S) at ($(O)+(90:\h)$);
+	\coordinate[label=below right:$I$] (I) at ($(D)!.5!(C)$);
+	\coordinate[label=right:$H$](H) at ($(S)!2/3!(I)$);
+	\draw (B)--(C)--(D)--(S)--cycle (I)--(S)--(C);
+	\draw[dashed] (C)--(A)--(D)--(B) (O)--(S)--(A)--(B)(H)--(O)--(I);
+	\foreach \diem in {A,B,C,D,S,O}	\fill (\diem)circle(1.5pt);
+
+\end{tikzpicture}
+\end{center}
+Kẻ $OI\perp DC$, $OH\perp SI$ khi đó $OI=\dfrac{1}{2}AB=1$.\\
+Vì $S.ABCD$ là hình chóp tứ giác đều nên $SO\perp\left(ABCD\right)\Rightarrow SO\perp CD$.\\
+Khi đó $\heva{
+& DC\perp OI\\ 
+& DC\perp SO}\Rightarrow DC\perp\left(SOI\right)\supset OH\Rightarrow DC\perp OH$.\\
+Ta có $\heva{
+& OH\perp SI\\ 
+& OH\perp DC}\Rightarrow OH\perp\left(SDC\right)\Rightarrow \mathrm{d}\left(O;\left(SDC\right)\right)=OH=\dfrac{SO\cdot OI}{\sqrt{S{O^2}+O{I^2}}}=\dfrac{\sqrt{2}}{\sqrt{3}}=\dfrac{\sqrt{6}}{3}$.\\
+Lại có $\mathrm{d}\left(A;\left(SDC\right)\right)=2\mathrm{d}\left(O;\left(SDC\right)\right)=\dfrac{2\sqrt{6}}{3}\approx 1,63$.}
+\end{ex}
+
+\Closesolutionfile{ans}
+\indapan{6}{ans/ans-26-2--SoGD-L1-LC}
+\indapan{4}{ans/ans-26-2--SoGD-L1-DS}
+\indapan{6}{ans/ans-26-2--SoGD-L1-KQ}

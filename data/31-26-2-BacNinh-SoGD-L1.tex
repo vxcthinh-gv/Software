@@ -1,0 +1,830 @@
+\begin{center}
+  \fontfamily{qag}\selectfont\bfseries\Large ĐỀ THI THỬ THPTQG SỞ GD\&ĐT 25--26, LẦN $1$
+\end{center}
+
+\caulc
+\Opensolutionfile{ans}[ans/ans-26-2--BacNinh-ChuyenBacNinh-L1-LC]
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D7H2-1]
+  Cho hàm số $y=\dfrac{2x - 1}{x+1}$. Giá trị $f'(3)$ là
+  \choice
+  {$\dfrac{4}{5}$}
+  {\True $\dfrac{3}{16}$}
+  {$\dfrac{2}{9}$}
+  {$\dfrac{1}{6}$}
+  \loigiai{
+    Ta có $y=\dfrac{2x - 1}{x+1} \Rightarrow f'(x)=\dfrac{3}{(x+1)^2}$. Khi đó $f'(3)=\dfrac{3}{(3+1)^2}=\dfrac{3}{16}$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2H2N2-1]
+  \immini{
+    Cho hình lập phương $ABCD.A'B'C'D'$. Vectơ nào dưới đây bằng $\overrightarrow{AD}$?
+    \choice
+    {$\overrightarrow{BC'}$}
+    {$\overrightarrow{DC}$}
+    {\True $\overrightarrow{B'C'}$}
+    {$\overrightarrow{AB}$}
+  }
+  {
+  	\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth, declare function={a=2.5;b=1.5;h=2.5;gocB=35;}]
+		\path (0,0) coordinate (A) (0:a) coordinate (D)
+			(180+gocB:b) coordinate (B)++(0:a) coordinate (C)
+			(90:h) coordinate (A')++(0:a) coordinate (D')
+			++(180+gocB:b) coordinate (C')
+			++(180:a) coordinate (B');
+		\draw (B')--(B)--(C)--(D)--(D')--(A')--(B')--(C')--(D') (C)--(C');
+		\draw[dashed] (A')--(A)--(D) (A)--(B);
+		\foreach \diem/\vt in {A/150,B/180,C/-30,D/0,A'/120,B'/180,C'/-30,D'/30}{
+			\fill (\diem)circle(1pt) ($(\diem)+(\vt:2.5mm)$)node{$\diem$};
+		}
+	\end{tikzpicture}
+  }
+  \loigiai{
+    Ta có $\overrightarrow{AD}=\overrightarrow{BC}=\overrightarrow{A'D'}=\overrightarrow{B'C'}$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D6H3-2]
+  Tập xác định của hàm số $y=(x - 1)^{\frac{1}{6}}+\log (4 - x^2)$ là
+  \choice
+  {$[1;2)$}
+  {$(-2;2)$}
+  {$(1;2]$}
+  {\True $(1;2)$}
+  \loigiai{
+    Điều kiện xác định $\heva{&x - 1 > 0\\&4 - x^2 > 0} 
+    \Leftrightarrow\heva{&x > 1 \\& -2 < x < 2} \Leftrightarrow 1 < x < 2$. \\
+    Vậy tập xác định của hàm số là $\mathscr{D}=(1;2)$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D5H2-2]
+  Khảo sát thời gian tập thể dục của một số học sinh khối $11$ thu được mẫu số liệu ghép nhóm sau:
+  \begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      \begin{tabular}{c}Thời gian\\(phút)
+      \end{tabular}
+      & $[0;20)$ & $[20;40)$ & $[40;60)$ & $[60;80)$ & $[80;100)$ \\
+      \hline
+      Số học sinh & $5$ & $9$ & $13$ & $10$ & $6$ \\
+      \hline
+    \end{tabular}
+  \end{table} \\
+  Trung vị mẫu số liệu trên gần số nào nhất?
+  \choice
+  {$41{,}23$}
+  {\True $51{,}54$}
+  {$40{,}55$}
+  {$50{,}44$}
+  \loigiai{
+    Ta có $n=5+9+13+10+6=43$. \\
+    Vị trí trung vị $\dfrac{n}{2}=21{,}5$ nằm trong lớp $[40;60)$. \\
+    Trung vị 
+    $M_e=40+\dfrac{21{,}5 - 14}{13} \cdot 20 \approx 51{,}54$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D7H2-3]
+  Cho hàm số $y=-x^3+3x^2+9x - 1$. Hệ số góc lớn nhất của tiếp tuyến với đồ thị hàm số là
+  \choice
+  {$9$}
+  {\True $12$}
+  {$6$}
+  {$8$}
+  \loigiai{
+    Hệ số góc của tiếp tuyến với đồ thị hàm số tại điểm $A(x_A, y_A)$ là $k=f'(x_A)$. \\
+    Ta có $y'=-3x^2+6x+9=-3(x - 1)^2+12 \leq 12, \forall x \in \mathbb{R}$. \\
+    Do đó hệ số góc lớn nhất của tiếp tuyến với đồ thị hàm số là $12$, đạt tại $x=1$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D3H1-3]
+  Giá trị của giới hạn $\lim \left( \sqrt[3]{n^3 - 2n^2} - n \right)$ bằng
+  \choice
+  {$\dfrac{1}{3}$}
+  {\True $-\dfrac{2}{3}$}
+  {$1$}
+  {$0$}
+  \loigiai{
+    Ta có
+    \allowdisplaybreaks
+    \begin{eqnarray*}
+      \lim \left( \sqrt[3]{n^3 - 2n^2} - n \right) 
+      &=& \lim \dfrac{n^3 - 2n^2 - n^3}{\sqrt[3]{(n^3 - 2n^2)^2}+n \sqrt[3]{n^3 - 2n^2}+n^2} \\
+      &=& \lim \dfrac{-2n^2}{\sqrt[3]{(n^3 - 2n^2)^2}+n \sqrt[3]{n^3 - 2n^2}+n^2} \\
+      &=& \lim \dfrac{-2}{\sqrt[3]{\left( 1 - \dfrac{2}{n} \right)^2}+n \sqrt[3]{1 - \dfrac{2}{n}}+1}=-\dfrac{2}{3}.
+    \end{eqnarray*}
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1H4H4-6]
+  Cho hai hình bình hành $ABCD$ và $ABEF$ không cùng nằm trong một mặt phẳng. Gọi $O_1, O_2$ lần lượt là tâm của $ABCD, ABEF$. $M$ là trung điểm của $CD$. Chọn khẳng định sai trong các khẳng định sau.
+  \choice
+  {\True $MO_2$ cắt $(BEC)$}
+  {$O_1O_2$ song song với $(AFD)$}
+  {$O_1O_2$ song song với $(BEC)$}
+  {$O_1O_2$ song song với $(EFM)$}
+  \loigiai{
+  	\immini{
+  		Gọi $K$ là trung điểm $BE$.\\
+  		Ta có $O_2KCM$ là hình bình hành (vì $O_2K\parallel =CM$).\\
+  		Suy ra $\heva{&O_2K\parallel CM \\ &CM\subset (BCE)} \Rightarrow O_2M\parallel (BCE)$.
+  	}
+    {
+		\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth, declare function={a=4;b=2;goc=45;h=3;g=80;}]
+		  \path (0,0) coordinate (A)++(0:a) coordinate (D)
+		  	(goc:b) coordinate (B)++(0:a) coordinate (C)
+		  	(g:h) coordinate (F)++(goc:b) coordinate (E)
+		  	($(A)!0.5!(C)$) coordinate (O_1)
+		  	($(A)!0.5!(E)$) coordinate (O_2)
+		  	($(C)!0.5!(D)$) coordinate (M)
+		  	($(B)!0.5!(E)$) coordinate (K);
+		  \draw (A)--(D)--(C)--(E)--(F)--cycle (F)--(D);
+		  \draw[dashed] (A)--(B)--(C)--cycle (A)--(E)--(B)--(F) (B)--(D) (O_1)--(O_2)--(M)--cycle (O_2)--(K)--(C);
+		  \foreach \p/\vt in {A/200,B/-80,C/0,D/-30,E/90,F/120,O_1/-90,O_2/180,M/-20,K/10}{
+		    \fill (\p) circle (1pt) ($(\p)+(\vt:2.5mm)$)node[scale=.8]{$\p$};
+		  }
+		\end{tikzpicture}
+	}
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D1N4-2]
+  Tập giá trị của hàm số $y=\cot x$ là
+  \choice
+  {$(-1;1)$}
+  {$[-1;1]$}
+  {\True $\mathbb{R}$}
+  {$(-\infty;0)$}
+  \loigiai{
+    Tập giá trị của hàm số $y=\cot x$ là $\mathbb{R}$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2H2N1-1]
+  Cho tứ diện $ABCD$. Gọi $G$ là trọng tâm của tam giác $ABC$. Phát biểu nào sau đây là \textbf{sai}?
+  \choice
+  {$\overrightarrow{DA}+\overrightarrow{DB}+\overrightarrow{DC}=3\overrightarrow{DG}$}
+  {$\overrightarrow{GD} - \overrightarrow{GA}=\overrightarrow{AD}$}
+  {$\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{0}$}
+  {\True $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}+\overrightarrow{GD}=\overrightarrow{0}$}
+  \loigiai{
+      Vì $G$ là trọng tâm tam giác $ABC$ nên ta có 
+      $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}=\overrightarrow{0}$. \\
+      Suy ra $\overrightarrow{GA}+\overrightarrow{GB}+\overrightarrow{GC}+\overrightarrow{GD}=\overrightarrow{GD} \neq \overrightarrow{0}$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1D2H3-3]
+  Tìm số hạng tổng quát của cấp số nhân lùi vô hạn khi có tổng bằng $3$ và công bội bằng $\dfrac{2}{3}$.
+  \choice
+  {\True $\left(\dfrac{2}{3}\right)^{n - 1}$}
+  {$\left( \dfrac{2}{3} \right)^n$}
+  {$\left( \dfrac{2}{3} \right)^{n+1}$}
+  {$\left( \dfrac{2}{3} \right)^{n+1}$}
+  \loigiai{
+    Ta có $S=\dfrac{u_1}{1 - q} \Leftrightarrow 3=\dfrac{u_1}{1 - \dfrac{2}{3}} \Leftrightarrow u_1=1$. \\
+    Cấp số nhân có $\heva{&u_1=1 \\ &q=\dfrac{2}{3}} 
+    \Rightarrow u_n=u_1 q^{n-1}=1 \cdot \left( \dfrac{2}{3} \right)^{n - 1} 
+   =\left( \dfrac{2}{3} \right)^{n - 1}$.
+  }
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1H4H4-6]
+	Cho lăng trụ $ABCD.A'B'C'D'$ có hai đáy là các hình bình hành. Các điểm $M,N,P$ lần lượt là trung điểm của cạnh $AD, BC, CC'$ (tham khảo hình vẽ). Xét các khẳng định sau:
+	\immini{
+		\begin{enumerate}[i)]
+			\item Mặt phẳng $(MNP)$ cắt $A'D'$.
+			\item Mặt phẳng $(MNP)$ cắt $DD'$ tại trung điểm của $DD'$.
+			\item Mặt phẳng $(MNP)$ song song với mặt phẳng $(ABC'D')$.
+		\end{enumerate}
+		Trong các khẳng định trên, số khẳng định đúng là
+		\choice
+		{$0$}
+		{$1$}
+		{$3$}
+		{\True $2$}
+	}
+	{
+		\begin{tikzpicture}[line join=round, line cap=round, >=stealth, scale=1, font=\footnotesize, declare function={a=4;b=1.5;goc=50;h=3.5;g=75;}]
+			\path (0,0) coordinate (A) (0:a) coordinate (D)
+			  	(180+goc:b) coordinate (B)++(0:a) coordinate (C)
+			  	(g:h) coordinate (A')++(0:a) coordinate (D')
+			  	++(180+goc:b) coordinate (C')
+			  	++(180:a) coordinate (B')
+			  	($(A)!0.5!(D)$) coordinate (M)
+			  	($(B)!0.5!(C)$) coordinate (N)
+			  	($(C)!0.5!(C')$)coordinate (P);
+			\draw[dashed] (A')--(A)--(B) (A)--(D) (P)--(M)--(N);
+			\draw (B)--(C)--(D)--(D')--(A')--(B')--(B) (C)--(C')
+			  	(B')--(C')--(D') (N)--(P);
+			\foreach \p/\vt in {A/150,B/200,C/-30,D/0,A'/120,B'/180,C'/-30,D'/30, M/120,N/-90,P/0}{
+			  	\fill (\p)circle(1pt) ($(\p)+(\vt:2.5mm)$)node[scale=.8]{$\p$};
+			}
+		\end{tikzpicture}
+	}
+	\loigiai{
+		\immini{
+			\begin{enumerate}
+				\item  Dễ thấy $A'D' \parallel AD$ mà $AD\cap MN =M$. \\
+				Suy ra $A'D'$ cắt mặt phẳng $(MNP)$.
+				\item  Gọi $Q$ là trung điểm $DD'$.\\
+				Ta có $PQ\parallel CD\parallel MN\Rightarrow M, N, P, Q \in (MNQP)$. Hay $DD' \cap (MNP)=Q$ là trung điểm $DD'$.
+				\item Dễ thấy $\heva{&MN\parallel AB \\ &NP\parallel BC'}
+				\Rightarrow (MNP)\parallel (ABC'D')$.
+			\end{enumerate}
+			Vậy trong các khẳng định trên, có $2$ khẳng định đúng.
+		}
+		{
+			\begin{tikzpicture}[line join=round, line cap=round, >=stealth, scale=1, font=\footnotesize, declare function={a=4;b=1.5;goc=50;h=3.5;g=75;}]
+				\path (0,0) coordinate (A) (0:a) coordinate (D)
+				(180+goc:b) coordinate (B)++(0:a) coordinate (C)
+				(g:h) coordinate (A')++(0:a) coordinate (D')
+				++(180+goc:b) coordinate (C')
+				++(180:a) coordinate (B')
+				($(A)!0.5!(D)$) coordinate (M)
+				($(B)!0.5!(C)$) coordinate (N)
+				($(C)!0.5!(C')$)coordinate (P)
+				($(D)!0.5!(D')$)coordinate (Q);
+				\draw[dashed] (A')--(A)--(B) (A)--(D) (P)--(M)--(N) (M)--(Q);
+				\draw (B)--(C)--(D)--(D')--(A')--(B')--(B) (C)--(C')
+				(B')--(C')--(D') (N)--(P)--(Q);
+				\foreach \p/\vt in {A/150,B/200,C/-30,D/0,A'/120,B'/180,C'/-30,D'/30, M/120,N/-90,P/0,Q/-20}{
+					\fill (\p)circle(1pt) ($(\p)+(\vt:2.5mm)$)node[scale=.8]{$\p$};
+				}
+			\end{tikzpicture}
+		}
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2D1N1-2]
+	\immini{
+		Cho hàm số đa thức bậc ba $y=ax^3+bx^2+cx+d$ $(a \neq 0)$ có đồ thị như hình vẽ. Hàm số đã cho nghịch biến trên khoảng nào dưới đây?
+		\choice
+		{$(-2;0)$}
+		{$(0;+\infty)$}
+		{$(-1;1)$}
+		{\True $(1;+\infty)$}
+	}
+	{
+		\begin{tikzpicture}[font=\footnotesize, line join=round, line cap=round, >=stealth, scale=0.8]
+		\draw[->] (-2.8,0)--(3,0) node[below] {$x$};
+		\draw[->] (0,-1.8)--(0,4) node[left] {$y$};
+		\draw (0,0) node [below right] {$O$};
+		\foreach \a/\b in {-2/-90,-1/90,1/-90,2/40}{
+			\fill (\a,0) circle(.8pt) ($(\a,0)+(\b:2.5mm)$)node[scale=.8]{$\a$};
+		}
+		\foreach \a/\b in {-1/-30,3/45}{
+			\fill (0,\a) circle(.8pt) ($(0,\a)+(\b:2.5mm)$)node[scale=.8]{$\a$};
+		}
+		\begin{scope}
+			\clip (-2.8,-1.8) rectangle (2.8,3.8);
+			\draw[blue, samples=200, domain=-2.3:2.3, smooth, variable=\x]
+			plot (\x, {-(\x)^3+3*(\x)+1});
+		\end{scope}
+		
+		% Đường dashed cực đại tại (1, 3)
+		\draw[dashed] (1,0)--(1,3)--(0,3)
+			(-1,0)--(-1,-1)--(0,-1)
+			(-2,0)--(-2,3)--(0,3);
+		\end{tikzpicture}
+	}
+	\loigiai{
+		Hàm số đã cho nghịch biến trên khoảng $(1;+\infty)$.
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+\cauds
+\Opensolutionfile{ans}[ans/ans-26-2--BacNinh-ChuyenBacNinh-L1-DS]
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2D1V5-3]
+	\immini{
+		Cho hàm số $y=f(x)$ có đạo hàm trên $\mathbb{R}$ và $f'(x)$ là hàm số bậc ba có đồ thị là đường cong trong hình vẽ.
+		\choiceTF
+		{Đồ thị hàm số $g(x)=f(x) - \dfrac{1}{2} x^2+x+2025$ cắt đường thẳng $y=m$ tại bốn điểm phân biệt khi và chỉ khi $g(-1) < m < \min\{g(-3);g(1)\}$}
+		{\True Đồ thị hàm số $h(x)=\dfrac{2x+1}{f'(x)}$ có $3$ đường tiệm cận}
+		{Hàm số $y=f(x)$ đồng biến trên khoảng $(0;+\infty)$}
+		{Hàm số $y=f(x)$ có hai điểm cực trị}
+	}
+	{
+		\begin{tikzpicture}[font=\footnotesize, line join=round, line cap=round, >=stealth,scale=1, yscale=.8]
+			\draw[->] (-3.8,0)--(2.2,0) node[below left] {$x$};
+			\draw[->] (0,-4.8)--(0,2) node[below left] {$y$};
+			\draw (0,0) node[below left] {$O$};
+			\foreach \x/\vt in {-3/90,-2/90,-1/90,1/50}{
+				\fill[black] (\x,0)circle(1pt) ($(\x,0)+(\vt:2.5mm)$)node{$\x$};
+			}
+			\foreach \x/\vt in {-4/-40,-2/0}{
+				\fill[black] (0,\x)circle(1pt) ($(0,\x)+(\vt:2.5mm)$)node{$\x$};
+			}
+			\begin{scope}
+			  \clip (-3.8,-5) rectangle (2,2);
+			  % f'(x)=(x+2)^2*(x - 1)
+			  \draw[blue, thick, samples=200, domain=-3.5:1.5, smooth, variable=\x]
+			  plot (\x, {(\x+2)^2*(\x - 1)});
+			\end{scope}
+			
+			% Dashed: điểm (-3, -4)
+			\draw[dashed] (-3,0)--(-3,-4)--(0,-4) (-1,0)--(-1,-2)--(0,-2);
+		\end{tikzpicture}
+	}
+	\loigiai{
+		\begin{itemchoice}
+		\itemch Xét hàm $g(x)=f(x) - \dfrac{1}{2}x^2+x+2025$.
+		\immini{
+			Ta có $g'(x)=f'(x) - x+1=f'(x) - (x-1)$. \\
+			Xét đồ thị hàm số $f'(x)$ và đồ thị hàm số $y=x - 1$, ta thấy
+			$$f'(x) - (x-1)=0 \Leftrightarrow \hoac{&x=-3 \\ &x=-1 \\ &x=1.}$$
+			Từ đó, ta có bảng biến thiên như sau:
+		}
+		{
+			\begin{tikzpicture}[font=\footnotesize, line join=round, line cap=round, >=stealth,scale=1, yscale=.8]
+				\draw[->] (-3.8,0)--(2.2,0) node[below left] {$x$};
+				\draw[->] (0,-4.8)--(0,2) node[below left] {$y$};
+				\draw (0,0) node[below left] {$O$};
+				\foreach \x/\vt in {-3/90,-2/90,-1/90,1/130}{
+					\fill[black] (\x,0)circle(1pt) ($(\x,0)+(\vt:2.5mm)$)node{$\x$};
+				}
+				\foreach \x/\vt in {-4/-40,-2/0}{
+					\fill[black] (0,\x)circle(1pt) ($(0,\x)+(\vt:2.5mm)$)node{$\x$};
+				}
+				\begin{scope}
+					\clip (-3.8,-5) rectangle (2,2);
+					% f'(x)=(x+2)^2*(x - 1)
+					\draw[blue, thick, samples=200, domain=-3.5:1.5, smooth, variable=\x]
+					plot (\x, {(\x+2)^2*(\x - 1)});
+					\draw[red, thick, domain=-3.5:2.5, variable=\x]
+					plot (\x, {\x - 1});
+				\end{scope}
+				
+				% Dashed: điểm (-3, -4)
+				\draw[dashed] (-3,0)--(-3,-4)--(0,-4) (-1,0)--(-1,-2)--(0,-2);
+			\end{tikzpicture}
+		}
+		\begin{center}
+		  \begin{tikzpicture}
+		    \tkzTabInit[lgt=2, espcl=2]
+		    {$x$ / 0.8, $g'(x)$ / 0.8, $g(x)$ / 2}
+		    {$-\infty$, $-3$, $-1$, $1$, $+\infty$}
+		    \tkzTabLine{, -, 0, +, 0, -, 0, +}
+		    \tkzTabVar{+/$+\infty$, -/$g(-3)$, +/$g(-1)$, -/$g(1)$, +/$+\infty$}
+		  \end{tikzpicture}
+		\end{center}
+		Dựa vào bảng biến thiên, ta thấy để phương trình $g(x)=m$ có $4$ nghiệm phân biệt thì $$g(-1) > m > \max\{g(-3);\ g(1)\}.$$
+		\itemch Xét hàm số $h(x)=\dfrac{2x+1}{f'(x)}$. Ta có $f'(x)=0 \Leftrightarrow \hoac{&x=1\\&x=-2}$, mà $\heva{ &2(1)+1=3 \neq 0 \\ &2(-2)+1=-3 \neq 0}$, do đó đồ thị hàm số $h(x)=\dfrac{2x+1}{f'(x)}$ có $2$ đường tiệm cận đứng tại $x=1$ và $x=-2$. \\
+		  Mặt khác, do bậc mẫu lớn hơn bậc tử nên $\lim\limits_{x \to -\infty} h(x)=\lim\limits_{x \to +\infty} h(x)=0$, do đó đồ thị hàm số $h(x)$ có $1$ đường tiệm cận ngang $y=0$. \\
+		  Vậy đồ thị hàm số $h(x)=\dfrac{2x+1}{f'(x)}$ có $3$ đường tiệm cận.
+		  \itemch Trên khoảng $(0;+\infty)$, ta thấy $\heva{&f'(x) < 0, x \in (0;1) \\& f'(x) > 0, x \in (1;+\infty)} \Rightarrow$ hàm số $f(x)$ nghịch biến trên khoảng $(0;1)$ và đồng biến trên khoảng $(1;+\infty)$.
+		  \itemch Dựa vào đồ thị của hàm số $f'(x)$, ta thấy $f'(x)=0$ có $1$ nghiệm bội lẻ ($x=1$), do đó hàm số $f(x)$ có $1$ điểm cực trị.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1H8V7-3]
+	Cho hình chóp tứ giác đều $S.ABCD$ có cạnh đáy bằng $a$, cạnh bên bằng $\sqrt{2}a$. Gọi $F$ là trung điểm của cạnh $SA$.
+	\choiceTF
+	{\True Khoảng cách từ $S$ đến mặt phẳng $(FCD)$ bằng $\dfrac{a\sqrt{10}}{5}$}
+	{Độ lớn của góc giữa đường thẳng $SA$ và mặt phẳng đáy bằng $30^\circ$}
+	{Thể tích của khối chóp $S.FCD$ bằng $\dfrac{a^3\sqrt{3}}{24}$}
+	{\True Khoảng cách giữa $AC$ và $SB$ bằng $\dfrac{a\sqrt{6}}{4}$}
+	\loigiai{
+		\begin{center}
+		  \begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth, declare function={a=5;b=3;goc=30;h=4;}]
+		  	% 1. Định nghĩa các đỉnh và trung điểm (sử dụng thư viện calc để lấy trung điểm)
+		  	\path (0,0) coordinate (A)
+			  	(0:a) coordinate (B)
+			  	(180+goc:b) coordinate (D)++(0:a) coordinate (C)
+			  	($(A)!0.5!(C)$) coordinate (O)++(90:h) coordinate (S)
+			  	($(S)!0.5!(A)$) coordinate (F)
+			  	($(S)!0.5!(B)$) coordinate (I);
+		  	\draw (S)--(D)--(C)--(B)--(S)--(C);
+		  	\draw[dashed] (S)--(A)--(D) (A)--(B) (A)--(C) (B)--(D) (S)--(O);
+		  	\draw[dashed, brown] (F)--(C) (F)--(D);
+		  	\draw[dashed, red] (O)--(I)--(C) (A)--(I);
+		  	\foreach \diem/\vt in {S/90, A/180, B/0, C/-45, D/-135, O/-90, F/135, I/45}{
+		  		\fill (\diem) circle (1pt) ($(\diem)+(\vt:3mm)$) node {$\diem$};
+		  	}
+		  \end{tikzpicture}
+		\end{center}
+		\begin{itemchoice}
+			\itemch Tam giác $SAC$ đều $\left(SA=SC=AC=a\sqrt{2}\right)$ có trung tuyến $FC=\dfrac{\sqrt{3}}{2} \cdot a \sqrt{2}=\dfrac{a \sqrt{6}}{2}$.
+			Tam giác $SAD$ có $DF$ là đường trung tuyến $\Rightarrow DF=\sqrt{\dfrac{SD^2+AD^2}{2} - \dfrac{SA^2}{4}}=a$. \\
+			Tam giác $FCD$ có $CD=a,\ DF=a,\ FC=\dfrac{a\sqrt{6}}{2}$. Khi đó, ta có
+			\begin{eqnarray*}
+			  	S_{FCD}&=&\sqrt{p(p-FC)(p-CD)(p-DF)}, \text{ với }  p=\dfrac{FC+CD+DF}{2}=\dfrac{4+\sqrt{6}}{4} \\
+			  	&=&\dfrac{\sqrt{15}}{8} \cdot a^2.
+			\end{eqnarray*}
+			Lại có $V_{S.FCD}=\dfrac{1}{3} d \left( S,(FCD) \right) \cdot S_{FCD} 
+			\Rightarrow d\left( S,(FCD) \right)=\dfrac{3V_{S.FCD}}{S_{FCD}}
+			=\dfrac{a\sqrt{10}}{5}$.
+			\itemch Ta có $\widehat{(SA,(ABCD))}=\widehat{(SA, AO)}=\widehat{SAO}$. \\
+			Trong $\triangle SAO$ có $\sin\widehat{SAO}=\dfrac{SO}{SA}=\dfrac{\sqrt{3}}{2} \Rightarrow \widehat{SAO}=60^\circ$. \\
+			Như vậy $\widehat{(SA,(ABCD))}=\widehat{(SA, AO)}=60^\circ$.
+			\itemch Gọi $O$ là tâm hình vuông $ABCD$, khi đó $SO$ là đường cao của hình chóp $S.ABCD$. \\
+			Tam giác vuông $SAO$ có $SA=a \sqrt{2},\ AO=\dfrac{AC}{2}=\dfrac{a \sqrt{2}}{2}$ \\
+			$\Rightarrow SO=\sqrt{SA^2 - AO^2}=\sqrt{\left( a \sqrt{2} \right)^2 - \left( \dfrac{a \sqrt{2}}{2} \right)^2}=\dfrac{a \sqrt{6}}{2}.$ \\
+			Suy ra $V_{S.ABCD}=\dfrac{1}{3} \cdot SO \cdot S_{ABCD}
+			=\dfrac{1}{3} \cdot SO \cdot AB^2=\dfrac{a^3\sqrt{6}}{6}$. \\
+			Từ đó $V_{S.FCD}=V_{A.FCD}=\dfrac{1}{2}V_{S.ACD}
+			=\dfrac{1}{4}V_{S.ABCD}
+			=\dfrac{a^3\sqrt{6}}{24}$.
+			
+			\itemch Kẻ $OI \perp SB$ ($I \in SB$). Dễ thấy hình chóp $S.ABCD$ đối xứng qua mặt phẳng $(SAC)$ nên ta có $CI=IA$. Do đó tam giác $AIC$ cân tại $I \Rightarrow OI \perp AC$. Suy ra $\mathrm{d}(AC, SB)=OI$. \\
+			Xét tam giác $SOB$ có $\dfrac{1}{OI^2}=\dfrac{1}{SO^2}+\dfrac{1}{OB^2} 
+			\Rightarrow OI=\dfrac{a \sqrt{6}}{4}$ hay $\mathrm{d}(AC, SB)=\dfrac{a \sqrt{6}}{4}$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[0D0V2-7]
+	Trong hộp có $45$ quả cầu có cùng kích thước và khối lượng được đánh số từ $1$ đến $45$. Lấy ngẫu nhiên $3$ quả cầu từ hộp đó. Xét tính đúng sai của các mệnh đề sau:
+	\choiceTF
+	{\True Số cách lấy được cả $3$ quả cầu đánh số chẵn bằng $1540$}
+	{Xác suất để tích $3$ số ghi trên $3$ quả cầu là một số chia hết cho $8$ bằng $\dfrac{523}{1290}$}
+	{Xác suất để tổng $3$ số ghi trên $3$ quả cầu là số lẻ bằng $\dfrac{1}{2}$}
+	{\True Xác suất để tổng $3$ số ghi trên $3$ quả cầu là số chia hết cho $4$ bằng $\dfrac{323}{1290}$}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Trong $45$ quả cầu có $22$ quả cầu mang số chẵn, $23$ quả cầu mang số lẻ. Do đó số cách lấy được cả $3$ quả cầu đánh số chẵn bằng $\mathrm{C}_{22}^3=1\,540$ (cách).
+			\itemch Ta xét các trường hợp tích $3$ số ghi trên $3$ quả cầu là số không chia hết cho $8$.
+			\begin{itemize}
+				\item Ba số là ba số lẻ. Số cách lấy là $\mathrm{C}_{23}^3$ (cách).
+				\item Trong ba số có $2$ số lẻ, và số chẵn còn lại không chia hết cho $8$. Có $5$ số chia hết cho $8$ ($8, 16, 24, 32, 40$) , do đó có $17$ số chẵn không chia hết cho $8$. Do đó có $\mathrm{C}_{23}^2 \cdot \mathrm{C}_{17}^1$ (cách).
+				\item Trong ba số có $1$ số lẻ, và tích $2$ số chẵn còn lại không chia hết cho $8$. Khi đó, $2$ số chẵn còn lại phải có dạng $4k+2, k \in \mathbb{N}$ (có $11$ số như vậy). Do đó có $\mathrm{C}_{23}^1 \cdot \mathrm{C}_{11}^2$ (cách).
+			\end{itemize}
+			Vậy có $\mathrm{C}_{23}^3+\mathrm{C}_{23}^2 \cdot \mathrm{C}_{17}^1+\mathrm{C}_{23}^1 \cdot \mathrm{C}_{11}^2=7337$ cách để chọn ra $3$ số có tích không chia hết cho $8$. \\
+			Số cách chọn ra $3$ số là $\mathrm{C}_{45}^3$ (cách). \\
+			Vậy xác suất để tích $3$ số ghi trên $3$ quả cầu là một số chia hết cho $8$ bằng: $1 - \dfrac{7337}{\mathrm{C}_{45}^3}=\dfrac{523}{1290}$.
+			\itemch Ta xét các trường hợp để tổng $3$ số được chọn là một số lẻ.
+			\begin{itemize}
+				\item Cả ba số đều là số lẻ. Số cách chọn là $\mathrm{C}_{23}^3$ (cách chọn)
+				\item Trong $3$ số có $1$ số lẻ và $2$ số chẵn. Số cách chọn là $\mathrm{C}_{23}^1 \cdot \mathrm{C}_{22}^2$ (cách chọn).
+			\end{itemize}
+			Tổng số cách chọn là $\mathrm{C}_{23}^3+\mathrm{C}_{23}^1 \cdot \mathrm{C}_{22}^2=7084$ (cách chọn). \\
+			Xác suất để tổng $3$ số ghi trên $3$ quả cầu là số lẻ bằng $\dfrac{7084}{\mathrm{C}_{45}^3}=\dfrac{322}{645}$ .
+			\itemch Trong $45$ số, có $11$ số chia $4$ hết cho $4$, $12$ số chia $4$ dư $1$, $11$ số chia $4$ dư $2$ và $11$ số chia $4$ dư $3$. Ta xét các trường hợp để tổng $3$ số ghi trên $3$ quả cầu là số chia hết cho $4$:
+			\begin{itemize}
+				\item $3$ số đều chia hết cho $4$, số cách chọn là $\mathrm{C}_{11}^3$ (cách).
+				\item Có $1$ số chia hết cho $4$ và $2$ số chia $4$ dư $2$. Số cách chọn là $\mathrm{C}_{11}^1 \cdot \mathrm{C}_{11}^2$ (cách).
+				\item Có $1$ số chia $4$ dư $2$, và $2$ số chia $4$ dư $1$. Số cách chọn là $\mathrm{C}_{11}^1 \cdot \mathrm{C}_{12}^2$ (cách).
+				\item Có $1$ số chia $4$ dư $2$, và $2$ số chia $4$ dư $3$. Số cách chọn là $\mathrm{C}_{11}^1 \cdot \mathrm{C}_{11}^2$ (cách).
+				\item Có $1$ số chia hết cho $4$, $1$ số chia $4$ dư $1$ và $1$ số chia $4$ dư $3$. Số cách chọn là $\mathrm{C}_{11}^1 \cdot \mathrm{C}_{12}^1 \cdot \mathrm{C}_{11}^1$ (cách chọn).
+			\end{itemize}
+			Tổng số cách chọn là $\mathrm{C}_{11}^4+\mathrm{C}_{11}^1 \cdot \mathrm{C}_{11}^2+\mathrm{C}_{11}^1 \cdot \mathrm{C}_{12}^2+\mathrm{C}_{11}^1 \cdot \mathrm{C}_{11}^2+\mathrm{C}_{11}^1 \cdot \mathrm{C}_{12}^1 \cdot \mathrm{C}_{11}^1=3\,553$ (cách). \\
+			Xác suất để tổng $3$ số ghi trên $3$ quả cầu là số chia hết cho $4$ là $\mathrm{P}=\dfrac{3\,553}{\mathrm{C}_{45}^3}=\dfrac{323}{1\,290}$.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2D1V3-1]
+	Cho hàm số $y=(9 - x^2)^\frac{1}{3}+\ln (1 - x)$.
+	\choiceTF
+	{Tập xác định của hàm số là khoảng $(-\infty;1)$}
+	{Hàm số có đạo hàm $y'=\dfrac{1}{\sqrt[3]{(9 - x^2)^2}} - \dfrac{1}{1 - x}$}
+	{\True Hàm số nghịch biến trên khoảng $(0;1)$}
+	{\True Giá trị nhỏ nhất của hàm số trên đoạn $\left[ \dfrac{1}{4}; \dfrac{1}{2} \right]$ bằng $\dfrac{1}{2} \sqrt[3]{70} - \ln 2$}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Điều kiện xác định
+			$\heva{&9 - x^2 > 0 \\ &1 - x > 0} \Leftrightarrow \heva{&-3 < x < 3 \\ &x < 1} \Leftrightarrow -3 < x < 1$. \\
+			Tập xác định của hàm số là $(-3;1)$.
+			\itemch Với mọi $x\in \mathscr{D}$, ta có 
+			$y'=-\dfrac{2x}{\sqrt[3]{(9 - x^2)^2}} - \dfrac{1}{1 - x}$.
+			\itemch Với mọi $x\in \mathscr{D}$, ta có
+			$\heva{&\dfrac{2x}{\sqrt[3]{(9 - x^2)^2}} > 0 \\ &1 - x > 0} 
+			\Rightarrow y'=-\dfrac{2x}{\sqrt[3]{(9 - x^2)^2}} - \dfrac{1}{1 - x} < 0$.
+			\itemch Do hàm số nghịch biến trên khoảng $(0;1)$ nên
+			$$\min\limits_{\left[\frac{1}{4}; \frac{1}{2} \right]} f(x)
+			=f\left( \dfrac{1}{2} \right)
+			=\sqrt[3]{\dfrac{35}{4}} - \ln 2=\dfrac{1}{2} \sqrt[3]{70} - \ln 2.$$
+		\end{itemchoice}
+	}
+\end{ex}
+
+\Closesolutionfile{ans}
+\caukq
+\Opensolutionfile{ans}[ans/ans-26-2--BacNinh-ChuyenBacNinh-L1-KQ]
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[0H5V4-4]
+	Cho hai vectơ $\overrightarrow{a}, \overrightarrow{b}$ sao cho $|\overrightarrow{a}|=\sqrt{2}, |\overrightarrow{b}|=2$ và hai vectơ $\overrightarrow{x}=\overrightarrow{a}+\overrightarrow{b},\ \overrightarrow{y}=2\overrightarrow{a} - \overrightarrow{b}$ vuông góc với nhau. Tính góc giữa hai véc tơ $\overrightarrow{a}$ và $\overrightarrow{b}$ \textit{(đơn vị độ)}.
+	\par\shortans[oly]{90}
+	\loigiai{
+		Ta có 
+		\begin{eqnarray*}
+			&&\overrightarrow{x} \perp \overrightarrow{y} 
+			\Leftrightarrow \overrightarrow{x} \cdot \overrightarrow{y}=0 \\
+			&\Leftrightarrow& \left(\overrightarrow{a}+\overrightarrow{b}\right)\left(2\overrightarrow{a} - \overrightarrow{b}\right)=0 \\
+			&\Leftrightarrow& 2a^2 - b^2+\overrightarrow{a}\overrightarrow{b}=0 \\
+			&\Leftrightarrow& \overrightarrow{a} \cdot \overrightarrow{b}=2 \cdot \left(\sqrt{2}\right)^2 - 2^2=0 \\
+			&\Leftrightarrow& \overrightarrow{a} \perp \overrightarrow{b}
+		\end{eqnarray*}
+		Vậy góc giữa véc tơ $\overrightarrow{a}$ và $\overrightarrow{b}$ bằng $90$ độ.
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2D1V2-3]
+	Tính tổng tất cả các giá trị nguyên của tham số $m$ để hàm số $y=\dfrac{x^2+(m - 1)x+3 - 2m}{x+m}$ đạt cực tiểu tại $x=-1$.
+	\par\shortans[oly]{2}
+	\loigiai{
+		Ta có $y=\dfrac{x^2+(m - 1)x+3 - 2m}{x+m}=x - 1+\dfrac{3 - m}{x+m} \Rightarrow y'=1 - \dfrac{3 - m}{(x+m)^2} 
+		\Rightarrow y''=\dfrac{2(3 - m)}{(x+m)^3}$. \\
+		Hàm số đạt cực tiểu tại $x=-1$ khi
+		$$\heva{&y'(-1)=0 \\ &y''(-1) > 0}
+		\Leftrightarrow \heva{&1-\dfrac{3 - m}{(-1+m)^2}=0 \\ &\dfrac{2(3 - m)}{(-1+m)^3} > 0}
+		\Leftrightarrow \heva{&\hoac{&\heva{&m=-1 \\ &m=2} \\ &1 < m < 3}}
+		\Leftrightarrow m=2.$$
+		Vậy $m=2$ thoả mãn điều kiện.
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[2H2V1-4]
+	Một chiếc ô tô được đặt trên mặt đáy dưới của một khung sắt dạng hình hộp chữ nhật với đáy trên là hình chữ nhật $ABCD$, mặt phẳng $(ABCD)$ song song với mặt phẳng nằm ngang. Khung sắt đó được đặt vào móc $E$ của chiếc cần cẩu sao cho các đoạn dây cáp $EA,EB,EC,ED$ bằng nhau và cùng tạo với mặt phẳng $(ABCD)$ một góc $\alpha$. \\
+	Chiếc cần cẩu kéo khung sắt lên theo phương thẳng đứng. Biết các lực căng $\overrightarrow{F}_1, \overrightarrow{F}_2, \overrightarrow{F}_3, \overrightarrow{F}_4,$ đều có cường độ là $4800$ N, trọng lượng của cả khung sắt chứa xe ô tô là $7200 \sqrt{6}$ N. Tính $\sin \alpha$ (làm tròn kết quả đến chữ số hàng phần trăm).
+	\shortans{$0{,}92$}
+	\loigiai{
+	  	\begin{center}
+	      	\begin{tikzpicture}[declare function={a=7; b=3.5; h=3; he=4; goc=200;}, line join=round, every node/.style={font=\normalsize}]
+	      	% Định nghĩa các điểm
+		      	\path
+		      	(0,0) coordinate (A')
+		      	(goc:b) coordinate (B')
+		      	(0:a) coordinate (D')
+		      	($(B')+(D')-(A')$) coordinate (C')
+		      	($(A')+(90:h)$) coordinate (A)
+		      	($(B')+(90:h)$) coordinate (B)
+		      	($(C')+(90:h)$) coordinate (C)
+		      	($(D')+(90:h)$) coordinate (D)
+		      	($(A)!0.5!(C)$) coordinate (O)
+		      	($(A')!0.5!(C')$) coordinate (O')
+		      	($(O)+(90:he)$) coordinate (E)
+		      	;
+		      	
+		      	% Định nghĩa xe ô tô hoạt hình
+		      	\tikzset{
+		      		car/.pic={
+		      			% Khung gầm xe
+		      			\draw[fill=orange, line width=0.8pt, line join=round, rounded  corners=2pt]
+		      			(-1.5, 0.25) rectangle (1.5, 0.8);
+		      			% Cabin xe
+		      			\draw[fill=orange, line width=0.8pt, line join=round, rounded  corners=2pt]
+		      			(-0.8, 0.8) -- (-0.4, 1.4) -- (0.6, 1.4) -- (1.1, 0.8) -- cycle;
+		      			% Cửa kính
+		      			\draw[fill=cyan!20, line width=0.6pt, line join=round, rounded  corners=1pt]
+		      			(-0.65, 0.8) -- (-0.35, 1.3) -- (0.05, 1.3) -- (0.05, 0.8) -- cycle;
+		      			\draw[fill=cyan!20, line width=0.6pt, line join=round, rounded  corners=1pt]
+		      			(0.15, 0.8) -- (0.15, 1.3) -- (0.5, 1.3) -- (0.85, 0.8) -- cycle;
+		      			% Bánh xe
+		      			\draw[fill=darkgray, line width=0.8pt] (-0.8, 0.25) circle (0.3);
+		      			\fill[gray!40] (-0.8, 0.25) circle (0.12);
+		      			\draw[fill=darkgray, line width=0.8pt] (0.8, 0.25) circle (0.3);
+		      			\fill[gray!40] (0.8, 0.25) circle (0.12);
+		      			% Cản trước/sau
+		      			\fill[gray!60] (-1.6, 0.35) rectangle (-1.4, 0.5);
+		      			\fill[gray!60] (1.4, 0.35) rectangle (1.6, 0.5);
+		      			% Đèn xe
+		      			\fill[yellow] (1.4, 0.55) circle (0.1);
+		      			\fill[red] (-1.4, 0.55) circle (0.1);
+		      		}
+		      	}
+		      	
+		      	% 1. Vẽ các cạnh khuất của khung sắt (đáy dưới và trụ sau)
+		      	\draw[dashed, line width=0.6pt] (A') -- (B') (A') -- (D') (A') -- (A);
+		      	\draw[dashed, line width=0.4pt] (A') -- (C') (B') -- (D'); % Đường chéo đáy dưới (mờ)
+		      	
+		      	% 2. Vẽ xe ô tô nằm giữa mặt đáy
+		      	\path (O') pic[scale=1.2] {car};
+		      	
+		      	% 3. Vẽ các cạnh nhìn thấy của khung sắt đáy dưới
+		      	\draw[line width=0.6pt] (B') -- (C') -- (D');
+		      	
+		      	% 4. Vẽ các trụ đứng phía trước
+		      	\draw[line width=0.6pt] (B) -- (B') (C) -- (C') (D) -- (D');
+		      	
+		      	% 5. Vẽ mặt đáy trên ABCD (khung hình chữ nhật)
+		      	\draw[line width=0.6pt] (B) -- (C) -- (D);
+		      	
+		      	% 6. Vẽ hai đường chéo mặt trên và đường cao EO
+		      	\draw[dashed, line width=0.6pt] (B)--(A)--(D) (A)--(C) (A)--(E) 
+		      	(B) -- (D) (E) -- (O);
+		      	
+		      	% 7. Vẽ các sợi dây cáp từ móc E xuống các góc
+		      	\draw[line width=0.6pt, darkgray] (E) -- (B) (E) -- (C) (E) -- (D);
+		      	
+		      	% 8. Vẽ cáp cẩu trục phía trên E
+		      	\draw[line width=2pt, gray!80!black] (E) -- ++(0, 1.5);
+		      	\draw[line width=1.5pt, fill=gray!30] (E) circle (0.15);
+		      	
+		      	% 9. Vẽ các vector lực căng dây F1, F2, F3, F4
+		      	\draw[-Stealth, red, line width=1.2pt] (A) -- ($(A)!0.55!(E)$) node[below right] {$\vec{F}_1$};
+		      	\draw[-Stealth, red, line width=1.2pt] (B) -- ($(B)!0.55!(E)$) node[above left]{$\vec{F}_2$};
+		      	\draw[-Stealth, red, line width=1.2pt] (C) -- ($(C)!0.55!(E)$) node[right]{$\vec{F}_3$};
+		      	\draw[-Stealth, red, line width=1.2pt] (D) -- ($(D)!0.55!(E)$) node[above right] {$\vec{F}_4$};
+		      	
+		      	% 10. Vẽ vector trọng lượng P của cả hệ thống (từ trọng tâm hướng xuống)
+		      	\draw[-Stealth, blue, line width=1.2pt] ($(O)!0.5!(O')$) -- ++(0, -3.5)node[right] {$\vec{P}$};
+		      	
+		      	% 11. Ký hiệu góc alpha giữa dây cáp và mặt phẳng (ABCD)
+		      	\path pic[draw, green!50!black, line width=0.8pt, angle radius=18pt]{angle=E--C--O};
+		      	\node[green!50!black] at ($(C)+(-0.7, 0.35)$) {$\alpha$};
+		      	
+		      	% 12. Đánh dấu các điểm và dán nhãn
+		      	\foreach \p/\pos in {A/135, B/225, C/-45, D/0}{
+		      		\draw[line width=0.6pt] (\p) circle (0.4pt) node[shift={(\pos:9pt)}]{$\p$};
+		      	}
+		      	\draw[line width=0.6pt] (E) circle (0.4pt) node[shift={(0:12pt)}] {$E$};
+		      	\draw[line width=0.6pt] (O) circle (0.4pt) node[shift={(-90:9pt)}] {$O$};
+	      \end{tikzpicture}
+	  	\end{center}
+	Đặt $\overrightarrow{F}_1=k\overrightarrow{AE}$; $\overrightarrow{F}_2=k\overrightarrow{BE}$; $\overrightarrow{F}_3=k\overrightarrow{CE}$; 
+	$\overrightarrow{F}_4=k\overrightarrow{DE}$. Ta có
+	\begin{eqnarray*}
+	-\overrightarrow{P}&=&\overrightarrow{F}_1+\overrightarrow{F}_2+\overrightarrow{F}_3+\overrightarrow{F}_4
+	=k\left(\overrightarrow{AE}+\overrightarrow{BE}+\overrightarrow{CE}+\overrightarrow{DE}\right)
+	=4k\overrightarrow{OE}\Rightarrow k\cdot OE=\dfrac{\left|\overrightarrow{P}\right|}{4}.
+	\end{eqnarray*}
+	Mặt khác $\left|\overrightarrow{F}_3\right|=k\cdot CE=k\cdot \dfrac{EO}{\sin \alpha}
+	\Rightarrow \sin \alpha=\dfrac{k\cdot EO}{\left|\overrightarrow{F}_3\right|}$. \\
+	Suy ra $\sin \alpha=\dfrac{\left|\overrightarrow{P}\right|}{4\cdot \left|\overrightarrow{F}_3\right|}=\dfrac{7\,200\sqrt{6}}{4 \cdot 4\,800} \approx 0{,}92.$
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1H4V3-5]
+	Cho hình tứ diện $ABCD$ có tất cả các cạnh bằng $6$. Gọi $M, N$ lần lượt là trung điểm của $CA, CB$. $P$ là điểm trên cạnh $BD$ sao cho $BP=2PD$. Gọi $(H)$ là hình giới hạn bởi giao tuyến của mặt phẳng $(MNP)$ với các mặt của tứ diện $ABCD$. Tính diện tích hình $(H)$ (kết quả làm tròn đến hàng phần trăm).
+	\par\shortans[oly]{8,93}
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth, declare function={a=5; b=4; h=3; goc=200;}]
+				% 1. Định nghĩa các đỉnh
+				\path (0,0) coordinate (A) 
+				(0:a) coordinate (B)++(goc:b) coordinate (C)
+				% Tính trung điểm M, N
+				($(A)!0.5!(C)$) coordinate (M)
+				($(C)!0.5!(B)$) coordinate (N)
+				(intersection of B--M and A--N) coordinate (O)++(90:h) coordinate (D)
+				% Tính điểm chia tỉ lệ (Tâm tỉ cự D=2, B=1 nghĩa là P gần D hơn)
+				($(B)!2/3!(D)$) coordinate (P)
+				($(A)!2/3!(D)$) coordinate (Q);
+				\draw[dashed] (A)--(B);
+				\draw (A)--(C)--(B)--(D)--(A) (C)--(D);
+				\draw[thick, blue] (M)--(Q) (N)--(P);
+				\draw[thick, blue, dashed] (M)--(N) (Q)--(P);
+				\foreach \diem/\vt in {A/180, B/0, C/-90, D/90, M/-135, N/-45, P/45, Q/135}{
+					\fill (\diem) circle (1pt) ($(\diem)+(\vt:3mm)$) node {$\diem$};
+				}
+			\end{tikzpicture} \qquad
+			\begin{tikzpicture}[scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+				% 1. Định nghĩa các điểm
+				\path (0,0) coordinate (M)
+				(3,0) coordinate (N)
+				(0.5,3.5) coordinate (Q)
+				(2.5,3.5) coordinate (P)
+				(0.5,0) coordinate (I)
+				(2.5,0) coordinate (J);
+				
+				% 2. Vẽ đa giác và các đường cao
+				\draw (M)--(N)--(P)--(Q)--cycle;
+				\draw (Q)--(I) (P)--(J);
+				
+				% 3. Vẽ kí hiệu góc vuông bằng toạ độ tương đối (++)
+				% Góc QIN: Tại I, dịch sang phải 0.2, lên 0.2, sang trái 0.2
+				\draw (I) ++(0.2,0) -- ++(0,0.2) -- ++(-0.2,0);
+				% Góc PJM: Tại J, dịch sang trái 0.2, lên 0.2, sang phải 0.2
+				\draw (J) ++(-0.2,0) -- ++(0,0.2) -- ++(0.2,0);
+				
+				% 4. Vẽ điểm và gắn nhãn bằng vòng lặp
+				\foreach \diem/\vt in {M/-135, N/-45, Q/135, P/45, I/-90, J/-90}{
+					\fill (\diem) circle (1pt) ($(\diem)+(\vt:3mm)$) node {$\diem$};
+				}
+			\end{tikzpicture} 
+		\end{center}
+		Dễ thấy $MN \parallel AB \Rightarrow (MNP) \parallel AB$. \\
+		Gọi $Q$ là giao điểm của $(MNP)$ với $AD \Rightarrow (MNPQ) \parallel AB \Leftrightarrow PQ \parallel AB \Rightarrow \dfrac{DQ}{DA}=\dfrac{DP}{DB}=\dfrac{1}{3}$. \\
+		Vậy hình $(H)$ giới hạn bởi giao tuyến của mặt phẳng $(MNP)$ với các mặt của tứ diện $ABCD$ là hình thang $MNPQ$ với hai đáy $MN, PQ$. \\
+		Xét tam giác $ACD$ có $
+		  \heva{& \dfrac{AM}{AC}=\dfrac{1}{2} \Rightarrow AM=3 \\ &\dfrac{AQ}{AD}=\dfrac{2}{3} \Rightarrow AQ=4}$. \\
+		Tam giác $AMQ$ có $MQ^2=AM^2+AQ^2 - 2 \cdot AM \cdot AQ \cdot \cos A$ \\
+		  $\Rightarrow MQ=\sqrt{3^2+4^2 - 2 \cdot 3 \cdot 4 \cdot \cos 60^\circ}=\sqrt{13}$. \\
+		Tương tự, $PN=\sqrt{PB^2+BN^2 - 2 \cdot PB \cdot BN \cdot \cos B}=\sqrt{13}$. \\
+		Xét tam giác $ADB$ có $QP \parallel AB \Rightarrow \dfrac{QP}{AB}=\dfrac{QD}{AD}=\dfrac{DP}{DB}=\dfrac{1}{3} \Rightarrow QP=2$. \\
+		Xét tam giác $ABC$ có $MN \parallel AB \Rightarrow \dfrac{MN}{AB}=\dfrac{CM}{CA}=\dfrac{CN}{CB}=\dfrac{1}{2} \Rightarrow MN=3$.\\
+		Hình thang $MNPQ$ có hai cạnh bên $QM=PN$ và hai đáy $MN \neq QP$ nên suy ra $MNPQ$ là hình thang cân. \\
+		Kẻ đường cao $QI, PJ$ ($I, J \in MN$), khi đó ta có
+		\begin{itemize}
+		    \item $QP=IJ \Rightarrow MI=JN=\dfrac{MN - PQ}{2}=\dfrac{1}{2}$
+		    \item $QI=PJ=\sqrt{QM^2 - MI^2}=\sqrt{(\sqrt{13})^2 - \left(\frac{1}{2}\right)^2}=\dfrac{\sqrt{51}}{2}$
+		\end{itemize}
+		Suy ra $S_{MNPQ}=QI \cdot \dfrac{QP+MN}{2}=\dfrac{5\sqrt{51}}{4} \approx 8{,}93$.
+	}
+\end{ex}
+
+\begin{ex}%[TT-BacNinh-ChuyenBacNinh-lan1]%[Dương Tấn Đạt, 26-2-DuAnDeTHPT2025-2026]%[1H8V7-4]
+	Một người đàn ông muốn chèo thuyền ở vị trí $A$ tới điểm $B$ về phía hạ lưu bờ đối diện trên một bờ sông thẳng rộng $3$ km (như hình vẽ). Anh chèo thuyền đến một điểm $D$ giữa $C$ và $B$ và sau đó chạy đến $B$. Biết anh ấy có thể chèo thuyền $6$ km/h, chạy $8$ km/h và quãng đường $BC=8$ km. Biết tốc độ của dòng nước là không đáng kể so với tốc độ chèo thuyền của người đàn ông. Khoảng thời gian ngắn nhất (đơn vị: giờ) để người đàn ông đến $B$ là $a+\dfrac{b}{c}\sqrt{d}$ trong đó $a, b, c, d \in \mathbb{N}^*$, $\dfrac{b}{c}$ là phân số tối giản và $d$ là số nguyên tố. Giá trị của $a+b+c+d$ bằng bao nhiêu?
+	\begin{center}
+		\begin{tikzpicture}[rotate=90,scale=1, font=\footnotesize, line join=round, line cap=round, >=stealth]
+			% 1. Vẽ dòng sông (mặt nước và 2 bờ sông)
+			\fill[blue!10,opacity=.5] (0,0) rectangle (3,8); % Giảm độ đậm của màu nền để mũi tên nổi bật hơn
+			\draw[thick] (0,0)--(0,8) (3,0)--(3,8);
+				
+			% 2. Định nghĩa toạ độ các điểm
+			\path (0,7.5) coordinate (A)
+			(3,7.5) coordinate (C)
+			(3,4.5) coordinate (D)
+			(3,0)   coordinate (B);
+				
+			% 3. Vẽ các hướng di chuyển (dùng vòng lặp cho gọn)
+			\foreach \diem in {C,D,B} {
+				\draw[->, thick, blue!50!black] (A)--(\diem);
+			}
+				
+			% 4. Vẽ các đường ghi kích thước (có thêm nét đứt dóng vị trí cho chuẩn kỹ thuật)
+			% Kích thước chiều rộng sông
+			\draw[dashed] (0,8) -- (0,8.6) (3,8) -- (3,8.6);
+			\draw[<->] (0,8.4) -- (3,8.4) node[midway, above, rotate=90] {$3 \text{ km}$};
+				
+			% Kích thước chiều dài khúc sông
+			\draw[dashed] (3,8) -- (4,8) (3,0) -- (4,0);
+			\draw[<->] (3.6,8) -- (3.6,0) node[midway, above] {$8 \text{ km}$};
+				
+			% 5. Vẽ chấm tròn tại các điểm và gắn nhãn bằng vòng lặp
+			\foreach \diem/\vt in {A/180, C/0, D/0, B/0}{
+				\fill (\diem) circle (1.5pt) ($(\diem)+(\vt:3mm)$) node {$\diem$};
+			}
+		\end{tikzpicture}
+	\end{center}
+	\par\shortans[oly]{17}
+	\loigiai{
+		Gọi $CD=x$ (km) $\Rightarrow DB=8 - x$ (km), điều kiện $0 \le x \le 8$. Khi đó ta có
+		\begin{itemize}
+			\item $AD=\sqrt{3^2+x^2}=\sqrt{x^2+9} 
+			\Rightarrow t_{AD}=\dfrac{\sqrt{x^2+9}}{6}$.
+			\item $DB=8 - x \Rightarrow t_{DB}=\dfrac{8 - x}{8}$.
+		\end{itemize}
+		Khi đó $t=t_{AD}+t_{DB}=\dfrac{\sqrt{x^2+9}}{6}+\dfrac{8 - x}{8}=f(x)$. \\
+		Xét $f'(x)=\dfrac{x}{6\sqrt{x^2+9}} - \dfrac{1}{8}$, cho $f'(x)=0 
+		\Leftrightarrow x=\dfrac{9\sqrt{7}}{7}$. \\
+		Bảng biến thiên của hàm số $f(x)$ với $0 \leq x \le 8$.
+		\begin{center}
+		    \begin{tikzpicture}
+		      \tkzTabInit[lgt=1.5, espcl=3]
+		      {$x$ /1, $f'(x)$ /1, $f(x)$ /2}
+		      {$0$, $\frac{9\sqrt{7}}{7}$, $8$}
+		      \tkzTabLine{, -, 0, +, }
+		      \tkzTabVar{+ / $\frac{3}{2}$, - / $\frac{8+\sqrt{7}}{8}$,+/$\frac{\sqrt{73}}{6}$}
+		    \end{tikzpicture}
+		\end{center}
+		Dựa vào bảng ta có $\min\limits_{[0;8]}=\dfrac{8+\sqrt{7}}{8}=1+\dfrac{1}{8}\sqrt{7}$. \\
+		Như vậy $a=1, b=1, c=8, d=7 \Rightarrow a+b+c+d=1+1+8+7=17$.
+	}
+\end{ex}
+
+\begin{ex}%Câu 6
+	Cho hình lăng trụ $ABC.A'B'C'$ có đáy là tam giác đều cạnh $2$. Hình chiếu vuông góc của $A'$ lên mặt phẳng $(ABC)$ trùng với trọng tâm tam giác $ABC$. Biết khoảng cách giữa hai đường thẳng $AA'$ và $BC$ bằng $\dfrac{\sqrt{3}}{2}$. Tính thể tích $V$ của khối lăng trụ $ABC.A'B'C'$ \textit{(kết quả làm tròn đến hàng phần trăm)}.
+	\par\shortans[oly]{1,15}
+	\loigiai{
+		\begin{center}
+			\begin{tikzpicture}[scale=1, line join=round, line cap=round, font=\footnotesize, declare function={a=6;b=4.5;goc=70;h=4.5;}]
+				% Các đỉnh của đáy ABC
+				\path (0,0) coordinate (A) (0:a) coordinate (B)++(-90-goc:b) coordinate (C)
+				($(C)!.5!(B)$) coordinate (I)
+				($(A)!2/3!(I)$) coordinate (G)++(90:h) coordinate (A')
+				++(0:a) coordinate (B')++(-90-goc:b) coordinate (C')
+				($(A)!2/3!(A')$) coordinate (K) ($(A)!2/3!(K)$) coordinate (J)
+				;
+				% --- Vẽ các đường khuất (nét đứt) ---
+				\draw[dashed] (B) -- (C) (A) -- (I) (A') -- (G)--(J) (I) -- (K);
+				
+				% --- Vẽ các đường thấy (nét liền) ---
+				% Khối lăng trụ
+				\draw[thick] (A) -- (B) -- (B') -- (A') -- cycle
+					(B') -- (C') -- (A') (A) -- (C) -- (C') 
+					(B) -- (C) -- (C') -- (B') -- cycle
+					(B) -- (A) -- (C) -- (C') -- (A') -- (B') -- cycle
+					(A) -- (A') (B') -- (C');
+				% --- Vẽ điểm và gắn tên ---
+				\foreach \a/\b in {A/180,B/0,C/-50,I/-30,K/130,G/-100,A'/120,B'/40,C'/-30, J/130}{
+					\fill[black] (\a)circle(.8pt) ($(\a)+(\b:2.5mm)$)node{$\a$};
+				}
+			\end{tikzpicture}
+		\end{center}
+		Gọi $G$ là trọng tâm tam giác $ABC$, $I$ là trung điểm $BC$, $J$ là hình chiếu của $G$ lên $AA'$, $K$ là hình chiếu của $I$ lên $AA'$. \\
+		Ta có $AA' \parallel BB' \Rightarrow \mathrm{d}(AA', BC)=\mathrm{d}(AA', (BB'C'C))=\mathrm{d}(A, (BB'C'C))$. \\
+		Vì $\triangle ABC$ đều nên $AI \perp BC$, mà $A'G \perp (ABC) \Rightarrow A'G \perp BC$.\\
+		Suy ra $BC \perp (AA'I) \Rightarrow IK \perp BC\Rightarrow IK=\mathrm{d}(A, (BB'C'C))=\dfrac{\sqrt{3}}{2}$. \\
+		Xét tam giác $AIK$ có $JG \parallel IK 
+		\Rightarrow \dfrac{JG}{KI}=\dfrac{AG}{AI}=\dfrac{2}{3} 
+		\Rightarrow JG=\dfrac{\sqrt{3}}{3}$. \\
+		Tam giác $ABC$ đều cạnh $2$ có $AI=\dfrac{2\sqrt{3}}{2}=\sqrt{3} 
+		\Rightarrow AG=\dfrac{2}{3}AI=\dfrac{2\sqrt{3}}{3}$. \\
+		Xét $\triangle AGA'$ vuông có $\dfrac{1}{JG^2}=\dfrac{1}{AG^2}+\dfrac{1}{A'G^2} \Rightarrow A'G=\dfrac{2}{3}$. \\
+		Thể tích khối lăng trụ $V_{ABC.A'B'C'}=A'G \cdot S_{ABC}
+		=\dfrac{2}{3} \cdot \dfrac{2^2\sqrt{3}}{4}=\dfrac{2\sqrt{3}}{3} \approx 1{,}15$.
+	}
+\end{ex}
+\Closesolutionfile{ans}
+
+%\indapan{6}{ans/ans-26-2--BacNinh-ChuyenBacNinh-L1-LC}
+%\indapan{4}{ans/ans-26-2--BacNinh-ChuyenBacNinh-L1-DS}
+%\indapan{6}{ans/ans-26-2--BacNinh-ChuyenBacNinh-L1-KQ}
